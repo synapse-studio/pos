@@ -124,3 +124,41 @@
     - `cd /var/www/html/ && drush`
   * Развернуть сайт из нового бэкапа
     - `./console.php kiosk:restore ***` (Example: ./console.php kiosk:restore https://docker-bcp-weekly.storage.yandexcloud.net/bcp-w-10158-t-pos.2023-09-18-10-38-05.tar.gz)
+
+# Требования к хостингу
+Веб-приложение разворачивается из открытой библиотеки на облачном хостинге, со следующей конфигурацией:
+• память - от 512 МБ
+• процессор - от 1 ядра
+• дисковое пространство- от 250 МБ
+
+# Параметры серверов и сетей:
+• Страна размещения сервера: Россия
+• CPU: от 1GHz
+• SSD RAID1
+
+# Для функционирования сайта необходимо следующее программное обеспечение:
+• Операционная система: Linux
+• Веб сервер: Nginx 1.10+ или Apache 2.4+
+• База данных: MySQL 8+ / Mariadb 10.1+ / SQLite 3.x
+• PHP 8.1+
+• Место на диске: 500Mb+
+• Настройки PHP:
+   - register_globals off
+   - safe_mode off
+   - session.save_handler user
+   - session.cache_limiter nocache
+   - error_reporting E_ALL
+   - php_memory_limit не менее 100мб, но лучше 500Mb+
+   - The standard PHP extensions (enabled by default) Hash and JSON are required
+   - PDO support
+
+# Параметры окружения (LAMP):
+• PHP 8+
+• MariaDB 10.5.x / MySQL 5.6+
+• Доступ по SSH/SFTP/FTP
+• phpMyAdmin или adminer
+• Drush
+• Drupal Console
+• Composer
+• Git
+• NodeJS (NPM, Gulp)
