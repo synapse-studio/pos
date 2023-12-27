@@ -1,0 +1,12 @@
+uuid: dfd19d56-44c3-4dec-a89a-5ab1e5580cc6
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: s_yEc2kWanpcHz6KkY_V8VcTjfBAi1O6CYQueNohDh4
+id: product_feature
+label: 'Комплектация товара'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,18 @@
+{% set classes = [
+    rows | length is divisible by(3) ? 'col-md-4',
+    'col-sm-6',
+    'col-12',
+    'mb-4',
+    'text-center',
+  ]
+%}
+
+<div class="row">
+  {% for row in rows %}
+
+    <div{{ attributes.addClass(classes) }}>
+      {{ row.content }}
+    </div>
+
+  {% endfor %}
+</div>

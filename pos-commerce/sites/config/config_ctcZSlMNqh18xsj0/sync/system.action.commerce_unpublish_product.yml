@@ -1,0 +1,13 @@
+uuid: 9eb51f90-69db-499d-9fff-d16e9065fb6d
+langcode: ru
+status: true
+dependencies:
+  module:
+    - commerce_product
+_core:
+  default_config_hash: 6gfQWDjHFkJsE2C2ayhUL7x1jBGPgOhr3SGF15Kxy-w
+id: commerce_unpublish_product
+label: 'Снять товар с публикации'
+type: commerce_product
+plugin: commerce_unpublish_product
+configuration: {  }

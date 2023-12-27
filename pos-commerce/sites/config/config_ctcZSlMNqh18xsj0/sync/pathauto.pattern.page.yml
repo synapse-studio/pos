@@ -1,0 +1,24 @@
+uuid: 1b3cc4ba-86b2-4112-a0f3-39d0f36f3cb7
+langcode: ru
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: ex8rab7T0Y5wn7sWLkFc--T8h48TiLY3sxT7aoOqdG8
+id: page
+label: Страница
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  ceca444d-7696-445a-8bb4-0a7173b539c6:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: ceca444d-7696-445a-8bb4-0a7173b539c6
+    context_mapping:
+      node: node
+    bundles:
+      page: page
+selection_logic: and
+weight: -5
+relationships: {  }

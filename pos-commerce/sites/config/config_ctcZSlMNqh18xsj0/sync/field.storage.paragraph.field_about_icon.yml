@@ -1,0 +1,23 @@
+uuid: 788c13ce-78d0-4eef-a3dd-1520440b5e8d
+langcode: ru
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: 0r99Rkx3a0PiaF2zwM7V5FpLaS79FuMEu8MC2aXGQhU
+id: paragraph.field_about_icon
+field_name: field_about_icon
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

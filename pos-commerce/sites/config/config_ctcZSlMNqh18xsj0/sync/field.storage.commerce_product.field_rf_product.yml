@@ -1,0 +1,21 @@
+uuid: 7f377b6f-e16d-4ee0-8dba-c5d591469734
+langcode: ru
+status: true
+dependencies:
+  module:
+    - commerce_product
+_core:
+  default_config_hash: 18brth8Vj7w7e6btcKOz3Ig2BnQoOi7uLA5QiiAt-kQ
+id: commerce_product.field_rf_product
+field_name: field_rf_product
+entity_type: commerce_product
+type: entity_reference
+settings:
+  target_type: commerce_product
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

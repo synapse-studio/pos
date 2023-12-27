@@ -1,0 +1,12 @@
+uuid: faeb17ac-99b3-494c-9767-53dc65e7d24d
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vZaQQ91HCkDNphARfW6j7KdcY1icFeuRwaAmASo2FX8
+label: 'Комплектация товара'
+id: product_feature
+purchasableEntityType: commerce_product_variation
+orderType: default
+traits: {  }
+locked: false

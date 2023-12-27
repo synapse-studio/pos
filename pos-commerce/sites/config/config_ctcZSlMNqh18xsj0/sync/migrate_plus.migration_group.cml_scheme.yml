@@ -1,0 +1,12 @@
+uuid: b2cecb56-041f-4795-bbc1-0b35551263d3
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: HNefu8ot46z6xIUrzqvsYIUWX5LsyOUYq_uxOcYNPDU
+id: cml_scheme
+label: cmlScheme
+description: ''
+source_type: ''
+module: null
+shared_configuration: null

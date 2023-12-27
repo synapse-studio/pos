@@ -1,0 +1,10 @@
+uuid: 07c44764-b11a-4538-b01b-1d79eaa7c582
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 5F20v9UtS0Yz4bPdHSCoobxXlHbim-oiqRBO7DHhGq4
+name: 'Варианты товара'
+vid: product_options
+description: ''
+weight: 0

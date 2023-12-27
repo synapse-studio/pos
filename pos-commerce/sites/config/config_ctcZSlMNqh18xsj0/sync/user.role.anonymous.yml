@@ -1,0 +1,24 @@
+uuid: df496064-4f5b-49ec-a9fa-86b07268c7e6
+langcode: ru
+status: true
+dependencies:
+  config:
+    - filter.format.restricted_html
+  module:
+    - commerce_checkout
+    - commerce_product
+    - contact
+    - filter
+    - system
+_core:
+  default_config_hash: mYTU4VkYPw4x9tAKva_Ie-TUSWmV_-8v-wSytlMDnbA
+id: anonymous
+label: Guest
+weight: 0
+is_admin: false
+permissions:
+  - 'access checkout'
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'use text format restricted_html'
+  - 'view commerce_product'

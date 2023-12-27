@@ -1,0 +1,19 @@
+uuid: 737ee12b-efe3-4f2d-a279-ec29fab6e4cb
+langcode: ru
+status: true
+dependencies:
+  module:
+    - synpay
+id: card
+label: card
+weight: null
+plugin: synpay
+configuration:
+  display_label: 'Карта 2'
+  mode: live
+  payment_method_types:
+    - credit_card
+  collect_billing_information: true
+  gateway: yookassa
+conditions: {  }
+conditionOperator: AND

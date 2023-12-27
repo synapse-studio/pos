@@ -1,0 +1,27 @@
+uuid: d428112e-c76e-484f-8452-4ac3025723f3
+langcode: ru
+status: true
+dependencies:
+  enforced:
+    module:
+      - cmlmigrations
+_core:
+  default_config_hash: WobmHAFkJGorrs7dOohc24rXbUYcI189zKeenIVKGkw
+id: cml_scheme_vocabulary
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: cml_scheme
+label: 'Scheme Vocabulary'
+source:
+  plugin: cml_scheme_volcabulary
+process:
+  vid: vid
+  label: name
+  name: name
+  description: description
+  weight: weight
+destination:
+  plugin: 'entity:taxonomy_vocabulary'
+migration_dependencies: null

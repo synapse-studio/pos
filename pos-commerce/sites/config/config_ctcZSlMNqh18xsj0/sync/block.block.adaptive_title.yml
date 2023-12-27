@@ -1,0 +1,26 @@
+uuid: null
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - adaptive
+_core:
+  default_config_hash: sHhyLkp-bOPXx7X9TBHAlGQMslZQQZX3l78mMjuWMuw
+id: adaptive_title
+theme: adaptive
+region: title
+weight: -6
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Заголовок страницы'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: /user/login

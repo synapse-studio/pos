@@ -1,0 +1,27 @@
+uuid: 60a0e1ce-cb93-4596-90ab-e1c5089845e4
+langcode: ru
+status: true
+dependencies:
+  enforced:
+    module:
+      - commerce_import
+_core:
+  default_config_hash: KGkgXcEAtC7WD2mCGiL-KntBfmOi9jvMqlPUOcpXL28
+id: commerce_paragraphs
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: commerce
+label: 'Commerce Paragraphs'
+source:
+  plugin: commerce_paragraphs
+process:
+  type: type
+  status: status
+  langcode: langcode
+  field_product_param_param: field_product_param_param
+  field_product_param_value: field_product_param_value
+destination:
+  plugin: 'entity:paragraph'
+migration_dependencies: null

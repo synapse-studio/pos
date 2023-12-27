@@ -1,0 +1,25 @@
+uuid: cce56080-8080-4d6d-95c6-410b971d9f09
+langcode: ru
+status: true
+dependencies:
+  config:
+    - image.style.catalog_teaser
+  module:
+    - cmlstarter
+_core:
+  default_config_hash: IGuwKhk3QKNHc5WVxuVlurbHX9hBPryc0f9QlW5MTBM
+id: catalog_teaser
+label: 'Catalog teaser'
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: catalog_teaser
+    breakpoint_id: cmlstarter.wide
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: catalog_teaser
+    breakpoint_id: cmlstarter.mobile_small
+    multiplier: 1x
+breakpoint_group: cmlstarter
+fallback_image_style: catalog_teaser

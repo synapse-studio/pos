@@ -1,0 +1,21 @@
+uuid: 765d177b-ac94-4a5c-ad60-9ec81696758a
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.type_service.field_type_service_image
+    - field.field.taxonomy_term.type_service.field_type_service_text
+    - taxonomy.vocabulary.type_service
+_core:
+  default_config_hash: StIopzZTzf9tUoMxdWv4sk2k7VjI_LPXGUeH6smBYYY
+id: taxonomy_term.type_service.default
+targetEntityType: taxonomy_term
+bundle: type_service
+mode: default
+content: {  }
+hidden:
+  description: true
+  field_type_service_image: true
+  field_type_service_text: true
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,23 @@
+uuid: 07ac5863-ab44-4eaa-98fc-7568fd5970db
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_metatag
+    - node.type.page
+  module:
+    - metatag
+_core:
+  default_config_hash: aoW3ymBg5ECOGnsbctEE18QnhHoAfycBhG8ooBiHrJ4
+id: node.page.field_metatag
+field_name: field_metatag
+entity_type: node
+bundle: page
+label: Мета-тег
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

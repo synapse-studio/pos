@@ -1,0 +1,45 @@
+uuid: 4f822f59-feff-4ff2-8801-c5cf409c061c
+langcode: ru
+status: true
+dependencies:
+  module:
+    - editor
+_core:
+  default_config_hash: LJ3C70e6is41ElZNK2FcVR28Wd13LZ0uVmwDIBrEajQ
+name: 'Базовый HTML'
+format: basic_html
+weight: 0
+filters:
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: true
+    weight: -10
+    settings:
+      allowed_html: '<a class href hreflang> <em class> <strong class> <cite class> <blockquote cite class> <code class> <ul type class> <ol start type class> <li class> <dl class> <dt class> <dd class> <h2 id class> <h3 id class> <h4 id class> <h5 id class> <h6 id class> <p class> <br> <span class> <img src alt height width data-entity-type data-entity-uuid data-align data-caption class> <embed> <table class> <caption class> <tbody class> <thead class> <tfoot class> <th class> <td class colspan rowspan> <tr class> <iframe src height width frameborder allowfullscreen> <div id class>'
+      filter_html_help: false
+      filter_html_nofollow: false
+  filter_align:
+    id: filter_align
+    provider: filter
+    status: true
+    weight: 7
+    settings: {  }
+  filter_caption:
+    id: filter_caption
+    provider: filter
+    status: true
+    weight: 8
+    settings: {  }
+  filter_html_image_secure:
+    id: filter_html_image_secure
+    provider: filter
+    status: true
+    weight: 9
+    settings: {  }
+  editor_file_reference:
+    id: editor_file_reference
+    provider: editor
+    status: true
+    weight: 11
+    settings: {  }

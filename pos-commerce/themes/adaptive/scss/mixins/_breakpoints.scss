@@ -1,0 +1,57 @@
+// Synapse breakpoint aliases
+
+// @include m-up(md) {....} => @media (min-width: 768px) {...}
+// @include m-up(700) {...} => @media (min-width: 700px) {...}
+@mixin m-up($value, $breakpoints: $grid-breakpoints) {
+  @if type-of($value) == number {
+    @media (min-width: '#{$value}px') {
+      @content;
+    }
+  } @else {
+    $min: breakpoint-min($value, $breakpoints);
+    @if $min {
+      @media (min-width: $min) {
+        @content;
+      }
+    } @else {
+      @content;
+    }
+  }
+}
+
+// @include m-down(lg) {.....} => @media (max-width: 1199px) {...}
+// @include m-down(1000) {...} => @media (max-width: 1000px) {...}
+@mixin m-down($value, $breakpoints: $grid-breakpoints) {
+  @if type-of($value) == number {
+    @media (max-width: '#{$value}px') {
+      @content;
+    }
+  } @else {
+    $max: breakpoint-max($value, $breakpoints);
+    @if $max {
+      @media (max-width: $max) {
+        @content;
+      }
+    } @else {
+      @content;
+    }
+  }
+}
+
+// @include m-between(sm,lg) {......} => @media (min-width: 768px) and (max-width: 1199px) {...}
+// @include m-between(500,lg) {.....} => @media (min-width: 500px) and (max-width: 1199px) {...}
+// @include m-between(700,1100) {...} => @media (min-width: 700px) and (max-width: 1100px) {...}
+@mixin m-between($lower, $upper, $breakpoints: $grid-breakpoints) {
+  @include m-up($lower, $breakpoints) {
+    @include m-down($upper, $breakpoints) {
+      @content;
+    }
+  }
+}
+
+// @include m-only(md) {...} => @media (min-width: 768px) and (max-width: 991) {...}
+@mixin m-only($name, $breakpoints: $grid-breakpoints) {
+  @include media-breakpoint-between($name, $name, $breakpoints) {
+    @content;
+  }
+}

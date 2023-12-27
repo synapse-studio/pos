@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=/home/synapse/kiosk.sh
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[ru_RU]=kiosk
+Name=kiosk
+Comment[ru_RU]=
+Comment=

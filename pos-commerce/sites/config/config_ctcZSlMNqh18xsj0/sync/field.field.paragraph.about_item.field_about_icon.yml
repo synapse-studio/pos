@@ -1,0 +1,21 @@
+uuid: ba0740da-a7a9-4c03-9dde-bc3a4f4c323d
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_about_icon
+    - paragraphs.paragraphs_type.about_item
+_core:
+  default_config_hash: DRejich_TsTHqBSlfk0uKg9rqTv_XmWIEbbM1WI8Cb4
+id: paragraph.about_item.field_about_icon
+field_name: field_about_icon
+entity_type: paragraph
+bundle: about_item
+label: Иконка
+description: 'Например <i class="fas fa-space-shuttle"></i>'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

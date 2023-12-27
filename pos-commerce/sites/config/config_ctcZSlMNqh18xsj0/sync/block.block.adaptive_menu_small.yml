@@ -1,0 +1,27 @@
+uuid: 6a4766e8-525f-4efb-8264-b66fd209cb7b
+langcode: ru
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - adaptive
+_core:
+  default_config_hash: BioI9BH3EAGRkK-CRHgnoLMIx6IHm99srRSjTWyi0AQ
+id: adaptive_menu_small
+theme: adaptive
+region: menu_small
+weight: -8
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Основная навигация'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

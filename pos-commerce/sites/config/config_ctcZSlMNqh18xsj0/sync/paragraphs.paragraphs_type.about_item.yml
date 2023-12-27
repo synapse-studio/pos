@@ -1,0 +1,12 @@
+uuid: ebce109b-0491-4c28-a61b-887ee150079a
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: w9FXfv8lMW-t9va4CdeNpKsWCnHxRne-N99bVY1nXbU
+id: about_item
+label: 'About item'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

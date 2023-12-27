@@ -1,0 +1,13 @@
+uuid: 6157e5aa-7dc6-459d-a7bf-abcf5881beb3
+langcode: ru
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: lDM9mvIGAu8Sw8rt-uCO4Sr7yX5VPrDPxYcawkbKd6k
+id: node_make_unsticky_action
+label: 'Отменить прикрепление материала вверху списков'
+type: node
+plugin: node_make_unsticky_action
+configuration: {  }

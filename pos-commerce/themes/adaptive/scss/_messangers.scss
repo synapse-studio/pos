@@ -1,0 +1,173 @@
+.messangers,
+.socials {
+  display: flex;
+  margin: 0px -8px 10px;
+}
+.messangers {
+  margin-right: 8px;
+}
+.header-social {
+  &-link {
+    width: 38px;
+    height: 38px;
+    display: flex !important;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-button1;
+  }
+  &-networks {
+    display: none;
+    padding-left: 16px;
+    margin: 8px -10px 0px -10px;
+    a {
+      padding: 0px !important;
+      margin: 0px 8px;
+      transition: background-color $duration;
+      &:hover {
+        background-color: darken($color-button1, 15%);
+      }
+    }
+  }
+  @include m-down(md) {
+    &-networks {
+      display: flex !important;
+      flex-wrap: wrap;
+    }
+  }
+}
+.footer {
+  &-social {
+    &-link {
+      width: 38px;
+      height: 38px;
+      display: flex;
+      border-radius: 50%;
+      align-items: center;
+      justify-content: center;
+      background-color: $color-button1;
+    }
+    &-networks {
+      text-align: right;
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 20px;
+      a {
+        padding: 0px;
+        margin: 0px 8px;
+        transition: background-color $duration;
+        &:hover {
+          background-color: darken($color-button1, 15%);
+        }
+      }
+      @include m-down(md) {
+        margin-top: 30px;
+        text-align: left;
+      }
+    }
+  }
+}
+.contact {
+  &-social {
+    &-link {
+      width: 38px;
+      height: 38px;
+      display: flex !important;
+      border-radius: 50%;
+      align-items: center;
+      justify-content: center;
+      background-color: $color-button1;
+    }
+    &-networks {
+      margin: 0px -10px 0px -10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      a {
+        padding: 0px !important;
+        margin: 0px 8px;
+        transition: background-color $duration;
+        &:hover {
+          background-color: darken($color-button1, 15%);
+        }
+      }
+    }
+  }
+}
+.whatsapp {
+  background-color:#25d366;
+  &-widget {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 120px;
+    z-index: 50;
+    &__link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background-color: #25d366;
+      box-shadow: 0 0 10px -3px #131313;
+      transition: box-shadow 0.4s;
+      svg {
+        width: 42px;
+        height: 42px;
+        animation: sway 6s ease-in-out infinite;
+      }
+    }
+    &__sign {
+      color: #25d366;
+      font-size: 13px;
+      font-weight: 500;
+      margin-top: 5px;
+      padding: 3px;
+      background-color: #fff;
+      border-radius: 3px;
+      box-shadow: 0 0 5px rgba(19, 19, 19, 0.3), 0 0 3px rgba(141, 198, 63, 0.3);
+      text-align: center;
+      text-shadow: 0 0 1px rgba(19, 19, 19, 0.3);
+    }
+    &--colored {
+      .whatsapp-widget__sign {
+        color: $color-button1;
+        background-color: $white;
+      }
+      .whatsapp-widget__link {
+        background-color: $color-button1;
+      }
+    }
+    @include m-down(sm) {
+      bottom: 5px;
+      right: 5px;
+    }
+  }
+  &:hover {
+    background-color: darken(#25d366, 15%) !important;
+  }
+}
+.telegram {
+  background-color: #1d97c9 !important;
+  svg {
+    margin-left: -3px;
+  }
+  &:hover {
+    background-color: darken(#1d97c9, 15%) !important;
+  }
+}
+.viber {
+  background-color: #7360f2;
+  svg {
+    margin-bottom: -2px;
+  }
+  &:hover {
+    background-color: darken(#7360f2, 15%) !important;
+  }
+}

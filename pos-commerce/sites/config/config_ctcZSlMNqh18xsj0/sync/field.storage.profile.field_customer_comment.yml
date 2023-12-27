@@ -1,0 +1,21 @@
+uuid: 17571dbf-fc79-4d16-810d-b9827d9953d9
+langcode: ru
+status: true
+dependencies:
+  module:
+    - profile
+_core:
+  default_config_hash: u5wwcBRDdMMwSdj93XpwVEDoFb05ggV9q3O9dyCTK-I
+id: profile.field_customer_comment
+field_name: field_customer_comment
+entity_type: profile
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

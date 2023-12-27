@@ -1,0 +1,21 @@
+uuid: db009375-1452-47c0-9206-76c4b3d39650
+langcode: ru
+status: true
+dependencies:
+  config:
+    - contact.form.order
+    - field.storage.contact_message.field_details
+_core:
+  default_config_hash: 3bJYQvz3Ca6x2BGGzAUuILiDk0sFljyr2-1kBcfllGY
+id: contact_message.order.field_details
+field_name: field_details
+entity_type: contact_message
+bundle: order
+label: 'Описание задачи'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

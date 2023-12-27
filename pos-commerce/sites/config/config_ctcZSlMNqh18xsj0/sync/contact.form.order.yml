@@ -1,0 +1,31 @@
+uuid: 4d7e7d62-525b-4f77-8a50-514a73616822
+langcode: ru
+status: true
+dependencies:
+  module:
+    - contact_ajax
+    - contact_storage
+third_party_settings:
+  contact_storage:
+    redirect_uri: ''
+    submit_text: Отправить
+    show_preview: false
+    disabled_form_message: ''
+    maximum_submissions_user: 0
+    page_autoreply_format: plain_text
+  contact_ajax:
+    enabled: true
+    render_selector: ''
+    prefix_id: ''
+    confirmation_type: 1
+    order: 1
+_core:
+  default_config_hash: 5Ba3VYq0hXyfc_UxHoqP_-U3X84MaXplgfwUCLUnP-c
+id: order
+label: Порядок
+recipients:
+  - support@synapse-studio.ru
+reply: ''
+weight: 0
+message: 'Спасибо, мы свяжемся с вами в ближайшее время.'
+redirect: ''

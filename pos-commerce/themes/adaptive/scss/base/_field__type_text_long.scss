@@ -1,0 +1,10 @@
+// Field text-long.
+.field--type-text-long {
+  table {
+    table-layout: fixed;
+    overflow-x: scroll;
+    @include m-down(sm) {
+      display: block;
+    }
+  }
+}

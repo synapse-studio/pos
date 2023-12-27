@@ -1,0 +1,39 @@
+version: "3"
+services:
+  mysql:
+    image: mariadb:10.5
+    container_name: mysql
+    hostname: mysql
+    restart: always
+    environment:
+      MYSQL_DATABASE: drupal
+      MYSQL_USER: drupal
+      MYSQL_PASSWORD: dbPass
+      MYSQL_ROOT_PASSWORD: rootPass
+    logging:
+      options:
+        max-file: "10"
+        max-size: "50m"
+    command:
+      - mysqld
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_unicode_ci
+    volumes:
+      - "./etc/dev/mysql/my.cnf:/etc/mysql/my.cnf"
+      - "./db:/var/lib/mysql"
+      - "./run/mysqld:/var/run/mysqld:rw"
+  php:
+    image: synstd/php:8.1
+    container_name: php
+    hostname: php
+    restart: always
+    logging:
+      options:
+        max-file: "3"
+        max-size: "50m"
+    volumes:
+      - "/opt/sites:/opt/sites:rw"
+      - "./run/php:/run/php:rw"
+      - "./root/.ssh:/root/.ssh:ro"
+      - "./www-home:/var/www:rw"
+      - "./run/mysqld:/var/run/mysqld:rw"

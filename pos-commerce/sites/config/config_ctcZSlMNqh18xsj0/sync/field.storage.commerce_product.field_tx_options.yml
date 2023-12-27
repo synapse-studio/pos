@@ -1,0 +1,22 @@
+uuid: 43193dbc-838b-4848-bb2e-8b265a061178
+langcode: ru
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - taxonomy
+_core:
+  default_config_hash: 528HCkfzKIko5P6JgVZ7KaHJ3NdFBNKjRqiGCpAJOr4
+id: commerce_product.field_tx_options
+field_name: field_tx_options
+entity_type: commerce_product
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

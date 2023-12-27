@@ -1,0 +1,21 @@
+uuid: a9c3e445-cf56-4b00-afb6-02f3ff7c60dc
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_customer_email
+    - profile.type.customer
+_core:
+  default_config_hash: 8chypjTE3mKyEN1wcp-Jrwk6P1_avCHrnM5fpZiT08U
+id: profile.customer.field_customer_email
+field_name: field_customer_email
+entity_type: profile
+bundle: customer
+label: E-mail
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

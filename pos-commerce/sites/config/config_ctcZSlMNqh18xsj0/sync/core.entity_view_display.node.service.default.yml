@@ -1,0 +1,89 @@
+uuid: 5a7460b0-8127-4f07-ac3b-36175fcf0418
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.node.service.field_attach
+    - field.field.node.service.field_gallery
+    - field.field.node.service.field_image
+    - field.field.node.service.field_image_big
+    - field.field.node.service.field_metatag
+    - field.field.node.service.field_paragraph
+    - field.field.node.service.field_service_info
+    - field.field.node.service.field_short
+    - field.field.node.service.field_type_service
+    - image.style.lp_gallery_280x210
+    - image.style.max_1300x1300
+    - node.type.service
+  module:
+    - colorbox
+    - entity_reference_revisions
+    - file
+    - metatag
+    - user
+_core:
+  default_config_hash: TgU1OaowPybeFIgTfUbKFzYyUKJtGxVxI7Sue6EU1Js
+id: node.service.default
+targetEntityType: node
+bundle: service
+mode: default
+content:
+  field_attach:
+    type: file_default
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_gallery:
+    type: colorbox
+    label: hidden
+    settings:
+      colorbox_node_style: lp_gallery_280x210
+      colorbox_node_style_first: ''
+      colorbox_image_style: max_1300x1300
+      colorbox_gallery: post
+      colorbox_gallery_custom: ''
+      colorbox_caption: auto
+      colorbox_caption_custom: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_metatag:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_paragraph:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_service_info:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_short:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_image: true
+  field_image_big: true
+  field_type_service: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

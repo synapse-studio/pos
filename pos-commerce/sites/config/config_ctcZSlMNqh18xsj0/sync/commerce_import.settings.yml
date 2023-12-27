@@ -1,0 +1,10 @@
+_core:
+  default_config_hash: 0ZdBhBP5LRsCwIJFeZiOGhl-w-SSTXDXSO3cjIO749k
+vocabulary: catalog
+product: product
+variation: variation
+field_image: field_image
+timeout: 30
+source_plugin: json
+drush: /usr/local/bin/drush
+langcode: ru

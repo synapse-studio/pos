@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: OkYIJnAd0oYj_Q2y8fzN4jNDyKNy0LHp_C3_SXhG9Us
+name: synimage_150
+label: 'Width 150px'
+effects:
+  7ed04515-cee5-409e-9014-0895be5d9d70:
+    uuid: 7ed04515-cee5-409e-9014-0895be5d9d70
+    id: image_scale
+    weight: 1
+    data:
+      width: 150
+      height: null
+      upscale: false

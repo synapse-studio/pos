@@ -1,0 +1,19 @@
+langcode: ru
+status: true
+dependencies:
+  module:
+    - focal_point
+_core:
+  default_config_hash: mnK7B6DY871jlSmaaxaX2EQGOOvFsJaGS5BUJUjAn3M
+name: service_promo_bg_325x256
+label: 'Service promo bg[325x256]'
+effects:
+  a86d680a-c2bc-4c4b-83d5-a0e882600828:
+    uuid: a86d680a-c2bc-4c4b-83d5-a0e882600828
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 325
+      height: 256
+      crop_type: focal_point
+pipeline: ''

@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: pqNiJ6eHlYZmSTVoy7-7c_k2CLr-lVEXyVWuPEfUjb8
+name: kvadrat150
+label: 'Square 150'
+effects:
+  3c303844-5326-4d49-bc21-dc5a1c831999:
+    uuid: 3c303844-5326-4d49-bc21-dc5a1c831999
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 150
+      height: 150
+      anchor: center-center

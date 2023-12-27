@@ -1,0 +1,10 @@
+uuid: acb9cc83-f483-4fe2-a963-a97518325f33
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: nKF60glKsb6Y6CR5spAZXZXlgA4Jn_HJGoikZsaPzSg
+name: Бренд
+vid: brand
+description: ''
+weight: 0

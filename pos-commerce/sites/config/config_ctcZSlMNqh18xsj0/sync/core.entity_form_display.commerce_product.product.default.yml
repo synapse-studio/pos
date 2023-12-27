@@ -1,0 +1,308 @@
+uuid: fbe9b9d2-f782-4b32-b0b8-f662469c431c
+langcode: ru
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.product
+    - field.field.commerce_product.product.body
+    - field.field.commerce_product.product.field_article
+    - field.field.commerce_product.product.field_attach
+    - field.field.commerce_product.product.field_catalog
+    - field.field.commerce_product.product.field_gallery
+    - field.field.commerce_product.product.field_image
+    - field.field.commerce_product.product.field_metatag
+    - field.field.commerce_product.product.field_paragraph
+    - field.field.commerce_product.product.field_product_features
+    - field.field.commerce_product.product.field_rf_product
+    - field.field.commerce_product.product.field_short
+    - field.field.commerce_product.product.field_title
+    - field.field.commerce_product.product.field_tx_brand
+    - field.field.commerce_product.product.field_tx_options
+    - image.style.thumbnail
+  module:
+    - cshs
+    - field_group
+    - file
+    - image
+    - inline_entity_form
+    - metatag
+    - paragraphs
+    - path
+    - text
+third_party_settings:
+  field_group:
+    group_main:
+      children:
+        - title
+        - field_title
+        - field_article
+        - field_catalog
+        - field_image
+        - field_short
+        - field_tx_brand
+      label: Main
+      region: content
+      parent_name: group_tabs
+      weight: 20
+      format_type: tab
+      format_settings:
+        classes: ''
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_extra:
+      children:
+        - body
+        - field_gallery
+        - field_attach
+        - stores
+        - created
+        - path
+        - uid
+        - status
+        - field_metatag
+      label: Дополнительно
+      region: content
+      parent_name: group_tabs
+      weight: 22
+      format_type: tab
+      format_settings:
+        classes: ''
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_paragraphs:
+      children:
+        - field_tx_options
+        - field_paragraph
+        - field_rf_product
+      label: Инфо
+      region: content
+      parent_name: group_tabs
+      weight: 21
+      format_type: tab
+      format_settings:
+        classes: ''
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_tabs:
+      children:
+        - group_main
+        - group_paragraphs
+        - group_extra
+        - group_product_feature
+      label: Вкладки
+      region: content
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      format_settings:
+        classes: ''
+        id: ''
+        direction: horizontal
+    group_product_feature:
+      children:
+        - field_product_features
+      label: 'Комплектации товара'
+      region: content
+      parent_name: group_tabs
+      weight: 23
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+_core:
+  default_config_hash: 6u4WcisxZqWlwVI4uxjG0HV1hv2mbc9vMuEdZV45_bk
+id: commerce_product.product.default
+targetEntityType: commerce_product
+bundle: product
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 7
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  created:
+    type: datetime_timestamp
+    weight: 11
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_article:
+    type: string_textfield
+    weight: 6
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_attach:
+    type: file_generic
+    weight: 9
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  field_catalog:
+    type: cshs
+    weight: 6
+    region: content
+    settings:
+      save_lineage: false
+      force_deepest: false
+      parent: null
+      level_labels: ''
+      hierarchy_depth: 0
+      required_depth: 0
+      none_label: '- Выберите -'
+    third_party_settings: {  }
+  field_gallery:
+    type: image_image
+    weight: 8
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_image:
+    type: image_image
+    weight: 7
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_metatag:
+    type: metatag_firehose
+    weight: 15
+    region: content
+    settings:
+      sidebar: true
+      use_details: true
+    third_party_settings: {  }
+  field_paragraph:
+    type: entity_reference_paragraphs
+    weight: 30
+    region: content
+    settings:
+      title: Параграф
+      title_plural: Параграфы
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+  field_product_features:
+    type: inline_entity_form_complex
+    weight: 0
+    region: content
+    settings:
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: false
+      match_operator: CONTAINS
+      allow_duplicate: false
+      collapsible: false
+      collapsed: false
+      revision: false
+      removed_reference: optional
+    third_party_settings: {  }
+  field_rf_product:
+    type: entity_reference_autocomplete
+    weight: 31
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_short:
+    type: string_textarea
+    weight: 8
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_tx_brand:
+    type: entity_reference_autocomplete
+    weight: 10
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_tx_options:
+    type: options_buttons
+    weight: 28
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 12
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 14
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  stores:
+    type: options_select
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 13
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  variations: true

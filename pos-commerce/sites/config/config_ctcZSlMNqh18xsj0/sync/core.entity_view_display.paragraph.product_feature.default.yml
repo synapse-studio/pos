@@ -1,0 +1,52 @@
+uuid: 50267b0f-02a9-4d48-ac95-b1e1a60ca696
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.product_feature.field_product_feature_none
+    - field.field.paragraph.product_feature.field_product_feature_products
+    - field.field.paragraph.product_feature.field_product_feature_title
+    - field.field.paragraph.product_feature.field_product_feature_widget
+    - paragraphs.paragraphs_type.product_feature
+  module:
+    - options
+_core:
+  default_config_hash: mtevV4LzmHRGmR3MrskV37GcvHFNVNyWPZWlpHQrJfw
+id: paragraph.product_feature.default
+targetEntityType: paragraph
+bundle: product_feature
+mode: default
+content:
+  field_product_feature_none:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_product_feature_products:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_product_feature_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_product_feature_widget:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  search_api_excerpt: true

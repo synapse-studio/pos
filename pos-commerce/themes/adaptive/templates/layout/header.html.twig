@@ -1,0 +1,64 @@
+{% set white = header_logo_inverse ? '-w' %}
+{% set ln = lang == 'ru' ? '-ru' %}
+{% set logo = '/' ~ directory ~ '/images/template/synapse' ~ ln ~ '-logo' ~ white ~ '.svg' %}
+{% set cartBlock = small_cart_block|render %}
+
+<header class="header">
+
+  <div id="header-info" class="header-info collapse h-lg-up">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-sm-6">
+          {{ page.header }}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="header-small h-lg-up">
+    <div class="container">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-auto">
+          <a href="{{ url('<front>') }}" title="{{ 'Home'|t }}" rel="home" class="header-logo header-logo--small">
+            <img src="{{ logo }}" alt="{{ 'Home'|t }}"/>
+          </a>
+        </div>
+        <div class="col-auto">
+          {% include directory ~ '/templates/layout/header-nav-togglers.html.twig' %}
+        </div>
+      </div>
+    </div>
+    <div id="small-menu" class="container collapse">
+      {{ page.menu_small }}
+    </div>
+  </div>
+
+  <div class="header-full h-md-down">
+    <div class="container">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-auto">
+          <a href="{{ url('<front>') }}" title="{{ 'Home'|t }}" rel="home" class="header-logo">
+            <img src="{{ logo }}" alt="{{ 'Home'|t }}"/>
+          </a>
+        </div>
+        <div class="col-auto">
+          {{ page.menu_main }}
+        </div>
+        {% if cartBlock %}
+          <div class="col-auto">
+            {{ cartBlock }}
+          </div>
+        {% endif %}
+        <div class="col-auto">
+          <div class="header-phone">
+            <a href="tel:{{ phone|replace({"-":"", " ":"", "(":"", ")":""}) }}">{{ phone|raw }}</a>
+            <button type="button" class="btn" data-toggle="modal" data-target="#block-adaptive-form-callme">
+              {{ 'Callback'|t }}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>

@@ -1,0 +1,20 @@
+uuid: 4a5ce331-23a2-4483-82d8-bfe9aef8872e
+langcode: ru
+status: true
+dependencies:
+  module:
+    - profile
+_core:
+  default_config_hash: Ugh7OU40AAQP820NaNLTu1lTABZ1H63pZ5VSeiOP3w8
+id: profile.field_customer_email
+field_name: field_customer_email
+entity_type: profile
+type: email
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

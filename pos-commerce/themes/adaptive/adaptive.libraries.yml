@@ -1,0 +1,33 @@
+theme:
+  css:
+    theme:
+      css/index.css: {}
+  js:
+    js/script.js: {}
+  dependencies:
+    - core/jquery
+
+slider:
+  css:
+    theme:
+      css/base/slider.css: {}
+  js:
+    js/slider.js: {}
+  dependencies:
+    - bootbase/flickity
+
+vue:
+  js:
+    js/libs/vue/app.js: {}
+  dependencies:
+    - adaptive/vue-lib
+
+vue-lib:
+  js:
+    js/libs/vue/axios.min.js: {}
+    js/libs/vue/vue-dev.js: {}
+    js/libs/vue/vuex.min.js: {}
+
+vue-cookies:
+  js:
+    js/libs/vue/vue-cookies.js: {}

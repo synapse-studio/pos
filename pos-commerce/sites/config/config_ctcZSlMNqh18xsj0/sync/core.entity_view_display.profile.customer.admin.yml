@@ -1,0 +1,70 @@
+uuid: 5ce07c04-f442-4734-8acb-4f52f5ef4208
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.profile.admin
+    - field.field.profile.customer.address
+    - field.field.profile.customer.field_customer_comment
+    - field.field.profile.customer.field_customer_email
+    - field.field.profile.customer.field_customer_name
+    - field.field.profile.customer.field_customer_phone
+    - field.field.profile.customer.field_customer_surname
+    - profile.type.customer
+  module:
+    - address
+  enforced:
+    module:
+      - commerce_order
+_core:
+  default_config_hash: YIL4nZ3a2ByhSU7C9ITZYsmB6l3GSsvLyGlwNF1_hW4
+id: profile.customer.admin
+targetEntityType: profile
+bundle: customer
+mode: admin
+content:
+  field_customer_comment:
+    type: basic_string
+    weight: 4
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_customer_email:
+    type: basic_string
+    weight: 3
+    region: content
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+  field_customer_name:
+    type: string
+    weight: 0
+    region: content
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_customer_phone:
+    type: string
+    weight: 2
+    region: content
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_customer_surname:
+    type: string
+    weight: 1
+    region: content
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  field_customer_comment: true
+  field_customer_email: true
+  field_customer_name: true
+  field_customer_phone: true
+  field_customer_surname: true
+  search_api_excerpt: true

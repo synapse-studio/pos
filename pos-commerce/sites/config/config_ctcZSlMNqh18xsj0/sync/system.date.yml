@@ -1,0 +1,12 @@
+_core:
+  default_config_hash: 1K4Ck5D9u5CuQX_Tex9WXkwCakIbL5YIuTxxQH1LnJk
+langcode: ru
+first_day: 1
+country:
+  default: RU
+timezone:
+  default: Europe/Moscow
+  user:
+    configurable: false
+    default: 0
+    warn: false

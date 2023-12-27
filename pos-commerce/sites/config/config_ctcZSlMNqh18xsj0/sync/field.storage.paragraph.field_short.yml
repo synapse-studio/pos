@@ -1,0 +1,21 @@
+uuid: 0ee54a4b-aa9e-4dc7-9b4a-7f233e14f85c
+langcode: ru
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: grSqgUjeiChz-jBtPgbNBqHFrlUlKqquUwNO3ejNU-M
+id: paragraph.field_short
+field_name: field_short
+entity_type: paragraph
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

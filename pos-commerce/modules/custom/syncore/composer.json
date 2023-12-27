@@ -1,0 +1,19 @@
+{
+  "name": "drupal/syncore",
+  "type": "drupal-custom-module",
+  "description": "Synapse.",
+  "license": "GPL-2.0+",
+  "require": {
+    "drupal/maxlength": "~2.0",
+    "drupal/imageapi_optimize": "^4.0",
+    "drupal/crop": "^2.2",
+    "drupal/focal_point": "^2.0",
+    "drupal/paragraphs_previewer": "^1.5",
+    "drupal/responsive_preview": "^1.1",
+    "drupal/entity_clone": "^1.0",
+    "drupal/coffee": "^1.2",
+    "drupal/search_api": "^1.2",
+    "drupal/easy_breadcrumb": "^2.0"
+  },
+  "minimum-stability": "dev"
+}

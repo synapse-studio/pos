@@ -1,0 +1,17 @@
+uuid: a44ad6ea-1de4-4829-85ed-944095193f90
+langcode: ru
+status: true
+dependencies:
+  module:
+    - commerce_cart
+title: 'Default cron handler'
+id: commerce_cart_cron
+weight: 0
+module: commerce_cart
+callback: commerce_cart_cron
+scheduler:
+  id: simple
+launcher:
+  id: serial
+logger:
+  id: database

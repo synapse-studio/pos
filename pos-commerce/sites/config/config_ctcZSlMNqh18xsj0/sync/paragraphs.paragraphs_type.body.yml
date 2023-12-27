@@ -1,0 +1,11 @@
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Y4nRGkuwBNk75x0ZUZetXnPFnNLY1hJ1DpfuOmBnlm8
+id: body
+label: Описание
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

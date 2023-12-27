@@ -1,0 +1,32 @@
+uuid: 571d81d6-7597-4338-9252-ccb274b9d139
+langcode: ru
+status: false
+dependencies:
+  config:
+    - views.view.service_types
+  module:
+    - system
+    - views
+  theme:
+    - adaptive
+_core:
+  default_config_hash: TuSTTE5IHMlnFA1Sgz9TsDglbCRso9cFYYzO1l42Dgg
+id: views_block__service_types_block_front
+theme: adaptive
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:service_types-block_front'
+settings:
+  id: 'views_block:service_types-block_front'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '<front>'

@@ -1,0 +1,9 @@
+langcode: ru
+status: true
+dependencies: {  }
+id: image_blocks
+label: 'Image Blocks'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

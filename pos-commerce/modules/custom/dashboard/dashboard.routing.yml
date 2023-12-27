@@ -1,0 +1,52 @@
+dashboard.board:
+  path: "/dashboard"
+  defaults:
+    _title: "Dashboard"
+    _controller: '\Drupal\dashboard\Controller\DashboardController::page'
+  requirements:
+    _permission: "administrator+observer"
+# reports.
+dashboard.static.report:
+  path: "/dashboard/static/{plugin_name}"
+  defaults:
+    _title: "Dashboard Static"
+    _controller: '\Drupal\dashboard\Controller\DashboardController::static'
+  requirements:
+    _permission: "administrator+observer"
+dashboard.dinamic.report:
+  path: "/dashboard/dinamic/{plugin_name}/{start}/{finish}"
+  defaults:
+    _title_callback: '\Drupal\dashboard\Controller\DashboardController::dinamicReportTitle'
+    _controller: '\Drupal\dashboard\Controller\DashboardController::dinamicReport'
+  requirements:
+    _permission: "administrator+observer"
+
+# dinamic-periods.
+dashboard.week.report:
+  path: "/dashboard/week/{plugin_name}"
+  defaults:
+    _title: "Dashboard Week"
+    _controller: '\Drupal\dashboard\Controller\DashboardController::week'
+  requirements:
+    _role: "administrator+observer"
+dashboard.month.report:
+  path: "/dashboard/month/{plugin_name}"
+  defaults:
+    _title: "Dashboard Month"
+    _controller: '\Drupal\dashboard\Controller\DashboardController::month'
+  requirements:
+    _permission: "administrator+observer"
+dashboard.quart.report:
+  path: "/dashboard/quart/{plugin_name}"
+  defaults:
+    _title: "Dashboard Quarter"
+    _controller: '\Drupal\dashboard\Controller\DashboardController::quart'
+  requirements:
+    _permission: "administrator+observer"
+dashboard.year.report:
+  path: "/dashboard/year/{plugin_name}"
+  defaults:
+    _title: "Dashboard Year"
+    _controller: '\Drupal\dashboard\Controller\DashboardController::year'
+  requirements:
+    _permission: "administrator+observer"

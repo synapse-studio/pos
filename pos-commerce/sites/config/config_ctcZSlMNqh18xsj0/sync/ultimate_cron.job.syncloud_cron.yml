@@ -1,0 +1,17 @@
+uuid: c3618b9a-6ba2-4119-976f-5f3eb9208476
+langcode: ru
+status: true
+dependencies:
+  module:
+    - syncloud
+title: 'Default cron handler'
+id: syncloud_cron
+weight: 0
+module: syncloud
+callback: syncloud_cron
+scheduler:
+  id: simple
+launcher:
+  id: serial
+logger:
+  id: database

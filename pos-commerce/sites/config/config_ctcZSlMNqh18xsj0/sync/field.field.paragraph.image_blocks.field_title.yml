@@ -1,0 +1,21 @@
+uuid: 3167604c-d15b-4402-bd72-2d1af80ef0e9
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.image_blocks
+_core:
+  default_config_hash: EFWj4VsqmWa6jp3r68Dxybrsi0wcZxOi5zC_HqdmFMo
+id: paragraph.image_blocks.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: image_blocks
+label: Заголовок
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,19 @@
+uuid: 48e93f59-0a09-4b5e-8aea-e075ffb53728
+langcode: ru
+status: true
+dependencies:
+  module:
+    - synpay
+id: qr
+label: QR
+weight: -10
+plugin: synpay
+configuration:
+  display_label: QR-код
+  mode: live
+  payment_method_types:
+    - credit_card
+  collect_billing_information: true
+  gateway: yookassa
+conditions: {  }
+conditionOperator: AND

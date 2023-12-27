@@ -1,0 +1,29 @@
+uuid: 752281b5-b392-4cb1-9dad-dff096b567a6
+langcode: ru
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: brRVt3aViUSul5rVzqyyRduiTu7bKoFMJMp7MylniKM
+id: paragraph.field_product_feature_widget
+field_name: field_product_feature_widget
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: select
+      label: 'Список выбора'
+    -
+      value: checkboxes
+      label: Чекбоксы
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

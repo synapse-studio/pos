@@ -1,0 +1,82 @@
+.region-tabs {
+  height: 0;
+  width: auto;
+  position: relative;
+  font-size: 14px;
+  line-height: 1.1;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  ul.tabs {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    margin: 0;
+    z-index: 8;
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    background: none;
+    max-width: 100%;
+    a {
+      color: $black;
+      opacity: 0.8;
+      display: block;
+      padding: 3px 7px;
+      border-radius: 0;
+      white-space: nowrap;
+      line-height: 1.15;
+      background-color: #efefef;
+      transition: opacity $duration, background-color $duration;
+      &:hover {
+        opacity: 1;
+        background-color: darken(#efefef, 3%);
+      }
+      &:active {
+        background-color: darken(#efefef, 10%);
+      }
+    }
+    li {
+      display: block;
+      vertical-align: bottom;
+      margin: 0 0 0 10px;
+      &.is-active a {
+        background-color: $white;
+      }
+    }
+  }
+  .block-local-actions-block nav {
+    left: 0;
+  }
+  .block > div.contextual {
+    display: none !important;
+  }
+  ul.secondary {
+    position: absolute;
+    top: 25px;
+    right: 0;
+    float: right;
+    z-index: 8;
+    padding: 0 0 0 3px;
+    margin: 0;
+    overflow: hidden;
+    border: none;
+    background: none;
+  }
+}
+.page-user-login,
+.page-entity-user-canonical,
+.page-view-commerce_user_orders-order_page,
+.page-entity-commerce_payment_method-collection {
+  .region-tabs {
+    ul.tabs {
+      @include m-down(lg) {
+        position: relative;
+        margin-bottom: 30px;
+      }
+    }
+    @include m-down(lg) {
+      height: unset;
+    }
+  }
+}
+

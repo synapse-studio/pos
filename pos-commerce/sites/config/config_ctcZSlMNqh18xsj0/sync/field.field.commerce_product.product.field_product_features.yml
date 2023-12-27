@@ -1,0 +1,78 @@
+uuid: ddb6df34-27a2-474f-bc91-e6af76254ed4
+langcode: ru
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.product
+    - field.storage.commerce_product.field_product_features
+    - paragraphs.paragraphs_type.product_feature
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: 3Mzr4p4cB_Qy4YZT36h349DU2pdppVn8rGQUq8wj1xI
+id: commerce_product.product.field_product_features
+field_name: field_product_features
+entity_type: commerce_product
+bundle: product
+label: 'Комплектации товара'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      product_feature: product_feature
+    negate: 0
+    target_bundles_drag_drop:
+      about:
+        weight: 17
+        enabled: false
+      about_item:
+        weight: 18
+        enabled: false
+      body:
+        weight: 19
+        enabled: false
+      gallery:
+        weight: 20
+        enabled: false
+      gallery_work:
+        weight: 21
+        enabled: false
+      image_blocks:
+        weight: 22
+        enabled: false
+      image_gallery:
+        weight: 23
+        enabled: false
+      image_text:
+        weight: 24
+        enabled: false
+      image_text_sort:
+        weight: 25
+        enabled: false
+      paragraph_block:
+        weight: 26
+        enabled: false
+      product_feature:
+        weight: 27
+        enabled: true
+      product_param:
+        weight: 28
+        enabled: false
+      text_image_plate:
+        weight: 29
+        enabled: false
+      text_slider:
+        weight: 30
+        enabled: false
+      work_scope:
+        weight: 31
+        enabled: false
+      work_scope_item:
+        weight: 32
+        enabled: false
+field_type: entity_reference_revisions

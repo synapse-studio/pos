@@ -1,0 +1,20 @@
+uuid: 373c2e26-b800-4519-aabd-90c83e9d6981
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: FvzYbqrSLeKG-eXDngFRYlGe3_f8RaSXPBf3i4jWpa0
+id: remote_video
+label: 'Внешнее видео'
+description: 'Видео с YouTube или Vimeo.'
+source: 'oembed:video'
+queue_thumbnail_downloads: false
+new_revision: true
+source_configuration:
+  source_field: field_media_oembed_video
+  thumbnails_directory: 'public://oembed_thumbnails'
+  providers:
+    - YouTube
+    - Vimeo
+field_map:
+  title: name

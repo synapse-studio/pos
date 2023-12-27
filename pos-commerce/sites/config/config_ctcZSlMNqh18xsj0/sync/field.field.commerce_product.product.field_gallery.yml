@@ -1,0 +1,40 @@
+uuid: 6f1fd8b2-f6d5-4f33-9dd3-1580ed1a7a08
+langcode: ru
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.product
+    - field.storage.commerce_product.field_gallery
+  module:
+    - image
+_core:
+  default_config_hash: FU4925o6VkSvCbWQFvnMxUjOZxfEgiLLTln8CSYNyRM
+id: commerce_product.product.field_gallery
+field_name: field_gallery
+entity_type: commerce_product
+bundle: product
+label: Галерея
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: 'product-gallery/[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: false
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: null
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

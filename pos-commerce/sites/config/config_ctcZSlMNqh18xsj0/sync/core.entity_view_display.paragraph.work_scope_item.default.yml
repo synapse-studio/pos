@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.work_scope_item.field_short
+    - field.field.paragraph.work_scope_item.field_title
+    - paragraphs.paragraphs_type.work_scope_item
+id: paragraph.work_scope_item.default
+targetEntityType: paragraph
+bundle: work_scope_item
+mode: default
+content:
+  field_short:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

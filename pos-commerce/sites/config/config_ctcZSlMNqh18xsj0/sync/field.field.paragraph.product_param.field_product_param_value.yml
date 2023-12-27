@@ -1,0 +1,21 @@
+uuid: 2918eb0f-74a4-4c81-8a2d-3d3f11414a2c
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_product_param_value
+    - paragraphs.paragraphs_type.product_param
+_core:
+  default_config_hash: JH-lZugw4Ani6cj8r7aAfoICnAE-hjNQ5-yNy8Esx0o
+id: paragraph.product_param.field_product_param_value
+field_name: field_product_param_value
+entity_type: paragraph
+bundle: product_param
+label: Значение
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

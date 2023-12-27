@@ -1,0 +1,32 @@
+_core:
+  default_config_hash: Po89J8rfAgTOhdyTA1nQgA9CJAMrGIGAWEV2_VAg2yE
+tovar-standart: |
+  Ид:
+  Артикул:
+  Штрихкод:
+  Наименование:
+  ПометкаУдаления:
+  БазоваяЕдиница: {type: 'attr', skip: 1, attr: 'НаименованиеПолное'}
+  Группы: {type: []}
+  Категория:
+  Описание:
+  Картинка: {type: []}
+  Изготовитель: {type: 'keyval'}
+  СтавкиНалогов: {type: 'keyval', skip: 1}
+  ЗначенияСвойств: {type: 'keyval'}
+  ЗначенияРеквизитов: {type: 'keyval'}
+offers-standart: |
+  Ид:
+  Наименование:
+  БазоваяЕдиница: {type: 'attr', skip: 1, attr: 'НаименованиеПолное'}
+  Количество:
+  Склад: {type: []}
+  ЗначенияСвойств: {type: 'keyval'}
+  Цены: {type: []}
+tovar-dop: ''
+offers-dop: ''
+cleaner-cron: 1
+cleaner-force: 1
+cleaner-expired: 'now -1 day'
+cleaner-keep: '5'
+langcode: ru

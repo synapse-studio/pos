@@ -1,0 +1,23 @@
+uuid: c2823dc6-0a3e-40bf-a225-6a3293f24588
+langcode: ru
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: hFIKqx8V__LSnVUgFXwqa-R-1XIMsZId7F-EUR4pAbQ
+id: paragraph.field_product_param_value
+field_name: field_product_param_value
+entity_type: paragraph
+type: string
+settings:
+  max_length: 8192
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

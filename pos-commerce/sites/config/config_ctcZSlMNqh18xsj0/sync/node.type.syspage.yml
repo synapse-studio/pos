@@ -1,0 +1,19 @@
+uuid: 9a55ac6c-9b56-4ea0-ba49-9a37f0e5cfff
+langcode: ru
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+_core:
+  default_config_hash: IYX5p8iV9S2ikvbs1Hc-FWBJpJOnZgaEkN6vwL5BrOM
+name: 'System Page'
+type: syspage
+description: ''
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

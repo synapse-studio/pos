@@ -1,0 +1,13 @@
+uuid: 8d392228-456d-447d-b877-75ce1493f57e
+langcode: ru
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.order_status
+_core:
+  default_config_hash: Aj-7LIzTzroe5nXrtwfmRvpRCVj7kdJk0NW3IvsD4d4
+id: taxonomy_term.order_status
+target_entity_type_id: taxonomy_term
+target_bundle: order_status
+default_langcode: site_default
+language_alterable: false

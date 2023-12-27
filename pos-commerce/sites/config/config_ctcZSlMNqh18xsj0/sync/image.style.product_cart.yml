@@ -1,0 +1,18 @@
+uuid: 6ecdfa87-ca71-4126-a862-68c2148791ab
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: '-79ti9wehC6poy7CbnyLz4BGutRN3YWY2sExpIw9dzI'
+name: product_cart
+label: 'Product Cart (107x115)'
+effects:
+  30c1fd62-db1c-4c83-bfba-bb502cdff1f3:
+    uuid: 30c1fd62-db1c-4c83-bfba-bb502cdff1f3
+    id: image_scale
+    weight: 2
+    data:
+      width: 107
+      height: 115
+      upscale: false
+pipeline: __default__

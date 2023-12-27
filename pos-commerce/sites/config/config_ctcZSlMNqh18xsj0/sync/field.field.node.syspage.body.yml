@@ -1,0 +1,25 @@
+uuid: 32a11926-e08b-4f54-b76f-2b941a179ff2
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.syspage
+  module:
+    - text
+_core:
+  default_config_hash: PUmyM1MunLCtxIjEIeYidZ3CxKXTF2I4x5WQrKmt354
+id: node.syspage.body
+field_name: body
+entity_type: node
+bundle: syspage
+label: Содержимое
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

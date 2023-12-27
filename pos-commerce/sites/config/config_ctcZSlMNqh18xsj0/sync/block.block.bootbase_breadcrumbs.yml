@@ -1,0 +1,22 @@
+uuid: 3a88ea91-26fc-4f73-a770-d3fc082a8db3
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bootbase
+_core:
+  default_config_hash: 3JFXUgpMPL3NxFaogNiB7cjnksTwV9QbfeF5S2DP3L4
+id: bootbase_breadcrumbs
+theme: bootbase
+region: breadcrumb
+weight: -6
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

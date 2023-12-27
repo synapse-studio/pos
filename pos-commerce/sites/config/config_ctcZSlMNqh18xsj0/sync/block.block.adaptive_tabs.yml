@@ -1,0 +1,22 @@
+uuid: ab835622-afb8-4ffc-a420-701801144637
+langcode: ru
+status: true
+dependencies:
+  theme:
+    - adaptive
+_core:
+  default_config_hash: twTWqNwwZNIIYdoAiOfkrE5FxlfHzIle99KB-WTlQ0k
+id: adaptive_tabs
+theme: adaptive
+region: tabs
+weight: -6
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Вкладки
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

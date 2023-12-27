@@ -1,0 +1,83 @@
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.node.page.body
+    - field.field.node.page.field_attach
+    - field.field.node.page.field_metatag
+    - node.type.page
+  module:
+    - file
+    - maxlength
+    - metatag
+    - path
+    - text
+_core:
+  default_config_hash: u5TaxDKQESIz0T-yuh95Lk8oRIlQx3sJRyOZ-nuEegA
+id: node.page.default
+targetEntityType: node
+bundle: page
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 1
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings:
+      maxlength:
+        maxlength_js: null
+        maxlength_js_label: 'Содержание ограничено до @limit символов, осталось: <strong>@remaining</strong>'
+        maxlength_js_summary: null
+        maxlength_js_label_summary: 'Содержание ограничено до @limit символов, осталось: <strong>@remaining</strong>'
+        maxlength_js_enforce: false
+        maxlength_js_truncate_html: false
+  field_attach:
+    type: file_generic
+    weight: 2
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  field_metatag:
+    type: metatag_firehose
+    weight: 4
+    region: content
+    settings:
+      sidebar: true
+      use_details: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 3
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      maxlength:
+        maxlength_js: 100
+        maxlength_js_label: 'Содержание ограничено до @limit символов, осталось: <strong>@remaining</strong>'
+hidden:
+  created: true
+  langcode: true
+  promote: true
+  sticky: true
+  uid: true

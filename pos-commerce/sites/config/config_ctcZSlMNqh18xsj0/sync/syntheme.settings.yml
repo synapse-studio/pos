@@ -1,0 +1,23 @@
+_core:
+  default_config_hash: FeIEbqQHuj8-uBZ5A46vCSlL5qVFrZm8e8-q92wzBa0
+theme: null
+bg: '#FFFFFF'
+bg-header: '#F5F5F5'
+bg-footer: '#F5F5F5'
+bg-blocks: '#F5F5F5'
+bg-form: '#F5F5F5'
+text-main: '#131313'
+text-second: '#6C6C6C'
+text-form: '#131313'
+text-header: '#131313'
+text-footer: '#131313'
+link: '#0040b8'
+link-menu: '#4F4F4F'
+link-menu-hover: '#0040b8'
+button1: '#0040b8'
+marks: '#4577D5'
+border: '#E4E4E4'
+button-text: '#FFFFFF'
+header-inverse: false
+footer-inverse: false
+langcode: ru

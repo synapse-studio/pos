@@ -1,0 +1,31 @@
+uuid: 6c38453c-4749-4ba3-95d0-ff3d6a4156e0
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_type_service
+    - node.type.service
+    - taxonomy.vocabulary.type_service
+_core:
+  default_config_hash: 5J2QoV-dqGfs3vXojZOBPbjvh-c93AxoPfHGX6LLhxE
+id: node.service.field_type_service
+field_name: field_type_service
+entity_type: node
+bundle: service
+label: 'Тип услуги'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      type_service: type_service
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

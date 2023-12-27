@@ -1,0 +1,18 @@
+uuid: null
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: paragraph_gallery_580x340
+label: 'Paragraph gallery[580x340]'
+effects:
+  f4bd0fcb-e197-4c68-95d6-6e5920ef8c64:
+    uuid: f4bd0fcb-e197-4c68-95d6-6e5920ef8c64
+    id: focal_point_scale_and_crop
+    weight: 2
+    data:
+      width: 580
+      height: 340
+      crop_type: focal_point
+pipeline: ''

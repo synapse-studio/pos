@@ -1,0 +1,48 @@
+uuid: 318e8453-0c7f-434d-b91b-b034143374a4
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.brand.field_brand_image
+    - field.field.taxonomy_term.brand.field_brand_link
+    - field.field.taxonomy_term.brand.field_brand_short
+    - image.style.brand_logo
+    - taxonomy.vocabulary.brand
+  module:
+    - image
+    - link
+_core:
+  default_config_hash: 9Z-XwTU5e3o2e_TzzSexGsASlfzlVx6hnR5cG7FLaiA
+id: taxonomy_term.brand.default
+targetEntityType: taxonomy_term
+bundle: brand
+mode: default
+content:
+  field_brand_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: brand_logo
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_brand_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  description: true
+  field_brand_short: true
+  langcode: true
+  search_api_excerpt: true

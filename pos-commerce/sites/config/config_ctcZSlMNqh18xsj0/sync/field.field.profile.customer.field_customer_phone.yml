@@ -1,0 +1,21 @@
+uuid: 0676a548-2905-4ef5-94c3-fe4968dad204
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_customer_phone
+    - profile.type.customer
+_core:
+  default_config_hash: Q5u-6eWsmlUbTN8zyZ4gv9G0QxfgfXpG7p9qEiTdvWA
+id: profile.customer.field_customer_phone
+field_name: field_customer_phone
+entity_type: profile
+bundle: customer
+label: Телефон
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

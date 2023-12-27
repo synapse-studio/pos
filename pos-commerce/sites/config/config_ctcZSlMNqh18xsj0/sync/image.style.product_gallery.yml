@@ -1,0 +1,39 @@
+uuid: 1d762443-d9e1-46e9-9279-bb8663f23aaa
+langcode: ru
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_effects
+_core:
+  default_config_hash: raRluGpiLC6GB_eDdtWTWSUXGmF94WexaJ1kIDbX10E
+name: product_gallery
+label: 'Product Gallery (200x150)'
+effects:
+  ecf287bb-9e3e-4467-9c8c-a943f82be5ac:
+    uuid: ecf287bb-9e3e-4467-9c8c-a943f82be5ac
+    id: image_effects_set_canvas
+    weight: 3
+    data:
+      canvas_size: exact
+      canvas_color: ''
+      exact:
+        width: '200'
+        height: '150'
+        placement: center-center
+        x_offset: 0
+        y_offset: 0
+      relative:
+        left: 0
+        right: 0
+        top: 0
+        bottom: 0
+  9e9f5ee7-aa37-4768-ab93-4a50eeb41e27:
+    uuid: 9e9f5ee7-aa37-4768-ab93-4a50eeb41e27
+    id: focal_point_scale_and_crop
+    weight: 2
+    data:
+      width: 200
+      height: 150
+      crop_type: focal_point
+pipeline: ''

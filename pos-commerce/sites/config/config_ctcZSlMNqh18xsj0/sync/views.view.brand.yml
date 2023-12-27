@@ -1,0 +1,98 @@
+uuid: 5790a227-c86f-406e-823c-185e2cc42562
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.teaser
+    - taxonomy.vocabulary.brand
+  module:
+    - taxonomy
+    - user
+_core:
+  default_config_hash: z32_2_jLY_jO3wyv9gZpOfLrVf0AuhgowcFOhPfq_Pw
+id: brand
+label: бренд
+module: views
+description: ''
+tag: ''
+base_table: taxonomy_term_field_data
+base_field: tid
+display:
+  default:
+    id: default
+    display_title: 'По умолчанию'
+    display_plugin: default
+    position: 0
+    display_options:
+      title: бренд
+      pager:
+        type: full
+        options:
+          items_per_page: 36
+      exposed_form:
+        type: basic
+      access:
+        type: perm
+        options:
+          perm: 'access content'
+      cache:
+        type: tag
+        options: {  }
+      empty: {  }
+      sorts: {  }
+      arguments: {  }
+      filters:
+        vid:
+          id: vid
+          table: taxonomy_term_field_data
+          field: vid
+          entity_type: taxonomy_term
+          entity_field: vid
+          plugin_id: bundle
+          value:
+            brand: brand
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+      style:
+        type: default
+        options:
+          row_class: brand-item
+          default_row_class: true
+          uses_fields: false
+      row:
+        type: 'entity:taxonomy_term'
+        options:
+          relationship: none
+          view_mode: teaser
+      query:
+        type: views_query
+      relationships: {  }
+      css_class: brand-list
+      use_more: false
+      link_display: page
+      header: {  }
+      footer: {  }
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - url.query_args
+        - user.permissions
+      tags: {  }
+  page:
+    id: page
+    display_title: Страница
+    display_plugin: page
+    position: 1
+    display_options:
+      display_extenders: {  }
+      path: product/brand
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - url.query_args
+        - user.permissions
+      tags: {  }

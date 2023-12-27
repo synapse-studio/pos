@@ -1,0 +1,31 @@
+{% set link = 'https://www.synapse-studio.ru/portfolio/standard?utm_source=client&utm_keyword=' ~ url('<front>')|render|split('/', -1)|join('/')  %}
+{% set white = footer_logo_inverse ? '-w' %}
+{% set ln = lang == 'ru' ? '-ru' %}
+{% set synlogo = '/' ~ directory ~ '/images/template/synapse' ~ ln ~ '-logo' ~ white ~ '.svg' %}
+
+<footer class="footer">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 col-md-6 col-12 text-md-left text-center">
+        <div class="footer-copyright">
+          <a href="{{ url('user.login') }}">©</a>
+          {{ "now"|date("Y") }}
+          {{ company.map.name }}.
+          {{ 'All rights reserved.'|t -}}
+          <span class="underline"></span>
+        </div>
+        {{ page.footer }}
+      </div>
+      <div class="col-lg-6 col-md-6 col-12 text-md-right text-center">
+        <div class="synapse" title="{{ 'Website Development and Promotion'|t }}">
+          <img class="synapse-logo" alt="{{ 'Synapse'|t }}" src="{{ synlogo }}" rel="noopener"/>
+          —
+          <a href="{{ link }}" target="_blank" class="synapse-link">
+            {{ 'Website Development'|t }}
+            <span class="underline"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

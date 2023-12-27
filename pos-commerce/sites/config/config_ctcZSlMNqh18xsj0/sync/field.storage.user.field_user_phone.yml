@@ -1,0 +1,23 @@
+uuid: c766d6e5-2df1-4ce5-82e3-a7b145cbf373
+langcode: ru
+status: true
+dependencies:
+  module:
+    - user
+_core:
+  default_config_hash: 8DVLydfytPqJjiygXL-ugSPVOawkpOKi6wVyMZoEslg
+id: user.field_user_phone
+field_name: field_user_phone
+entity_type: user
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

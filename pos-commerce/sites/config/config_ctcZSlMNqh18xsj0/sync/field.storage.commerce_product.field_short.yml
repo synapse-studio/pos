@@ -1,0 +1,21 @@
+uuid: 78d7a7d8-446e-4a1f-8449-8a939c4b3d4d
+langcode: ru
+status: true
+dependencies:
+  module:
+    - commerce_product
+_core:
+  default_config_hash: xAQskATlapPH4dvQg_KcfVfS4G6_Vx1NxyYQ678Q58g
+id: commerce_product.field_short
+field_name: field_short
+entity_type: commerce_product
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

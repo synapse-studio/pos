@@ -1,0 +1,21 @@
+uuid: 7a6df59c-fe0f-4a91-9128-029c23a08a93
+langcode: ru
+status: true
+dependencies:
+  module:
+    - contact
+_core:
+  default_config_hash: Gb7DK8VAqBV9jrwtOCyQHgB6peoxWD0kA3aAgYeGidY
+id: contact_message.field_details
+field_name: field_details
+entity_type: contact_message
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

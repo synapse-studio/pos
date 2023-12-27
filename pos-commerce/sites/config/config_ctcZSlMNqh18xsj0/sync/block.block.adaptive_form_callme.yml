@@ -1,0 +1,28 @@
+uuid: 580e9485-be0a-473f-bd33-108ddfe26086
+langcode: ru
+status: true
+dependencies:
+  config:
+    - contact.form.callback
+  module:
+    - contact_block
+  theme:
+    - adaptive
+_core:
+  default_config_hash: xTGaHscpt9Eozir2yh_RY5xXsGik0a7wghVmpxMxGRk
+id: adaptive_form_callme
+theme: adaptive
+region: bottom
+weight: -8
+provider: null
+plugin: contact_block
+settings:
+  id: contact_block
+  label: 'Обратный вызов'
+  label_display: visible
+  provider: contact_block
+  contact_form: callback
+  form_display: default
+  contact_form_button_text: Callback
+  remove_preview_button: 1
+visibility: {  }

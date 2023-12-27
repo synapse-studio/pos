@@ -1,0 +1,16 @@
+uuid: 93480c78-66d4-4db6-bf69-9e9caadb7eec
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: _3STfpuYXL2_1WK27daFfPemZzEGjc2v8A-OTQJpKDo
+id: product_feature
+label: 'Комплектация товара'
+description: ''
+variationType: null
+variationTypes:
+  - variation
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

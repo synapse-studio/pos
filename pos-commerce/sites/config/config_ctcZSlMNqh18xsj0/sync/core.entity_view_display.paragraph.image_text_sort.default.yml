@@ -1,0 +1,52 @@
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.image_text_sort.field_body
+    - field.field.paragraph.image_text_sort.field_image
+    - field.field.paragraph.image_text_sort.field_image_text_sort
+    - field.field.paragraph.image_text_sort.field_title
+    - image.style.paragraph_gallery_580x340
+    - paragraphs.paragraphs_type.image_text_sort
+  module:
+    - image
+    - options
+    - text
+id: paragraph.image_text_sort.default
+targetEntityType: paragraph
+bundle: image_text_sort
+mode: default
+content:
+  field_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: paragraph_gallery_580x340
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_image_text_sort:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  search_api_excerpt: true

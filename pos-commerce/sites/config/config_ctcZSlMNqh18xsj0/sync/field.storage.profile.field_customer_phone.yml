@@ -1,0 +1,23 @@
+uuid: 4d7c4b61-e67c-4fcd-91d6-8aeb771a65b0
+langcode: ru
+status: true
+dependencies:
+  module:
+    - profile
+_core:
+  default_config_hash: wDgq-83j2r0ENqA9mShmnoWaFG1PiRv8o9QC7jXHWNM
+id: profile.field_customer_phone
+field_name: field_customer_phone
+entity_type: profile
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

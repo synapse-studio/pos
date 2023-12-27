@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: chcLxo3seD1RUmyqalmx3v7R8MTFLCTU5-Cw7-ZnSEU
+name: kvadrat500
+label: 'Square 500'
+effects:
+  bfb4fb3e-1d3f-4fe6-ae92-e4dfca948d4a:
+    uuid: bfb4fb3e-1d3f-4fe6-ae92-e4dfca948d4a
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 500
+      height: 500
+      anchor: center-center

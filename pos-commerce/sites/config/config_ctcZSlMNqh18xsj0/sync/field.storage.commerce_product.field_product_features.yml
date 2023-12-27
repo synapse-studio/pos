@@ -1,0 +1,23 @@
+uuid: 131d77b3-e0f3-487a-b359-2394e617efdd
+langcode: ru
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - entity_reference_revisions
+    - paragraphs
+_core:
+  default_config_hash: zY_rHIwEiVub04mc_LVFUShxnpJ53QXF_dj7Oa86fgs
+id: commerce_product.field_product_features
+field_name: field_product_features
+entity_type: commerce_product
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

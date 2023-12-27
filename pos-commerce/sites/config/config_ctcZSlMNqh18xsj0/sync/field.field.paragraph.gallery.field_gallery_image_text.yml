@@ -1,0 +1,68 @@
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_gallery_image_text
+    - paragraphs.paragraphs_type.gallery
+    - paragraphs.paragraphs_type.image_gallery
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: Ro7dvrjl394lCD2Z6VCR3ERX6V2mj2wnMi01wMETmwQ
+id: paragraph.gallery.field_gallery_image_text
+field_name: field_gallery_image_text
+entity_type: paragraph
+bundle: gallery
+label: Изображение
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      image_gallery: image_gallery
+    negate: 0
+    target_bundles_drag_drop:
+      about:
+        weight: 14
+        enabled: false
+      about_item:
+        weight: 15
+        enabled: false
+      body:
+        weight: -7
+        enabled: false
+      gallery:
+        weight: -6
+        enabled: false
+      gallery_work:
+        weight: 18
+        enabled: false
+      image_blocks:
+        weight: 19
+        enabled: false
+      image_gallery:
+        weight: 20
+        enabled: true
+      image_text:
+        weight: -9
+        enabled: false
+      image_text_sort:
+        weight: -8
+        enabled: false
+      text_image_plate:
+        weight: 23
+        enabled: false
+      text_slider:
+        weight: 24
+        enabled: false
+      work_scope:
+        weight: 25
+        enabled: false
+      work_scope_item:
+        weight: 26
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,141 @@
+{% if lp_library %}
+  {{ attach_library('synlanding/' ~ lp_library) }}
+{% endif %}
+
+{% if form_bg %}
+  {% set style_form_bg = ' style="background-image: url(' ~ form_bg ~ ')"' %}
+  {% set form_image = '<img src=' ~ form_bg ~ ' >' %}
+{% endif %}
+{% set order = page.order|render %}
+
+{% if design == 'new' or design == 'visitka' %}
+  {% if order %}
+    {% if design == 'new' %}
+      <div class="service-order{{ style_form_bg ? ' service-order--custom' }}" {{ style_form_bg|raw }} id="order">
+        <div class="container">
+          <div class="service-order-content">
+            <div class="service-order-title">
+              {{ 'Сontact us'|t }}
+            </div>
+            {% if new_lp2 %}
+              <div class="service-order-text">
+                {{ 'Our managers will contact you to discuss the details'|t }}
+              </div>
+            {% endif %}
+            <div class="service-order-form">
+              {{ order }}
+            </div>
+          </div>
+        </div>
+      </div>
+    {% else %}
+      <div class="service-order" id="order">
+        <div class="container">
+          <div class="service-order-title">
+            {{ 'Write us, we will answer all your questions'|t }}
+          </div>
+          <div class="service-order-container{{ form_image ? '' : ' no-image'}}">
+            <div class="service-order-image">
+              {{ form_image|raw }}
+            </div>
+            <div class="service-order-content">
+              <div class="service-order-text">
+                {{ 'Fill this form and manager contact you in one hour'|t }}
+              </div>
+              <div class="service-order-form">
+                {{ order }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    {% endif %}
+  {% endif %}
+
+  <div class="service-block service-block--contacts" id="contacts">
+    <div class="service-block-title">
+      <div class="container">
+        {{ 'Contacts'|t }}
+      </div>
+    </div>
+    <div class="service-block-content">
+      <div class="container">
+        <div class="service-contacts">
+          {% if company.address %}
+            <div class="service-contacts-address">
+              {{ company.address|raw }}
+            </div>
+          {% endif %}
+          {% if company.schedule %}
+            <div class="service-contacts-schedule">
+              {{ company.schedule|raw }}
+            </div>
+          {% endif %}
+          {% set phones = company.phone|raw %}
+          {% if phones %}
+            {% set phones_array = phones|split(',') %}
+            <div class="service-contacts-phone">
+              {% for phone in phones_array %}
+                <a href="tel:{{ phone|replace({'-':'', ' ':'', '(':'', ')':''}) }}">{{ phone|raw }}</a>
+                {% if phone != phones_array|last %}
+                  <span>
+                    <pre> | </pre>
+                  </span>
+                {% endif %}
+              {% endfor %}
+            </div>
+          {% endif %}
+          {% set emails = company.email|raw %}
+          {% if emails %}
+            {% set emails_array = emails|split(',') %}
+            <div class="service-contacts-email">
+              {% for email in emails_array %}
+                <a href="mailto:{{ email }}">{{ email|raw }}</a>
+                {% if email != emails_array|last %}
+                  <span>
+                    <pre> | </pre>
+                  </span>
+                {% endif %}
+              {% endfor %}
+            </div>
+          {% endif %}
+        </div>
+        {% if company.telegram.phone or company.whatsapp.phone or company.viber.phone or social_networks %}
+          <div class="contact-social-networks">
+            {% if company.telegram.phone or company.whatsapp.phone or company.viber.phone%}
+              <div class="messangers">
+                {% if company.telegram.phone %}
+                  <a class="contact-social-link telegram" target="_blank" href="https://tlgg.ru/{{ company.telegram.send }}">{{ company.telegram.icon|raw }}</a>
+                {% endif %}
+                {% if company.whatsapp.phone %}
+                  <a class="contact-social-link whatsapp" target="_blank" href="https://wa.me/{{ company.whatsapp.send }}">{{ company.whatsapp.icon|raw }}</a>
+                {% endif %}
+                {% if company.viber.phone %}
+                  <a class="contact-social-link viber" target="_blank" href="viber://chat?number=%2B{{ company.viber.send }}">{{ company.viber.icon|raw }}</a>
+                {% endif %}
+              </div>
+            {% endif %}
+            {% if social_networks %}
+              <div class="socials">
+                {% if social_networks.vkontakte %}
+                  <a class="contact-social-link" target=" _blank" href=" {{ social_networks.vkontakte.link }} ">{{ social_networks.vkontakte.icon|raw }}</a>
+                {% endif %}
+                {% if social_networks.instagram %}
+                  <a class="contact-social-link" target="_blank" href="{{ social_networks.instagram.link }}">{{ social_networks.instagram.icon|raw }}</a>
+                {% endif %}
+                {% if social_networks.facebook %}
+                  <a class="contact-social-link" target="_blank" href="{{ social_networks.facebook.link }}">{{ social_networks.facebook.icon|raw }}</a>
+                {% endif %}
+                {% if social_networks.youtube %}
+                  <a class="contact-social-link" target="_blank" href="{{ social_networks.youtube.link }}">{{ social_networks.youtube.icon|raw }}</a>
+                {% endif %}
+              </div>
+            {% endif %}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+
+{% endif %}

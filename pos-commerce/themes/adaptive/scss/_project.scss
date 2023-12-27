@@ -1,0 +1,43 @@
+.project {
+  &-full {
+    &-characteristics {
+      margin-bottom: 50px;
+      .field {
+        display: flex;
+        margin-bottom: 20px;
+        @include m-down(lg) {
+          justify-content: space-between;
+        }
+        &__label {
+          margin-right: 10px;
+          @include m-up(xl) {
+            flex-grow: 1;
+            max-width: 200px;
+          }
+        }
+        &__item {
+          @include m-up(xl) {
+            flex-grow: 1;
+            max-width: 200px;
+          }
+        }
+      }
+    }
+    &-button {
+      &--more {
+        margin-bottom: 30px;
+      }
+    }
+  }
+  &-teaser {
+    &-title {
+      margin-bottom: 10px;
+    }
+    &-content {
+      margin-bottom: 15px;
+    }
+    &-image {
+      margin-bottom: 10px;
+    }
+  }
+}

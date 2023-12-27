@@ -1,0 +1,28 @@
+adaptive.mobile_small:
+  label: mobile320
+  mediaQuery: 'all and (max-width: 360px)'
+  weight: 0
+  multipliers:
+    - 1x
+    - 2x
+adaptive.mobile:
+  label: mobile
+  mediaQuery: 'all and (min-width: 361px) and (max-width: 575px)'
+  weight: 1
+  multipliers:
+    - 1x
+    - 2x
+adaptive.narrow:
+  label: narrow
+  mediaQuery: 'all and (min-width: 576px) and (max-width: 991px)'
+  weight: 2
+  multipliers:
+    - 1x
+    - 2x
+adaptive.wide:
+  label: wide
+  mediaQuery: 'all and (min-width: 992px)'
+  weight: 3
+  multipliers:
+    - 1x
+    - 2x

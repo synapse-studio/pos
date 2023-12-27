@@ -1,0 +1,16 @@
+_core:
+  default_config_hash: JKTxcsxlKvWlzrpiSHAHV02h2zkd2MEnD6dvUvAO5Dk
+langcode: ru
+yamap-name: Pos-commerce
+map-latitude: '59.214189'
+map-longitude: '39.858191'
+map-zoom: '16'
+yamap-type: standart
+yamap-enable: enable_contact
+yamap-path: /node/1
+yamap-attach: .footer
+map-offset_x: ''
+map-offset_y: ''
+yamap-method: before
+map-apikey: d73c51ac-cd05-4cfc-a526-1beeb92228f3
+map-apikey-google: ''

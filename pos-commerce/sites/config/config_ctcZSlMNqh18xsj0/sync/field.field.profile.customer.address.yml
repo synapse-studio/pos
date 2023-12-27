@@ -1,0 +1,38 @@
+uuid: 89da7111-e994-4a4c-8b1c-ab664690baa2
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.profile.address
+    - profile.type.customer
+  module:
+    - address
+_core:
+  default_config_hash: 0lW9atu6EsqDPufp7ZJ4IVzmKSzeZv0vhbHwZ2fIh8k
+id: profile.customer.address
+field_name: address
+entity_type: profile
+bundle: customer
+label: Адрес
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  available_countries: {  }
+  langcode_override: ''
+  field_overrides: {  }
+  fields:
+    administrativeArea: administrativeArea
+    locality: locality
+    dependentLocality: dependentLocality
+    postalCode: postalCode
+    sortingCode: sortingCode
+    addressLine1: addressLine1
+    addressLine2: addressLine2
+    organization: organization
+    givenName: givenName
+    additionalName: additionalName
+    familyName: familyName
+field_type: address

@@ -1,0 +1,22 @@
+uuid: f740ab00-72e8-4ae6-a600-16e290f62c24
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - classy
+_core:
+  default_config_hash: sqe0C6Qr5KUDZfydSAUYywpBmtuo0vaBv1bPXwhUsiE
+id: classy_messages
+theme: classy
+region: sidebar_first
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,21 @@
+langcode: ru
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - paragraphs
+_core:
+  default_config_hash: iqyt_2B_-UpuaB2ptfXuF7P0uavAJo4i8fRl0cVubi0
+id: paragraph.field_image_blocks_items
+field_name: field_image_blocks_items
+entity_type: paragraph
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

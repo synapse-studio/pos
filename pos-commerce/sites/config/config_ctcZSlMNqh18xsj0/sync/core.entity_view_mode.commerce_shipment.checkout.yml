@@ -1,0 +1,12 @@
+uuid: 9a0093dd-ca80-4f23-adea-9d82fd2037d4
+langcode: ru
+status: true
+dependencies:
+  module:
+    - commerce_shipping
+_core:
+  default_config_hash: SOM4LMI0fFeahHJLPEPoVldiWGePCGwhTERi0cTjb0U
+id: commerce_shipment.checkout
+label: 'Оформление заказа'
+targetEntityType: commerce_shipment
+cache: true

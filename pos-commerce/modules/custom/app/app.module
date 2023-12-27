@@ -1,0 +1,55 @@
+<?php
+
+/**
+ * @file
+ * Contains Hooks.
+ */
+
+use Drupal\app\Hook\NodePresave;
+use Drupal\app\Hook\NodePreprocess;
+use Drupal\app\Hook\NodeView;
+use Drupal\app\Hook\Theme;
+use Drupal\app\Hook\ProductView;
+use Drupal\app\Hook\ProductPreprocess;
+
+/**
+ * Implements hook_ENTITY_TYPE_view().
+ */
+function app_commerce_product_view(array &$build, $entity, $display, $view_mode) {
+  ProductView::hook($build, $entity, $view_mode);
+}
+
+/**
+ * Implements hook_preprocess_ENTITY_TYPE() for **.html.twig.
+ */
+function app_preprocess_commerce_product(&$variables) {
+  ProductPreprocess::hook($variables);
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_presave().
+ */
+function app_node_presave($entity) {
+  NodePresave::hook($entity);
+}
+
+/**
+ * Implements hook_preprocess_ENTITY_TYPE() for node.html.twig.
+ */
+function app_preprocess_node(&$variables) {
+  NodePreprocess::hook($variables);
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_view().
+ */
+function app_node_view(array &$build, $entity, $display, $view_mode) {
+  NodeView::hook($build, $entity, $view_mode);
+}
+
+/**
+ * Implements hook_theme().
+ */
+function app_theme() {
+  return Theme::hook();
+}

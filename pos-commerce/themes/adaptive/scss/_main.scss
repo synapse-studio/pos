@@ -1,0 +1,48 @@
+#sys .messages {
+  margin: 0 0 50px;
+}
+@include m-up(1025) {
+  ::-webkit-scrollbar {
+    width: 4px;
+    height: 6px;
+    background-color: #f4f4f4;
+  }
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: none;
+  }
+  ::-webkit-scrollbar-thumb {
+    outline: none;
+    border-radius: 0;
+    background-color: #131313;
+  }
+  body {
+    scrollbar-color: darken(#f4f4f4, 7%) transparent;
+    scrollbar-width: thin;
+  }
+}
+.is-dragging a {
+  pointer-events: none;
+}
+.synmap-point {
+  width: 42px;
+  height: 60px;
+  fill: $color-marks;
+  -webkit-filter: drop-shadow(0 4px 7px rgba(#000, 0.25));
+  filter: drop-shadow(0 4px 7px rgba(#000, 0.25));
+}
+.preloader {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background: url("../images/template/ajax-preloader.svg") rgba(255,255,255,0.95) no-repeat;
+  background-position: center;
+  background-size: 170px;
+  margin-bottom: 30px;
+  &--small {
+    height: 100px;
+    background-size: 90px;
+  }
+  &--transparent {
+    background-color: transparent;
+  }
+}

@@ -1,0 +1,17 @@
+uuid: da7fa9d9-9b92-4416-a6c5-9e37567a84cf
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: EIi04hLJKjbk5lGNwlE5l9U6rZLb-VHL14zcnaFWlcQ
+name: lp_gallery_280x210
+label: 'lp gallery [280x210]'
+effects:
+  12f6dcd1-eeef-47e9-92d7-78ba78b77bb2:
+    uuid: 12f6dcd1-eeef-47e9-92d7-78ba78b77bb2
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 280
+      height: 210
+      anchor: center-center

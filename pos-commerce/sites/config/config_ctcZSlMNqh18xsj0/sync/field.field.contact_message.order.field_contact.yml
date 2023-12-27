@@ -1,0 +1,21 @@
+uuid: a4e14a48-5412-4ab9-84e8-b8356a96362f
+langcode: ru
+status: true
+dependencies:
+  config:
+    - contact.form.order
+    - field.storage.contact_message.field_contact
+_core:
+  default_config_hash: ito3fbz5Bn2mwPtXBeW_UtfBS83rZzXecAljsSAjF0M
+id: contact_message.order.field_contact
+field_name: field_contact
+entity_type: contact_message
+bundle: order
+label: 'Номер телефона'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

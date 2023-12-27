@@ -1,0 +1,41 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.work_scope.field_title
+    - field.field.paragraph.work_scope.field_work_scope_items
+    - paragraphs.paragraphs_type.work_scope
+  module:
+    - maxlength
+    - paragraphs
+id: paragraph.work_scope.default
+targetEntityType: paragraph
+bundle: work_scope
+mode: default
+content:
+  field_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      maxlength:
+        maxlength_js: 100
+        maxlength_js_label: 'Содержание ограничено до @limit символов, осталось: <strong>@remaining</strong>'
+  field_work_scope_items:
+    type: entity_reference_paragraphs
+    weight: 1
+    region: content
+    settings:
+      title: Параграф
+      title_plural: Параграфы
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,22 @@
+uuid: 8979e591-a74b-4265-b303-b9cefdbe43fe
+langcode: ru
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - paragraphs
+_core:
+  default_config_hash: xUAOEMlPXpislIxDKWm4LmZa0qPXU6UTzE3A0BCgfQs
+id: paragraph.field_product_feature_products
+field_name: field_product_feature_products
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: commerce_product
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

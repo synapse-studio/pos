@@ -1,0 +1,22 @@
+uuid: 75de6ba7-d3d2-4b32-b602-728740175df7
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - adaptive
+_core:
+  default_config_hash: 3JFXUgpMPL3NxFaogNiB7cjnksTwV9QbfeF5S2DP3L4
+id: adaptive_breadcrumbs
+theme: adaptive
+region: breadcrumb
+weight: -6
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: 'Строка навигации'
+  label_display: '0'
+  provider: system
+visibility: {  }

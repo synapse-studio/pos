@@ -1,0 +1,7 @@
+app.page:
+  path: '/app'
+  defaults:
+    _controller: '\Drupal\app\Controller\AppPage::page'
+    _title_callback: '\Drupal\app\Controller\AppPage::pageTitle'
+  requirements:
+    _permission: 'administer site configuration'

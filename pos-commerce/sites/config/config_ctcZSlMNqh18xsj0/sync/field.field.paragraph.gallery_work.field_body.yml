@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_body
+    - paragraphs.paragraphs_type.gallery_work
+  module:
+    - text
+id: paragraph.gallery_work.field_body
+field_name: field_body
+entity_type: paragraph
+bundle: gallery_work
+label: Описание
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

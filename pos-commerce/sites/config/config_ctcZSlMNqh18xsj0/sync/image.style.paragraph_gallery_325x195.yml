@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: paragraph_gallery_325x195
+label: 'Paragraph gallery [325x195]'
+effects:
+  a999dfe7-88f9-4329-972d-60cb87b80754:
+    uuid: a999dfe7-88f9-4329-972d-60cb87b80754
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 325
+      height: 195
+      crop_type: focal_point
+pipeline: ''

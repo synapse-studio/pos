@@ -1,0 +1,4 @@
+# Git ignore css map
+css/*
+bootstrap4/css/*
+scss/_colors.scss

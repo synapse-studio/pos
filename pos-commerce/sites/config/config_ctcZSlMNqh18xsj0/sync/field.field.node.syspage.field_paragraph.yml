@@ -1,0 +1,54 @@
+uuid: 3e304204-ea9f-45be-95f3-4a2cec19fc20
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraph
+    - node.type.syspage
+    - paragraphs.paragraphs_type.about
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: ejreuop_Rsnn1eASCW8BHR4tCIVxUpOyJY1-hnah_DY
+id: node.syspage.field_paragraph
+field_name: field_paragraph
+entity_type: node
+bundle: syspage
+label: Параграф
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      about: about
+    negate: 0
+    target_bundles_drag_drop:
+      about:
+        weight: 9
+        enabled: true
+      about_item:
+        weight: 10
+        enabled: false
+      body:
+        weight: 11
+        enabled: false
+      gallery:
+        weight: 12
+        enabled: false
+      image_blocks:
+        weight: 13
+        enabled: false
+      image_text:
+        weight: 14
+        enabled: false
+      image_text_sort:
+        weight: 15
+        enabled: false
+      product_param:
+        weight: 16
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,56 @@
+uuid: 45d3a2a4-55a2-41c0-9721-aa21bbd798f4
+langcode: ru
+status: true
+dependencies:
+  config:
+    - contact.form.order
+    - field.field.contact_message.order.field_contact
+    - field.field.contact_message.order.field_details
+    - field.field.contact_message.order.field_name
+    - field.field.contact_message.order.field_order_item
+_core:
+  default_config_hash: J5nrsrODe8yUovOOvrOvCBnSwoeQi51qcm60vD7Bafk
+id: contact_message.order.default
+targetEntityType: contact_message
+bundle: order
+mode: default
+content:
+  field_contact:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 40
+    third_party_settings: {  }
+    label: hidden
+  field_details:
+    type: string_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+    third_party_settings: {  }
+  field_name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+    third_party_settings: {  }
+    label: hidden
+  field_order_item:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  copy: true
+  langcode: true
+  mail: true
+  message: true
+  name: true
+  preview: true
+  subject: true

@@ -1,0 +1,5 @@
+syncommerce.products_management:
+  title: "Products management"
+  parent: commerce.admin_commerce
+  description: "Product management"
+  route_name: syncommerce.products

@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: vO4v95_nGuJJ-EA6dGzZuEdPhkTUlu01_1esABx-b5c
+enable: 1
+admin-pages: 0
+admin-disable: 0
+user-disable: 0
+telegram-int: '1'
+site-id: ''
+custom-matomo: ''
+weekly: 1
+server: mq.biz-panel.com
+port: '8883'
+login: 'app:bzIMqiorFnhhNrqr2FMNmNPg'
+password: ooTR2IPGGiT9tkWiLtZiwQ
+langcode: ru

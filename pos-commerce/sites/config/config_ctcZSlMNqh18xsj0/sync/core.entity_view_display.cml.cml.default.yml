@@ -1,0 +1,73 @@
+uuid: 4795fae9-737b-4942-9183-15a51ddb6e7c
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.cml.cml.field_file
+  module:
+    - cmlapi
+    - file
+    - options
+_core:
+  default_config_hash: 3WiWu4f2bQOHpJOzk36JRTkU2anp9543d-SLHiB85DA
+id: cml.cml.default
+targetEntityType: cml
+bundle: cml
+mode: default
+content:
+  field_file:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  full:
+    type: boolean
+    label: inline
+    settings:
+      format: yes-no
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  ip:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  state:
+    type: list_default
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  status:
+    type: boolean
+    label: inline
+    settings:
+      format: enabled-disabled
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  type:
+    type: list_default
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true
+  login: true
+  name: true
+  search_api_excerpt: true
+  user_id: true

@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: text_image_plate
+label: 'Текст+картинка на плашке'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,20 @@
+uuid: ddbcbe50-9a2e-4339-b6cd-a2cfaf77b6b4
+langcode: ru
+status: true
+dependencies:
+  module:
+    - focal_point
+_core:
+  default_config_hash: s2r0cDIeBQnHE0ZSrwQjLePDN47Xaa6NAGi_WK1bQ74
+name: product_teaser
+label: 'Product Teaser [286x280]'
+effects:
+  43936e24-964f-4004-8a54-e1c788602981:
+    uuid: 43936e24-964f-4004-8a54-e1c788602981
+    id: focal_point_scale_and_crop
+    weight: 2
+    data:
+      width: 286
+      height: 280
+      crop_type: focal_point
+pipeline: ''

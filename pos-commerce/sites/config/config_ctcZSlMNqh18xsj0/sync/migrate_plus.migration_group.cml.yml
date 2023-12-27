@@ -1,0 +1,12 @@
+uuid: af630e9d-c7bb-42b6-921c-542d64048cdd
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: BwI_HU07wAbAS6hscIWbVHU1yqCYXLgL89IBMIsrWNo
+id: cml
+label: cml
+description: ''
+source_type: ''
+module: null
+shared_configuration: null

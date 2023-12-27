@@ -1,0 +1,21 @@
+uuid: 125692c6-6905-4c6c-a303-075b6dd79475
+langcode: ru
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - metatag
+_core:
+  default_config_hash: HqTgA1SeDVG8ZxJKsw5UV_p0V0gMUCHl0squhsHU0GI
+id: commerce_product.field_metatag
+field_name: field_metatag
+entity_type: commerce_product
+type: metatag
+settings: {  }
+module: metatag
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

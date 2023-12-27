@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: paragraph_text_slider_285x190
+label: 'Paragraph text_slider [285x190]'
+effects:
+  c4ce9263-cdef-462f-8853-aa101b93976a:
+    uuid: c4ce9263-cdef-462f-8853-aa101b93976a
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 285
+      height: 195
+      crop_type: focal_point
+pipeline: ''

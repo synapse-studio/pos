@@ -1,0 +1,79 @@
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraph
+    - node.type.service
+    - paragraphs.paragraphs_type.about
+    - paragraphs.paragraphs_type.body
+    - paragraphs.paragraphs_type.gallery
+    - paragraphs.paragraphs_type.gallery_work
+    - paragraphs.paragraphs_type.image_blocks
+    - paragraphs.paragraphs_type.image_text
+    - paragraphs.paragraphs_type.text_image_plate
+    - paragraphs.paragraphs_type.text_slider
+    - paragraphs.paragraphs_type.work_scope
+  module:
+    - entity_reference_revisions
+id: node.service.field_paragraph
+field_name: field_paragraph
+entity_type: node
+bundle: service
+label: Параграф
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      body: body
+      gallery: gallery
+      image_text: image_text
+      about: about
+      image_blocks: image_blocks
+      gallery_work: gallery_work
+      work_scope: work_scope
+      text_image_plate: text_image_plate
+      text_slider: text_slider
+    negate: 0
+    target_bundles_drag_drop:
+      about:
+        weight: 8
+        enabled: true
+      about_item:
+        weight: 7
+        enabled: false
+      body:
+        weight: -9
+        enabled: true
+      gallery:
+        weight: -7
+        enabled: true
+      gallery_work:
+        weight: 13
+        enabled: true
+      image_blocks:
+        weight: 8
+        enabled: true
+      image_text:
+        weight: -6
+        enabled: true
+      image_text_sort:
+        weight: -8
+        enabled: false
+      text_image_plate:
+        weight: 20
+        enabled: true
+      text_slider:
+        weight: 22
+        enabled: true
+      work_scope:
+        weight: 19
+        enabled: true
+      work_scope_item:
+        weight: 20
+        enabled: false
+field_type: entity_reference_revisions

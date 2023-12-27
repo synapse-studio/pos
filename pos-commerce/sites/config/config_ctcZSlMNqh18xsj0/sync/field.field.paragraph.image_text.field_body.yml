@@ -1,0 +1,23 @@
+uuid: 09678460-da09-4e3a-90cf-a0e61313806e
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_body
+    - paragraphs.paragraphs_type.image_text
+  module:
+    - text
+_core:
+  default_config_hash: asP3XifUAP6K4RfFx23eNQv6vb6Og0ovoIpoHX4qfVA
+id: paragraph.image_text.field_body
+field_name: field_body
+entity_type: paragraph
+bundle: image_text
+label: Описание
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

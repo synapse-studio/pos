@@ -1,0 +1,36 @@
+uuid: 077c0858-23b0-4d36-a41d-d7af28311779
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.editor
+  module:
+    - system
+    - user
+  theme:
+    - bootbase
+_core:
+  default_config_hash: ZdmiDfpxRVdqL7IPy5eU8oIlStDOJjQ8zrpGq_aqGqg
+id: bootbase_editor
+theme: bootbase
+region: bottom
+weight: -5
+provider: null
+plugin: 'system_menu_block:editor'
+settings:
+  id: 'system_menu_block:editor'
+  label: Navigation
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      administrator: administrator
+      editor: editor

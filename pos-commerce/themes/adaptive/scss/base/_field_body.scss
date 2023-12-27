@@ -1,0 +1,40 @@
+.text-formatted {
+  font-size: 16px;
+  @include m-down(md) {
+    td,
+    th {
+      padding: 10px;
+    }
+  }
+  @include m-down(xs) {
+    table {
+      display: block;
+      overflow: auto;
+      margin-bottom: 15px;
+    }
+    h2 {
+      margin: 20px 0;
+      font-size: 23px;
+    }
+    h3 {
+      margin: 18px 0;
+      font-size: 20px;
+      line-height: 24px;
+    }
+    h4 {
+      margin: 15px 0;
+      font-size: 18px;
+      line-height: 24px;
+    }
+    p {
+      margin: 0 0 15px;
+    }
+    .youtube-embed-wrapper {
+      margin: 15px 0;
+    }
+    iframe {
+      max-height: 40vh;
+      margin: 15px 0;
+    }
+  }
+}

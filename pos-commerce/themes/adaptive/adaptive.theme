@@ -1,0 +1,52 @@
+<?php
+
+/**
+ * @file
+ * Preprocess functions for adaptive.
+ */
+
+use Drupal\bootbase\GetContactForm;
+use Drupal\adaptive\Hook\FormAlter;
+use Drupal\adaptive\Hook\FormSystemThemeSettingsAlter;
+use Drupal\adaptive\Hook\TemplatePreprocessParagraphWorkScope;
+use Drupal\adaptive\Hook\TemplatePreprocessParagraphBlock;
+
+
+/**
+ * Prepares variables for the page.html.twig template.
+ */
+function adaptive_preprocess_page(&$variables) {
+  // Lang.
+  $variables['lang'] = \Drupal::languageManager()->getCurrentLanguage()->getId();
+
+  // Get many forms: Set count, Use: {{ forms.callback1 }}.
+  // Hack contact_ajax.module line ~237:
+  // if (isset($_POST['element_id'])) {$element_id = $_POST['element_id'];} !
+  // $variables['forms'] = GetContactForm::form('callback', $count = 0);
+
+  // Dark footer -> white logo.
+  $variables['header_logo_inverse'] = theme_get_setting('header_logo_inverse');
+  $variables['footer_logo_inverse'] = theme_get_setting('footer_logo_inverse');
+}
+
+function adaptive_preprocess_paragraph__work_scope(&$variables) {
+  TemplatePreprocessParagraphWorkScope::hook($variables);
+}
+
+function adaptive_preprocess_paragraph__paragraph_block(&$variables) {
+  TemplatePreprocessParagraphBlock::hook($variables);
+}
+
+/**
+ * Hook hook_form_alter() to add classes to the search form.
+ */
+function adaptive_form_system_theme_settings_alter(&$form, $form_state) {
+  FormSystemThemeSettingsAlter::hook($form, $form_state);
+}
+
+/**
+ * form_Alter.
+ */
+function adaptive_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  FormAlter::hook($form, $form_state, $form_id);
+}

@@ -1,0 +1,37 @@
+uuid: b8117896-9d9f-44f3-953d-7b310acdcf77
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.teaser
+    - field.field.taxonomy_term.brand.field_brand_image
+    - field.field.taxonomy_term.brand.field_brand_link
+    - field.field.taxonomy_term.brand.field_brand_short
+    - image.style.brand_logo
+    - taxonomy.vocabulary.brand
+  module:
+    - image
+_core:
+  default_config_hash: 7QBBIDJO4DM8PDWzxJMaUmZWPzokiNFC1sA42CXwBzM
+id: taxonomy_term.brand.teaser
+targetEntityType: taxonomy_term
+bundle: brand
+mode: teaser
+content:
+  field_brand_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: brand_logo
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  description: true
+  field_brand_link: true
+  field_brand_short: true
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,17 @@
+uuid: 498f383e-bc36-42a8-9e1d-84063611cb01
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 4LgE3a9lx91hoaxaV3EP44adOEqR0DNZCbWjlsSR_T0
+name: footer_form_bg
+label: 'footer-form-bg[575x442]'
+effects:
+  8f7bc214-3077-49f8-95c7-edf228908808:
+    uuid: 8f7bc214-3077-49f8-95c7-edf228908808
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 575
+      height: 442
+      anchor: center-center

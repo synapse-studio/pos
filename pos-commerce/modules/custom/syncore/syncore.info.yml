@@ -1,0 +1,21 @@
+name: Syncore
+description: "Syncore module"
+type: module
+core_version_requirement: ^9 || ^10
+package: Synapse
+dependencies:
+  - maxlength
+  - imageapi_optimize
+  - crop
+  - focal_point
+  - paragraphs_previewer
+  - responsive_preview
+  - entity_clone
+  - coffee
+  - search_api
+  - easy_breadcrumb
+
+# Information added by Drupal.org packaging script on 2023-07-05
+version: '8.x-1.24'
+project: 'syncore'
+datestamp: 1688541512

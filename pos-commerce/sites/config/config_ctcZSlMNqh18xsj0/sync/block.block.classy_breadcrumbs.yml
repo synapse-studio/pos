@@ -1,0 +1,22 @@
+uuid: 65f60b90-64b4-478e-9cb2-97d63f68af9f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - classy
+_core:
+  default_config_hash: 3JFXUgpMPL3NxFaogNiB7cjnksTwV9QbfeF5S2DP3L4
+id: classy_breadcrumbs
+theme: classy
+region: breadcrumb
+weight: -6
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

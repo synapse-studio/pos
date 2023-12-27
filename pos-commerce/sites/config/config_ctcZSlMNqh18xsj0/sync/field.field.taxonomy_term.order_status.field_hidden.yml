@@ -1,0 +1,23 @@
+uuid: 7b98106e-57e8-4960-8aae-0c74a47e42c5
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_hidden
+    - taxonomy.vocabulary.order_status
+id: taxonomy_term.order_status.field_hidden
+field_name: field_hidden
+entity_type: taxonomy_term
+bundle: order_status
+label: Скрыть
+description: 'Скрыть статус со страницы заказов.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Вкл
+  off_label: Выкл
+field_type: boolean

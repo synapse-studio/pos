@@ -1,0 +1,20 @@
+uuid: 7798dbb8-c44e-409d-be86-f9d829622061
+langcode: en
+status: true
+dependencies:
+  theme:
+    - bootbase
+_core:
+  default_config_hash: sHhyLkp-bOPXx7X9TBHAlGQMslZQQZX3l78mMjuWMuw
+id: bootbase_title
+theme: bootbase
+region: title
+weight: -6
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

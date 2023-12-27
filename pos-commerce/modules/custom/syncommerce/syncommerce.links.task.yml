@@ -1,0 +1,4 @@
+syncommerce.products:
+  route_name: syncommerce.products
+  title: "Product management"
+  base_route: commerce.admin_commerce

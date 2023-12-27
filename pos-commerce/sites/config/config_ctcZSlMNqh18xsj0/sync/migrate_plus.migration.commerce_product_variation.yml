@@ -1,0 +1,31 @@
+uuid: 3b3d4de6-525d-4d5c-b9a5-b5cf1ec6b8f5
+langcode: ru
+status: true
+dependencies:
+  enforced:
+    module:
+      - commerce_import
+_core:
+  default_config_hash: bfo36isIppvjIMY1f5VLVrk17vzsobSUlkUWp0fISKs
+id: commerce_product_variation
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: commerce
+label: 'Product Variation'
+source:
+  plugin: commerce_product_variation
+process:
+  sku: sku
+  uid: uid
+  type: type
+  title: title
+  price: price
+  list_price: list_price
+  product_key: product_key
+  field_stock: field_stock
+  field_oldprice: field_oldprice
+destination:
+  plugin: 'entity:commerce_product_variation'
+migration_dependencies: null

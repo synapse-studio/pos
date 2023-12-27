@@ -1,0 +1,21 @@
+uuid: 59087580-4386-43ad-8f32-3c9f2a286f8e
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_product_param_param
+    - paragraphs.paragraphs_type.product_param
+_core:
+  default_config_hash: Go_W4uFlPplyCNGru9ulScOd0M7kM-1Wk6dtY9hIoEM
+id: paragraph.product_param.field_product_param_param
+field_name: field_product_param_param
+entity_type: paragraph
+bundle: product_param
+label: Параметр
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

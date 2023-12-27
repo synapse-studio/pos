@@ -1,0 +1,76 @@
+uuid: d51d3532-6abf-4e8b-a9e8-b76c9d03c419
+langcode: ru
+status: true
+dependencies:
+  module:
+    - commerce_payment
+    - commerce_promotion
+    - commerce_shipping
+    - email_registration
+    - syncart
+_core:
+  default_config_hash: 5BYvSDemm8xYwB9rMGFuEuGK6FxVheqtXEUxnpKO2N4
+label: 'По умолчанию'
+id: default
+plugin: multistep_default
+configuration:
+  display_checkout_progress: true
+  display_checkout_progress_breadcrumb_links: false
+  guest_order_assign: false
+  guest_new_account: false
+  guest_new_account_notify: false
+  panes:
+    shipping_information:
+      step: _disabled
+      weight: 7
+      auto_recalculate: true
+      require_shipping_profile: true
+    payment_information:
+      step: order_information
+      weight: 0
+    payment_process:
+      step: payment
+      weight: 1
+      capture: true
+    completion_message:
+      step: complete
+      weight: 2
+      message:
+        value: "Your order number is [commerce_order:order_number].\r\nYou can view your order on your account page when logged in."
+        format: plain_text
+    syncart_finalaze:
+      step: complete
+      weight: 3
+    coupon_redemption:
+      step: _sidebar
+      weight: 4
+      allow_multiple: false
+    order_summary:
+      step: _disabled
+      weight: 5
+      view: ''
+    completion_register:
+      step: _disabled
+      weight: 6
+    contact_information:
+      step: _disabled
+      weight: 8
+      double_entry: false
+    login:
+      step: _disabled
+      weight: 9
+      allow_guest_checkout: true
+      allow_registration: false
+      registration_form_mode: register
+    review:
+      step: _disabled
+      weight: 10
+    email_registration_login:
+      step: _disabled
+      weight: 11
+      allow_guest_checkout: true
+      allow_registration: false
+      registration_form_mode: register
+    email_registration_completion_registration:
+      step: _disabled
+      weight: 12

@@ -1,0 +1,47 @@
+<div class="page">
+
+  {% include directory ~ '/templates/layout/header.html.twig' %}
+
+  <main class="page-content">
+
+    <div id="sys">
+      <div class="container">
+        {{ page.tabs }}
+        {{ page.messages }}
+      </div>
+    </div>
+
+    {% if page.slider|render %}
+      <div id="slider">
+        {{ page.slider }}
+      </div>
+    {% endif %}
+
+    {% if lp %}
+      {{ page.content }}
+      {% include directory ~ '/templates/layout/lp-section.html.twig' %}
+    {% else %}
+      {{ page.breadcrumb }}
+      <div class="container">
+        <div class="row">
+          {% set main_class = 'col-md-12' %}
+          {% set sidebar = page.sidebar|render %}
+          {% if sidebar %}
+            {% set main_class = 'col-md-9' %}
+            <div class="col-md-3" id="sidebar">
+              {{ sidebar }}
+            </div>
+          {% endif %}
+          <div class="{{ main_class }}">
+            {{ page.title }}
+            {{ page.content }}
+          </div>
+        </div>
+      </div>
+    {% endif %}
+  </main>
+
+  {% include directory ~ '/templates/layout/footer.html.twig' %}
+
+</div>
+{{ page.bottom }}

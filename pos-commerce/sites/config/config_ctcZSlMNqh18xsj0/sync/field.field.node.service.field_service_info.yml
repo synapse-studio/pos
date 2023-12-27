@@ -1,0 +1,21 @@
+uuid: 4125d148-6730-4ff1-b267-0f9ceb1a5529
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_service_info
+    - node.type.service
+_core:
+  default_config_hash: NO7ttNPulAXW8mtIqCigH4seb-7x3HgtCetuyrWTL5Y
+id: node.service.field_service_info
+field_name: field_service_info
+entity_type: node
+bundle: service
+label: 'Состав работ'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

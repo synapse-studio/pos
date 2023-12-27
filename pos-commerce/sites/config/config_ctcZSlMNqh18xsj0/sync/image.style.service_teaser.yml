@@ -1,0 +1,22 @@
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: '-NVO6H6IfZJciMn74X510SnOR-EcMqe1rHPnpxqi1WE'
+name: service_teaser
+label: 'Service Teaser [288x200]'
+effects:
+  0330ab81-80e4-457f-942c-ead260f04846:
+    uuid: 0330ab81-80e4-457f-942c-ead260f04846
+    id: image_scale_and_crop
+    weight: -9
+    data:
+      width: 288
+      height: 200
+      anchor: center-center
+  78710fbd-8194-4126-a35d-c52466d0ec53:
+    uuid: 78710fbd-8194-4126-a35d-c52466d0ec53
+    id: image_convert
+    weight: -10
+    data:
+      extension: jpg

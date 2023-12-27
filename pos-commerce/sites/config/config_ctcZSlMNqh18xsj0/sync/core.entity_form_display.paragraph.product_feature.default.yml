@@ -1,0 +1,52 @@
+uuid: ab31daeb-8c6e-4b71-87ee-ffbf03672cd7
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.product_feature.field_product_feature_none
+    - field.field.paragraph.product_feature.field_product_feature_products
+    - field.field.paragraph.product_feature.field_product_feature_title
+    - field.field.paragraph.product_feature.field_product_feature_widget
+    - paragraphs.paragraphs_type.product_feature
+_core:
+  default_config_hash: LalQJVVLivpZGYT4WdrFOmCYVq3SsmAbyCPBaYiZ_U4
+id: paragraph.product_feature.default
+targetEntityType: paragraph
+bundle: product_feature
+mode: default
+content:
+  field_product_feature_none:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_product_feature_products:
+    type: entity_reference_autocomplete
+    weight: 1
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_product_feature_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_product_feature_widget:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

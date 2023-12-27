@@ -1,0 +1,27 @@
+uuid: d2e304da-9f04-4f64-8acb-d1c6fde49dbe
+langcode: ru
+status: true
+dependencies:
+  module:
+    - commerce_cart
+    - commerce_checkout
+    - commerce_shipping
+third_party_settings:
+  commerce_cart:
+    cart_block_view: commerce_cart_block
+    cart_form_view: commerce_cart_form
+    cart_expiration: {  }
+  commerce_checkout:
+    checkout_flow: product_feature
+  commerce_shipping:
+    shipment_type: ''
+id: product_feature
+label: 'Комплектация товара'
+traits: {  }
+locked: false
+workflow: order_default
+numberPattern: null
+refresh_mode: customer
+refresh_frequency: 300
+sendReceipt: true
+receiptBcc: ''

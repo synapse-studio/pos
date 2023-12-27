@@ -1,0 +1,19 @@
+uuid: null
+langcode: ru
+status: true
+dependencies: {  }
+id: cash
+label: cash
+weight: -10
+plugin: manual
+configuration:
+  display_label: Наличные
+  mode: n/a
+  payment_method_types:
+    - credit_card
+  collect_billing_information: true
+  instructions:
+    value: ''
+    format: plain_text
+conditions: {  }
+conditionOperator: AND

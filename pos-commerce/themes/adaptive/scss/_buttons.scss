@@ -1,0 +1,43 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: none;
+  border: 0;
+  box-shadow: none;
+  white-space: normal;
+  padding: 10px 18px;
+  min-width: 160px;
+  font-size: 14px;
+  color: $color-button-text;
+  border-color: $color-button1;
+  background-color: $color-button1;
+  transition: box-shadow $duration, background-color $duration;
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  &:hover {
+    color: $white;
+    background-color: darken($color-button1, 10%);
+  }
+  &:active {
+    background-color: darken($color-button1, 20%);
+  }
+  &--loading {
+    overflow: hidden;
+    position: relative;
+    &::before {
+      content: '';
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 5;
+      background: url('../images/template/ajax-preloader.svg') rgba(#fff, .5) no-repeat center;
+      background-size: 25px;
+      position: absolute;
+    }
+  }
+}

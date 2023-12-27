@@ -1,0 +1,23 @@
+uuid: 0644a074-8712-4c43-ba32-cb9be67925ad
+langcode: ru
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.product
+    - field.storage.commerce_product.field_metatag
+  module:
+    - metatag
+_core:
+  default_config_hash: 6cwCiqnfz3EtmGFOsidYQbB_fHoM_oHUFrNFKzh5VGA
+id: commerce_product.product.field_metatag
+field_name: field_metatag
+entity_type: commerce_product
+bundle: product
+label: Мета-тег
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

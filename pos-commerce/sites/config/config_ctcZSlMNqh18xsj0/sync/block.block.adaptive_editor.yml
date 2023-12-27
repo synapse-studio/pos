@@ -1,0 +1,36 @@
+uuid: a56a32c5-be2c-44dd-b3a4-01628b269554
+langcode: ru
+status: true
+dependencies:
+  config:
+    - system.menu.editor
+  module:
+    - system
+    - user
+  theme:
+    - adaptive
+_core:
+  default_config_hash: ZdmiDfpxRVdqL7IPy5eU8oIlStDOJjQ8zrpGq_aqGqg
+id: adaptive_editor
+theme: adaptive
+region: bottom
+weight: -5
+provider: null
+plugin: 'system_menu_block:editor'
+settings:
+  id: 'system_menu_block:editor'
+  label: Навигация
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      administrator: administrator
+      editor: editor

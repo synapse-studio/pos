@@ -1,0 +1,28 @@
+name: Synapse Adaptive
+description: A starter theme for Drupal 8.
+type: theme
+base theme: bootbase
+core_version_requirement: ^9 || ^10
+libraries:
+  - adaptive/theme
+ckeditor_stylesheets:
+  - css/style.css
+ckeditor5-stylesheets:
+  - css/style.css
+'interface translation project': adaptive
+'interface translation server pattern': 'themes/adaptive/translations/%language.po'
+regions:
+  header: Header
+  menu_small: Menu Small
+  menu_main: Menu Main
+  title: Title
+  tabs: Tabs
+  breadcrumb: Breadcrumb
+  messages: Messages
+  featured: Featured
+  sidebar: Sidebar
+  order: Order
+  slider: Slider
+  content: Content
+  footer: Footer
+  bottom: Bottom

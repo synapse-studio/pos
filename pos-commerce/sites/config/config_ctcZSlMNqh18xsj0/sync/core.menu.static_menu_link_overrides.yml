@@ -1,0 +1,46 @@
+_core:
+  default_config_hash: jdY7AU0tU-QsjmiOw3W8vwpYMb-By--_MSFgbqKUTYM
+langcode: ru
+definitions:
+  synmini__front:
+    weight: -45
+    menu_name: main
+    parent: ''
+    expanded: true
+    enabled: false
+  contact__site_page:
+    weight: -46
+    menu_name: footer
+    parent: ''
+    expanded: false
+    enabled: false
+  synmini__add:
+    weight: -50
+    menu_name: editor
+    parent: ''
+    enabled: true
+    expanded: true
+  synmini__menu:
+    weight: -48
+    menu_name: editor
+    parent: ''
+    expanded: true
+    enabled: true
+  synorders__settings:
+    weight: -47
+    menu_name: editor
+    parent: ''
+    expanded: false
+    enabled: true
+  synusers__settings:
+    weight: -44
+    menu_name: editor
+    parent: ''
+    expanded: false
+    enabled: true
+  synmini__logout:
+    weight: -43
+    menu_name: editor
+    parent: ''
+    expanded: false
+    enabled: true

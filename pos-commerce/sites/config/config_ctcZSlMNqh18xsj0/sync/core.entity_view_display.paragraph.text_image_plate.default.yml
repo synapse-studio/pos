@@ -1,0 +1,56 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.text_image_plate.field_body
+    - field.field.paragraph.text_image_plate.field_image
+    - field.field.paragraph.text_image_plate.field_link
+    - field.field.paragraph.text_image_plate.field_title
+    - paragraphs.paragraphs_type.text_image_plate
+  module:
+    - image
+    - link
+    - text
+id: paragraph.text_image_plate.default
+targetEntityType: paragraph
+bundle: text_image_plate
+mode: default
+content:
+  field_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  search_api_excerpt: true

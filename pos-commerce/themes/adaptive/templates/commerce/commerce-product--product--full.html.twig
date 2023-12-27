@@ -1,0 +1,191 @@
+{{ attach_library('catalog/product') }}
+{%
+set classes = [
+'product-full',
+cart ? '' : 'drupal-app',
+]
+%}
+{% set title = product_entity.field_title.value %}
+{% set body = product.body.0['#text'] %}
+{% set specifications = product.field_paragraph|render %}
+
+<div{{attributes.addClass(classes)}}>
+  <div class="product-top">
+    <div class="container container--product">
+      <div class="product-columns">
+        <div class="product-column product-column--left" id="product-gallery">
+          <product-gallery :id="{{ product_entity.id() }}" :gallery-ini="{{ gallery.gallery|json_encode() }}"
+            :lightbox-ini="{{ gallery.lightbox|json_encode() }}" :imgs="{{ gallery.lightbox|json_encode() }}">
+            <div class="product-gallery">
+              <div class="product-gallery-thumbs" v-if="gallery.length">
+                <template v-for="(item, key) in gallery">
+                  <div class="product-gallery-thumb" :style="translate"
+                    :class="{'product-gallery-thumb--active': item.choosen, 'product-gallery-thumb--image': item.type == 'image'}"
+                    v-if="item.link == 0 || item.link == color" v-on:click="chooseItem(key)">
+                    <picture>
+                      <source :srcset="item.thumb + ' 1x, ' + item.thumb_2x + ' 2x'" media="all">
+                      <img :src="item.thumb" alt="">
+                    </picture>
+                  </div>
+                </template>
+              </div>
+              <div class="product-gallery-main" :class="gallery.length == 0 ? 'product-gallery-main--empty' : ''">
+                <template v-for="(item, key) in gallery">
+                  <div class="product-gallery-image" v-if="item.choosen"
+                    :class="item.choosen ? 'product-gallery-image--active' : ''">
+                    <div class="product-gallery-arrow product-gallery-arrow--prev" @click="showImage(-1)"
+                      v-show="gallery.length > 1"></div>
+                    <picture>
+                      <source :srcset="item.main + ' 1x, ' + item.main_2x + ' 2x'" media="all"
+                        @click="showLightbox(key)">
+                    </picture>
+                    <img :src="item.main" @click="showLightbox(key)" alt="" />
+                    <div class="product-gallery-arrow product-gallery-arrow--next" @click="showImage(1)"
+                      v-show="gallery.length > 1"></div>
+                  </div>
+                </template>
+              </div>
+              <vue-easy-lightbox :visible="visible" :imgs="lightbox" :index="index"
+                @hide="handleHide"></vue-easy-lightbox>
+            </div>
+          </product-gallery>
+        </div>
+        <div class="product-column product-column--right">
+          {% if product.field_article %}
+          <div class="product-article">
+            {{ product.field_article }}
+          </div>
+          {% endif %}
+          <h1 class="page-title">
+            {{ title ? title : product_entity.getTitle() }}
+          </h1>
+          {{ product.field_short }}
+          {{ product.field_tx_options }}
+          {% if characteristics %}
+          <div class="product-characteristics">
+            <div class="product-characteristics-title">Характеристики товара</div>
+            <ul class="product-characteristics-list">
+              {{ characteristics }}
+            </ul>
+          </div>
+          {% endif %}
+          <div class="product-full-cart">
+            {% if cart %}
+            <div class="product-full-variations">
+              {{ cart }}
+              {{ favorite }}
+            </div>
+            {% else %}
+            {% if view_price %}
+            {% set oldprice = product.variation_field_oldprice[0]['#markup'] %}
+            <div class="product-variation-price">
+              <div class="product-price">
+                {% if oldprice %}
+                <div class="product-price-old">
+                  {{ oldprice|round(2) }}
+                </div>
+                {% endif %}
+                <div class="product-price-current">
+                  {{ product.variations }}
+                </div>
+              </div>
+            </div>
+            <button type="button" class="btn btn--blue" style="margin: 0px 0px 25px 25px" data-bs-toggle="modal"
+              data-bs-target="#block-form-order-modal">
+              {{ 'Order product'|t }}
+            </button>
+            {% else %}
+            <button type="button" class="btn btn--blue" style="margin: 0px 0px 25px 0px" data-bs-toggle="modal"
+              data-bs-target="#block-form-order-modal">
+              {{ 'Order product'|t }}
+            </button>
+            {% endif %}
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% if body or specifications %}
+  <div class="product-tabs">
+    <div class="product-tabs-header">
+      <div class="container container--product">
+        <ul class="nav nav-tabs" id="product-tab" role="tablist">
+          {% if body %}
+          <li class="nav-item">
+            <a class="nav-link active" data-bs-toggle="tab" href="#product-description" role="tab"
+              aria-controls="description" aria-selected="true">
+              {{ 'Description'|t }}
+            </a>
+          </li>
+          {% endif %}
+          {% if specifications %}
+          <li class="nav-item">
+            <a class="nav-link {{ not body ? ' active' : '' }}" data-bs-toggle="tab" href="#product-specifications"
+              role="tab" aria-controls="specifications" aria-selected="false">
+              {{ 'Specifications'|t }}
+            </a>
+          </li>
+          {% endif %}
+        </ul>
+      </div>
+    </div>
+    <div class="product-tabs-body">
+      <div class="container container--product">
+        <div class="tab-content" id="product-tab-content">
+          {% if body %}
+          <div class="tab-pane fade show active" id="product-description" role="tabpanel"
+            aria-labelledby="description-tab">
+            <div class="product-description{{ body|length > 700 ? ' product-description--hidden' }}">
+              <div class="product-description-content text-formatted">
+                {{ {
+                '#type': 'processed_text',
+                '#text': body,
+                '#format': 'wysiwyg'
+                } }}
+                {{ product.field_attach }}
+                <div class="product-description-button">
+                  <button type="button" class="btn btn--bordered">
+                    {{ 'Show more'|t }}
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% endif %}
+          {% if specifications %}
+          <div class="tab-pane fade {{ not body ? ' active show' : '' }}" id="product-specifications" role="tabpanel"
+            aria-labelledby="specifications-tab">
+            <div class="product-specifications">
+              {{ specifications }}
+            </div>
+          </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+  </div>
+
+  {#
+  /**
+  * @file
+  *
+  * Default product template.
+  *
+  * Available variables:
+  * - attributes: HTML attributes for the wrapper.
+  * - product: The rendered product fields.
+  * Use 'product' to print them all, or print a subset such as
+  * 'product.title'. Use the following code to exclude the
+  * printing of a given field:
+  * @code
+  * {{ product|without('title') }}
+  * @endcode
+  * - product_entity: The product entity.
+  * - product_url: The product URL.
+  *
+  * @ingroup themeable
+  */
+  #}

@@ -1,0 +1,12 @@
+uuid: 3bfebacb-cccf-4a62-9c95-2b662cd8700e
+langcode: ru
+status: true
+dependencies:
+  module:
+    - commerce_product
+_core:
+  default_config_hash: QzYaSIqaiERqJfvu7p3boW9bXSJtHsjYtn71AOCKROY
+id: commerce_product.teaser
+label: Анонс
+targetEntityType: commerce_product
+cache: true

@@ -1,0 +1,27 @@
+uuid: de0521cf-98cd-4864-9dd8-41efd97b3786
+langcode: ru
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - adaptive
+_core:
+  default_config_hash: GPHb6B9mUZqD4ZMCROCJ0qp74g6umrExXeXEzcZ89hk
+id: adaptive_menu_footer
+theme: adaptive
+region: footer
+weight: 0
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: 'Menu footer'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: true
+visibility: {  }

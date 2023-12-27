@@ -1,0 +1,32 @@
+uuid: 58bd0177-b180-4af5-a8d9-cd118499a3a5
+langcode: ru
+status: true
+dependencies:
+  config:
+    - views.view.catalog
+  module:
+    - system
+    - views
+  theme:
+    - adaptive
+_core:
+  default_config_hash: H6gCy3W6W_Gc0t8LgPsXd0sPNUKmCXvsonRIjrz_B4M
+id: views_block__catalog_block_description
+theme: adaptive
+region: content
+weight: 100
+provider: null
+plugin: 'views_block:catalog-block_description'
+settings:
+  id: 'views_block:catalog-block_description'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/taxonomy/term*'

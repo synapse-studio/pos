@@ -1,0 +1,28 @@
+uuid: 3a5a3205-e963-493d-b849-d6a493dc4f9f
+langcode: ru
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+  module:
+    - commerce_checkout
+    - commerce_order
+    - commerce_payment
+    - commerce_product
+    - contact
+    - filter
+    - system
+_core:
+  default_config_hash: j0Z0A4_0PFR3fIdLT4NgRD79gN9XtFddaa84uS-P4rI
+id: authenticated
+label: Пользователь
+weight: 1
+is_admin: false
+permissions:
+  - 'access checkout'
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'manage own commerce_payment_method'
+  - 'use text format basic_html'
+  - 'view commerce_product'
+  - 'view own commerce_order'

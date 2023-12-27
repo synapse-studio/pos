@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.kvadrat150
+    - image.style.kvadrat300
+    - image.style.kvadrat500
+_core:
+  default_config_hash: 1MKPn-M8s4-Ax8afNOIint73V5ktit3yxKpPB8fNn1k
+id: kvadrats
+label: kvadrats
+image_style_mappings:
+  -
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: '(min-width:992px) 300w, (min-width:768px) 150w, (min-width:544px) 300w, 90vw'
+      sizes_image_styles:
+        - kvadrat150
+        - kvadrat300
+        - kvadrat500
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
+breakpoint_group: responsive_image
+fallback_image_style: kvadrat150

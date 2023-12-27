@@ -1,0 +1,29 @@
+uuid: 75df2f7d-88d7-48db-9e32-b8d7d1416e9e
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_attach
+    - node.type.service
+  module:
+    - file
+_core:
+  default_config_hash: e9ybyFOrfU9srcLEWBY2FiGNcpDs1shzpdeSqIXbnkE
+id: node.service.field_attach
+field_name: field_attach
+entity_type: node
+bundle: service
+label: 'Прикреплённые файлы'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: 'service/[date:custom:Y]'
+  file_extensions: 'txt jpg jpeg png doc docx pdf ods xlsx xls zip rar'
+  max_filesize: '25 MB'
+  description_field: true
+field_type: file

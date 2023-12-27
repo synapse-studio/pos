@@ -1,0 +1,34 @@
+syncommerce.products:
+  path: "/syncommerce/products"
+  defaults:
+    _title: "Manage products"
+    _controller: '\Drupal\syncommerce\Controller\SyncommerceController::build'
+  requirements:
+    _permission: "administer commerce_order"
+
+syncommerce.products_list:
+  path: "/syncommerce/products_list"
+  defaults:
+    _title: "Get product list"
+    _controller: '\Drupal\syncommerce\Controller\SyncommerceController::list'
+  methods: [POST]
+  requirements:
+    _permission: "administer commerce_order"
+
+syncommerce.products_update:
+  path: "/syncommerce/updateProduct"
+  defaults:
+    _title: "Save product"
+    _controller: '\Drupal\syncommerce\Controller\SyncommerceController::updateProduct'
+  methods: [POST]
+  requirements:
+    _permission: "administer commerce_order"
+
+syncommerce.variations_update:
+  path: "/syncommerce/updateVariation"
+  defaults:
+    _title: "Save variation"
+    _controller: '\Drupal\syncommerce\Controller\SyncommerceController::updateVariation'
+  methods: [POST]
+  requirements:
+    _permission: "administer commerce_order"

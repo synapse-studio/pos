@@ -1,0 +1,1 @@
+{"version":3,"file":"../user.css","sources":["user.scss"],"sourcesContent":[".path-user {\n  .view-commerce-order-item-table {\n    margin-top: 50px;\n  }\n}\n"],"names":[],"mappings":"AAAA,AACE,UADQ,CACR,+BAA+B,CAAC;EAC9B,UAAU,EAAE,IAAI,GACjB"}

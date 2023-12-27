@@ -1,0 +1,25 @@
+uuid: efb372a5-d29e-4dd4-acfe-1b6564ec6c33
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_image_text_sort
+    - paragraphs.paragraphs_type.image_text_sort
+  module:
+    - options
+_core:
+  default_config_hash: 8bdfEOmejEmRbuytR8WwgYNOfc-b-Fl3oX8QfnJMZVo
+id: paragraph.image_text_sort.field_image_text_sort
+field_name: field_image_text_sort
+entity_type: paragraph
+bundle: image_text_sort
+label: Порядок
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: image_text
+default_value_callback: ''
+settings: {  }
+field_type: list_string

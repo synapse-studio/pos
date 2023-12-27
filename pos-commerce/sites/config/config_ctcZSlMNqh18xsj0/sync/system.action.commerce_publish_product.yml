@@ -1,0 +1,13 @@
+uuid: 9558345b-dae7-4406-aaca-6eb84b6b2d56
+langcode: ru
+status: true
+dependencies:
+  module:
+    - commerce_product
+_core:
+  default_config_hash: 83abjxFWTlkso65OfwvUzv_VvAc9iIswF2kW_MGZmY8
+id: commerce_publish_product
+label: 'Опубликовать товар'
+type: commerce_product
+plugin: commerce_publish_product
+configuration: {  }

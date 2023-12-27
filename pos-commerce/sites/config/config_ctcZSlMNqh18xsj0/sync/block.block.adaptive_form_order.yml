@@ -1,0 +1,44 @@
+uuid: 072f5753-b488-4cf4-a7e8-b0cbe384333a
+langcode: ru
+status: true
+dependencies:
+  config:
+    - contact.form.order
+  module:
+    - contact_block
+    - node
+    - system
+  theme:
+    - adaptive
+_core:
+  default_config_hash: mh1lODcQe-pz1_GWk2KUtyk-SXaBlDqfbKoWVKKjFg8
+id: adaptive_form_order
+theme: adaptive
+region: order
+weight: -5
+provider: null
+plugin: contact_block
+settings:
+  id: contact_block
+  label: 'Свяжитесь с нами'
+  label_display: '0'
+  provider: contact_block
+  contact_form: order
+  form_display: default
+  contact_form_button_text: Order
+  remove_preview_button: 1
+visibility:
+  node_type:
+    id: node_type
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      service: service
+      event: event
+      syspage: syspage
+  request_path:
+    id: request_path
+    negate: true
+    context_mapping: {  }
+    pages: '/node/*/*'

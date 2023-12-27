@@ -1,0 +1,9 @@
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: nIbpWTGEziOzzhiDzoia2JZCcW2wA5ogV83n3f9E_Gw
+name: 'Категория услуги'
+vid: type_service
+description: ''
+weight: 0

@@ -1,0 +1,42 @@
+.page-syncommerce-products .region-content {
+  max-width: 100%; }
+
+.products-filter .filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; }
+  .products-filter .filters-item:not(.filters-page) {
+    margin-right: 30px;
+    margin-bottom: 15px; }
+    .products-filter .filters-item:not(.filters-page) label {
+      margin-right: 5px; }
+  .products-filter .filters-page {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; }
+    .products-filter .filters-page-item {
+      margin-right: 30px;
+      margin-bottom: 15px; }
+      .products-filter .filters-page-item label {
+        margin-right: 5px; }
+
+.variations-toggler {
+  transition: transform 0.4s; }
+  .variations-toggler.opened {
+    transform: rotate(90deg); }
+
+@media (max-width: 1200px) {
+  .products-filter .products-variations table {
+    display: block;
+    overflow: scroll; } }
+
+@media (max-width: 767px) {
+  .products-filter .filters {
+    flex-direction: column;
+    align-items: flex-start; }
+    .products-filter .filters-item {
+      margin-right: 0; }
+    .products-filter .filters-page-item {
+      margin-right: 0; } }
+
+/*# sourceMappingURL=_maps/product.css.map */

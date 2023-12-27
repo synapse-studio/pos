@@ -1,0 +1,19 @@
+uuid: 7f16ef8b-9479-4bf1-8bff-f94cb11946fb
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_product_features_title
+    - paragraphs.paragraphs_type.product_features
+id: paragraph.product_features.field_product_features_title
+field_name: field_product_features_title
+entity_type: paragraph
+bundle: product_features
+label: Заголовок
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

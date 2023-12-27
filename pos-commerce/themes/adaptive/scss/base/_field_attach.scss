@@ -1,0 +1,44 @@
+.field--name-field-attach {
+  margin: 50px 0 30px;
+  .field__item {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    position: relative;
+    line-height: 1.2;
+    margin: 0 0 10px;
+    min-height: 36px;
+    &::before {
+      content: '\f15b';
+      font-size: 30px;
+      font-family: 'Font Awesome\ 5 Free';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translate3d(0, -50%, 0);
+    }
+  }
+  .file {
+    font-size: 1em;
+    font-weight: bold;
+    background: none;
+    padding-left: 20px;
+    a {
+      text-decoration: none;
+      border-bottom: solid 1px transparent;
+      &:hover {
+        border-color: #fff!important;
+      }
+    }
+  }
+  @include m-down(md) {
+    .field--name-field-attach {
+      margin: 20px 0;
+    }
+    .field--name-field-attach .file {
+      background-size: 20px;
+      padding: 0 0 15px 30px;
+      font-size: 15px;
+    }
+  }
+}

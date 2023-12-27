@@ -1,0 +1,13 @@
+uuid: 30593c6d-ac7f-43f3-aa5b-928376b4f1f3
+langcode: ru
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: VVyUA6PIaVeGtcIbgEWqJ6SYDiJdReBeojFswURFpKs
+id: media_save_action
+label: 'Сохранить медиа'
+type: media
+plugin: 'entity:save_action:media'
+configuration: {  }

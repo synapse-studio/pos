@@ -1,0 +1,51 @@
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.about_item.field_about_icon
+    - field.field.paragraph.about_item.field_description
+    - field.field.paragraph.about_item.field_image
+    - field.field.paragraph.about_item.field_title
+    - image.style.about_item_375x285
+    - paragraphs.paragraphs_type.about_item
+  module:
+    - image
+id: paragraph.about_item.default
+targetEntityType: paragraph
+bundle: about_item
+mode: default
+content:
+  field_about_icon:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_description:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: about_item_375x285
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  search_api_excerpt: true

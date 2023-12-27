@@ -1,0 +1,67 @@
+uuid: 3c3f78ce-b4c3-4070-aae9-3ea591c00852
+langcode: ru
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.variation
+    - field.field.commerce_product_variation.variation.attribute_color
+    - field.field.commerce_product_variation.variation.attribute_size
+    - field.field.commerce_product_variation.variation.field_oldprice
+    - field.field.commerce_product_variation.variation.field_stock
+    - field.field.commerce_product_variation.variation.weight
+  module:
+    - commerce_price
+_core:
+  default_config_hash: jElruT0PXDoGo6TSIfAeOXBi2cwBkBRN7lvfGLKenRs
+id: commerce_product_variation.variation.default
+targetEntityType: commerce_product_variation
+bundle: variation
+mode: default
+content:
+  attribute_color:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  attribute_size:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  commerce_stock_always_in_stock:
+    type: boolean_checkbox
+    weight: 4
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_oldprice:
+    type: number
+    weight: 3
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_stock:
+    type: number
+    weight: 6
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  price:
+    type: commerce_price_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  langcode: true
+  list_price: true
+  sku: true
+  status: true
+  uid: true
+  weight: true

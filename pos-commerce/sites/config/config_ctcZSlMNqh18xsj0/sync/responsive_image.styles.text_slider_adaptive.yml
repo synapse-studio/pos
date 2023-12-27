@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.paragraph_text_slider_285x190
+    - image.style.paragraph_text_slider_540x360
+  theme:
+    - adaptive
+id: text_slider_adaptive
+label: 'Text slider adaptive'
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: paragraph_text_slider_540x360
+    breakpoint_id: adaptive.wide
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: paragraph_text_slider_285x190
+    breakpoint_id: adaptive.mobile_small
+    multiplier: 1x
+breakpoint_group: adaptive
+fallback_image_style: paragraph_text_slider_540x360

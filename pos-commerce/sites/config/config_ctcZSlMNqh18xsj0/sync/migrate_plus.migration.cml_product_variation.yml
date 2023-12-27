@@ -1,0 +1,31 @@
+uuid: 47fdbf81-f74a-40c7-ad69-9ad103954b7d
+langcode: ru
+status: true
+dependencies:
+  enforced:
+    module:
+      - cmlmigrations
+_core:
+  default_config_hash: JvEPkihgYVtscoXQ36zMRD_CxW219BPlSs8rZxs6cz4
+id: cml_product_variation
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: cml
+label: 'Product Variation'
+source:
+  plugin: cml_commerce_product_variation
+process:
+  type: type
+  title: title
+  sku: sku
+  status: status
+  product_uuid: product_uuid
+  price: price
+  field_stock: field_stock
+destination:
+  plugin: 'entity:commerce_product_variation'
+migration_dependencies:
+  required:
+    - cml_product_variation_attribute

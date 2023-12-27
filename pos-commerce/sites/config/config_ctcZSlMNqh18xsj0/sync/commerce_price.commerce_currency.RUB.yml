@@ -1,0 +1,11 @@
+uuid: 10581835-8ba5-41e9-ad2b-f583a9f15a7b
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: pEb1r1FqPRif-yVI7wgb0BT7R3kSyfvP6HBv8n8SNK4
+currencyCode: RUB
+name: 'российский рубль'
+numericCode: '643'
+symbol: ₽
+fractionDigits: 0

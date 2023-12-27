@@ -1,0 +1,8 @@
+_core:
+  default_config_hash: nl4Nq78tgaeZiqX3Nm6JxpBSI7nq0XB9jsoGttm9WbU
+langcode: ru
+default_form: feedback
+flood:
+  limit: 25
+  interval: 3600
+user_default_enabled: true

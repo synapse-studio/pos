@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: paragraph_text_slider_540x360
+label: 'Paragraph text_slider [540X360]'
+effects:
+  108c2a3d-4b50-456a-985c-841b8491a6ec:
+    uuid: 108c2a3d-4b50-456a-985c-841b8491a6ec
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 540
+      height: 360
+      crop_type: focal_point
+pipeline: ''

@@ -1,0 +1,58 @@
+uuid: 296875a6-7a6c-4690-9bb9-979b21acba42
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.type_service.field_type_service_image
+    - field.field.taxonomy_term.type_service.field_type_service_text
+    - image.style.thumbnail
+    - taxonomy.vocabulary.type_service
+  module:
+    - image
+_core:
+  default_config_hash: 3kqXKvRwc-9LKovcjcfIZkOwgr8Uegmh8a3_dBeV63g
+id: taxonomy_term.type_service.default
+targetEntityType: taxonomy_term
+bundle: type_service
+mode: default
+content:
+  field_type_service_image:
+    type: image_image
+    weight: 1
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_type_service_text:
+    type: string_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 100
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  tvi:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  description: true
+  langcode: true
+  path: true

@@ -1,0 +1,125 @@
+{{ attach_library('syncommerce/product') }}
+
+<div class="product-variation">
+  <product>
+    <div class="products-filter">
+      <div class="filters">
+        <div class="filters-item filters-vendor_code">
+          <label>Артикул</label>
+          <input type="text" v-model="filters.article" v-on:keyup="filterApply()"/>
+        </div>
+        <div class="filters-item filters-name">
+          <label>Товар</label>
+          <input type="text" v-model="filters.name" v-on:keyup="filterApply()"/>
+        </div>
+        <div class="filters-item filters-catalog">
+          <label>Каталог</label>
+          <input type="text" v-model="filters.catalog" v-on:keyup="filterApply()"/>
+        </div>
+        <div class="filters-item filters-status">
+          <label>Статус</label>
+          <input type="checkbox" v-model="filters.status" @change="filterApply()"/>
+        </div>
+        <div class="filters-item filters-page">
+          <div class="filters-page-item">
+            <label>Страница</label>
+            <input type="text" v-model="filters.page" v-on:keyup="filterApply()"/>
+          </div>
+          <div class="filters-page-item">
+            <label>Количество</label>
+            <input type="text" v-model="filters.max" v-on:keyup="filterApply()"/>
+          </div>
+        </div>
+      </div>
+      <div class="products-variations">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Опубликован</th>
+              <th>Наименование</th>
+              <th>Артикул</th>
+              <th>Каталог</th>
+              <th>Обновить</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <template class="products" v-for="(product, productId) in products">
+              <tr @click="toggleVariations(product)">
+                <td>
+                  <a :href="product.url">${ productId }</a>
+                </td>
+                <td><input type="checkbox" v-model="product.status"></td>
+                <td><input type="text" v-model="product.title"/></td>
+                <td><input type="text" v-model="product.article"/></td>
+                <td>
+                  <select v-model="product.catalog">
+                    <option v-for="(catalogName, id) in catalog" v-bind:value="id">
+                      ${ catalogName }
+                    </option>
+                  </select>
+                </td>
+                <td>
+                  <button class="btn btn--main" @click="saveProduct(productId)">Обновить товар</button>
+                  <div class="syncommerce-save">${ product.info }</div>
+                </td>
+                <td>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" class="variations-toggler" :class="product.viewVariation ? 'opened' : ''">
+                    <polygon points="7.293 4.707 14.586 12 7.293 19.293 8.707 20.707 17.414 12 8.707 3.293 7.293 4.707"/>
+                  </svg>
+                </td>
+              </tr>
+              <tr v-show="product.viewVariation">
+                <td colspan="6">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>ID</th>
+                        <th>Опубликована</th>
+                        <th>Атрибуты</th>
+                        <th>Цена</th>
+                        <th>Старая Цена</th>
+                        <th>Количество</th>
+                        <th>Обновить</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <template class="variations" v-for="(variation, variationId) in product.variations">
+                        <tr>
+                          <td>
+                            ${ variationId }
+                          </td>
+                          <td><input type="checkbox" v-model="variation.status"></td>
+                          <td>
+                            <div class="products-attributes" v-for="(attribute, attributeId) in attributes">
+                              ${ attribute.label} :
+                              <select v-model="variation.attributes[attributeId].id">
+                                <option v-for="(attributeValue, valueId) in attribute.values" v-bind:value="valueId">
+                                  ${ attributeValue.name }
+                                </option>
+                              </select>
+                            </div>
+                          </td>
+                          <td><input type="text" v-model="variation.price_number"/>
+                            ${ variation.price_code }</td>
+                          <td><input type="text" v-model="variation.old_price"/>
+                            ${ variation.price_code }</td>
+                          <td><input type="text" v-model="variation.stock"/></td>
+                          <td>
+                            <button class="btn btn--main" @click="saveVariation(productId, variationId)">Обновить вариант</button>
+                            <div class="syncommerce-save">${ variation.info }</div>
+                          </td>
+                        </tr>
+                      </template>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+          </tbody>
+        </template>
+      </tbody>
+    </table>
+  </div>
+</div></product></div>

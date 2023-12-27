@@ -1,0 +1,17 @@
+// Synapse visibility utilities
+
+// .h-md-up => @media (min-width: 768px) {display: none !important;}
+@each $bp in map-keys($grid-breakpoints) {
+  .h-#{$bp}-up,
+  .hidden-#{$bp}-up {
+    @include media-breakpoint-up($bp) {
+      display: none !important;
+    }
+  }
+  .h-#{$bp}-down,
+  .hidden-#{$bp}-down {
+    @include media-breakpoint-down($bp) {
+      display: none !important;
+    }
+  }
+}

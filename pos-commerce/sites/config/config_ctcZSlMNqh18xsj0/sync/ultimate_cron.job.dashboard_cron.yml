@@ -1,0 +1,17 @@
+uuid: 22f37c28-5e33-4de0-8332-99f633c15dd1
+langcode: ru
+status: true
+dependencies:
+  module:
+    - dashboard
+title: 'Default cron handler'
+id: dashboard_cron
+weight: 0
+module: dashboard
+callback: dashboard_cron
+scheduler:
+  id: simple
+launcher:
+  id: serial
+logger:
+  id: database

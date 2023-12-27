@@ -1,0 +1,35 @@
+uuid: e1304fde-4104-45eb-9e2c-74ec468fc049
+langcode: ru
+status: true
+dependencies:
+  enforced:
+    module:
+      - cmlmigrations
+_core:
+  default_config_hash: ckU34fi_JXdeODISTz237REENdlsIBthezqRME9Ntyw
+id: cml_taxonomy_stores
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: cml
+label: Магазины
+source:
+  plugin: cml_tx_stores
+process:
+  vid: vid
+  name: name
+  status: status
+  parent:
+    -
+      plugin: skip_on_empty
+      method: process
+      source: parent
+    -
+      plugin: migration_lookup
+      migration: cml_taxonomy_stores
+      source: parent
+  weight: weight
+destination:
+  plugin: 'entity:taxonomy_term'
+migration_dependencies: null

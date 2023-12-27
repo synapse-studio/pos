@@ -1,0 +1,21 @@
+uuid: 058c220e-073a-4779-ba3c-cd0fa8f6495f
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_product_features_widget
+    - paragraphs.paragraphs_type.product_features
+  module:
+    - options
+id: paragraph.product_features.field_product_features_widget
+field_name: field_product_features_widget
+entity_type: paragraph
+bundle: product_features
+label: 'Способ вывода'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

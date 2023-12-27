@@ -1,0 +1,24 @@
+uuid: 572fc160-c170-4f59-9f2b-a1c3bf5caf94
+langcode: ru
+status: true
+dependencies:
+  module:
+    - taxonomy
+_core:
+  default_config_hash: CI1YqpwHt4AbdZ1tTfcRJLKvkTFNk73c7_2y0ZJJAkU
+id: services_type
+label: 'Services type'
+type: 'canonical_entities:taxonomy_term'
+pattern: 'services/[term:name]'
+selection_criteria:
+  a67f7ed4-de0a-4de9-85dc-23d5b14c0d8d:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: a67f7ed4-de0a-4de9-85dc-23d5b14c0d8d
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      type_service: type_service
+selection_logic: and
+weight: -5
+relationships: {  }

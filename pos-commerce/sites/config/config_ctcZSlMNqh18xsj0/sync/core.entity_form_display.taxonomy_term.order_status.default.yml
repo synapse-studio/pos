@@ -1,0 +1,64 @@
+uuid: 09d9eaca-73d4-4e70-8bb3-c18d86dd78c2
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.order_status.field_hidden
+    - taxonomy.vocabulary.order_status
+  module:
+    - path
+    - text
+id: taxonomy_term.order_status.default
+targetEntityType: taxonomy_term
+bundle: order_status
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_hidden:
+    type: boolean_checkbox
+    weight: 1
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 3
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 5
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  tvi:
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

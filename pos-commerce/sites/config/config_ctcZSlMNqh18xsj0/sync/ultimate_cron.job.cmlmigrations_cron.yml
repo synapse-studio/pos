@@ -1,0 +1,17 @@
+uuid: 247b3ddb-1667-469b-a683-7908efabf2cc
+langcode: ru
+status: true
+dependencies:
+  module:
+    - cmlmigrations
+title: 'Default cron handler'
+id: cmlmigrations_cron
+weight: 0
+module: cmlmigrations
+callback: cmlmigrations_cron
+scheduler:
+  id: simple
+launcher:
+  id: serial
+logger:
+  id: database

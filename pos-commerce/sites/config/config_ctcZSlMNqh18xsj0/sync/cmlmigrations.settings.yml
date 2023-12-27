@@ -1,0 +1,12 @@
+_core:
+  default_config_hash: cgRHOdZ-1_gl8QGp7lSZLMXKKPLZZ2JCzGblyolW1xM
+vocabulary: catalog
+product: product
+variation: variation
+field_image: field_image
+timeout: '30'
+drush: /usr/local/bin/drush
+langcode: ru
+stores: null
+prices: 0
+timeout-quick-run: 60

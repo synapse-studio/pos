@@ -1,0 +1,29 @@
+uuid: 779aa75a-d723-4c7a-b1d7-bc6454f8f88f
+langcode: ru
+status: true
+dependencies:
+  enforced:
+    module:
+      - cmlmigrations
+_core:
+  default_config_hash: iA0wLq7JlvJkPDiphOt4hUKsMt0BQ9DCYc93wNNvXIk
+id: cml_scheme_product
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: cml_scheme
+label: 'Scheme Product'
+source:
+  plugin: cml_scheme_product
+process:
+  id: id
+  type: type
+  label: label
+  status: status
+  description: description
+  variationType: variationType
+  injectVariationFields: injectVariationFields
+destination:
+  plugin: 'entity:commerce_product_type'
+migration_dependencies: null

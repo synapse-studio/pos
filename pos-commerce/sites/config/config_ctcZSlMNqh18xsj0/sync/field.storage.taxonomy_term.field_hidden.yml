@@ -1,0 +1,18 @@
+uuid: a8d9f23a-e724-4aed-9b27-29dc978d75e6
+langcode: ru
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.field_hidden
+field_name: field_hidden
+entity_type: taxonomy_term
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

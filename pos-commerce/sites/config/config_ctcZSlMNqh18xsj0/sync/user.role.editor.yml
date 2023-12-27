@@ -1,0 +1,69 @@
+uuid: null
+langcode: ru
+status: true
+dependencies:
+  config:
+    - filter.format.wysiwyg
+    - media.type.file
+    - media.type.image
+  module:
+    - commerce
+    - commerce_order
+    - commerce_product
+    - commerce_store
+    - filter
+    - media
+    - system
+_core:
+  default_config_hash: TX44MiQGOKWz_uhd6q-4udUm1sYNwSNNY1okpcKz_Hw
+id: editor
+label: Редактор
+weight: 3
+is_admin: null
+permissions:
+  - 'access commerce administration pages'
+  - 'access commerce_order overview'
+  - 'access commerce_product overview'
+  - 'administer orders'
+  - 'create article content'
+  - 'create file media'
+  - 'create image content'
+  - 'create image media'
+  - 'create media'
+  - 'create pos commerce_order'
+  - 'create slide content'
+  - 'create usluga content'
+  - 'delete any article content'
+  - 'delete any file media'
+  - 'delete any image content'
+  - 'delete any image media'
+  - 'delete any media'
+  - 'delete any slide content'
+  - 'delete any usluga content'
+  - 'delete media'
+  - 'delete own file media'
+  - 'delete own image media'
+  - 'edit any article content'
+  - 'edit any file media'
+  - 'edit any image content'
+  - 'edit any image media'
+  - 'edit any slide content'
+  - 'edit any usluga content'
+  - 'edit own file media'
+  - 'edit own image media'
+  - 'update any media'
+  - 'update media'
+  - 'use text format wysiwyg'
+  - 'view any unpublished commerce_product'
+  - 'view commerce_order'
+  - 'view commerce_product'
+  - 'view commerce_product_attribute'
+  - 'view commerce_store'
+  - 'view default commerce_order'
+  - 'view default commerce_product'
+  - 'view media'
+  - 'view own commerce_order'
+  - 'view own unpublished media'
+  - 'view pos commerce_order'
+  - 'view product commerce_product'
+  - 'view the administration theme'

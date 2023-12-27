@@ -1,0 +1,7 @@
+_core:
+  default_config_hash: q-2Gi2L5aUlSdbigrePT6q67GZI772iyRjjzLwFd73k
+phpmail: 1
+from: 'POS <do-not-reply@s1dev.ru>'
+debug: 0
+langcode: ru
+reply: do-not-reply@s1dev.ru

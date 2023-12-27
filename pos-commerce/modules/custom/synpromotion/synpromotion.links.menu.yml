@@ -1,0 +1,6 @@
+synpromotion.settings:
+  title: Synpromotion settings
+  description: Configure synpromotion.
+  parent: system.admin_config_system
+  route_name: synpromotion.settings
+  weight: 100

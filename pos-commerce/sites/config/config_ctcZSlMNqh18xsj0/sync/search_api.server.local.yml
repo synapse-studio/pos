@@ -1,0 +1,17 @@
+uuid: a8d31290-de0e-4055-a08a-30854b0ec1b6
+langcode: ru
+status: true
+dependencies:
+  module:
+    - search_api_db
+_core:
+  default_config_hash: w7nkosKEkbRuUSpNaKTqJK-BvyRrdNgs3smb0JfqGQs
+id: local
+name: Local
+description: ''
+backend: search_api_db
+backend_config:
+  database: 'default:default'
+  min_chars: 3
+  matching: partial
+  phrase: disabled

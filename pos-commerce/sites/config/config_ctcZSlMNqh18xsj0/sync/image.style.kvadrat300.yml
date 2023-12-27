@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 2ugP-0CuIb8uqvdoqmxSLVmpetBA5P9h1My7IbyQ77A
+name: kvadrat300
+label: 'Square 300'
+effects:
+  604b6a76-24fd-4eba-8781-01c516db2b51:
+    uuid: 604b6a76-24fd-4eba-8781-01c516db2b51
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 300
+      height: 300
+      anchor: center-center

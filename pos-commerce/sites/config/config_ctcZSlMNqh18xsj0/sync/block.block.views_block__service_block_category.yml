@@ -1,0 +1,33 @@
+uuid: 12d0966e-4e86-49b3-a0b5-56d3b1f41ab6
+langcode: ru
+status: false
+dependencies:
+  config:
+    - views.view.service
+  module:
+    - system
+    - views
+  theme:
+    - adaptive
+_core:
+  default_config_hash: w2LaCi6XSi3Ady7J7ftbIrPrFIM864NO81eEbJVODiU
+id: views_block__service_block_category
+theme: adaptive
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:service-block_category'
+settings:
+  id: 'views_block:service-block_category'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '/services/*'

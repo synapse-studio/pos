@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: zI8uYurDa-_dmXUnxffa4atdmLDrePrTVPJsrADoaB0
+name: watermark
+label: Watermark
+effects:
+  ce717799-4d49-4e94-9515-b9f6bfe2d314:
+    uuid: ce717799-4d49-4e94-9515-b9f6bfe2d314
+    id: image_scale
+    weight: 2
+    data:
+      width: 1140
+      height: null
+      upscale: false

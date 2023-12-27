@@ -1,0 +1,5 @@
+_core:
+  default_config_hash: ZADSSda3nkuqPN7sF4MtD4oASerIjvSUaDdIjt3yWXQ
+langcode: ru
+login_with_username: false
+require_username_on_registration: false

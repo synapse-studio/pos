@@ -1,0 +1,39 @@
+uuid: c8b3bcd8-0fa6-4b8f-897c-626369361b33
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.catalog.field_catalog_image
+    - image.style.catalog_teaser
+    - taxonomy.vocabulary.catalog
+  module:
+    - image
+    - text
+_core:
+  default_config_hash: HM7ANz4p_XpecqDiNbk8BZcawAqIu8I7R7P9aRp9pvs
+id: taxonomy_term.catalog.default
+targetEntityType: taxonomy_term
+bundle: catalog
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_catalog_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: catalog_teaser
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

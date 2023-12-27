@@ -1,0 +1,24 @@
+uuid: 2d140315-d514-45de-bbd2-ba3b353508ba
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: so_N_643irraKnli75LjQt_vI70m4QctXnec9eBTVRM
+name: catalog_teaser_big
+label: 'Catalog teaser big [572x600]'
+effects:
+  e0358d8b-3708-44ef-b313-b1daa856dcd2:
+    uuid: e0358d8b-3708-44ef-b313-b1daa856dcd2
+    id: image_convert
+    weight: 1
+    data:
+      extension: jpg
+  48ebce9f-3560-4672-a244-80287173d000:
+    uuid: 48ebce9f-3560-4672-a244-80287173d000
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 572
+      height: 600
+      anchor: center-top
+pipeline: __default__

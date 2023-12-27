@@ -1,0 +1,13 @@
+uuid: 8ec3ecd1-89de-428b-8951-dbabec90cc14
+langcode: ru
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: nh83qNNrmWE-CDdHz2MdFOAk60T9mzv3R-MaKfZR2jw
+id: media_publish_action
+label: 'Публиковать медиа'
+type: media
+plugin: 'entity:publish_action:media'
+configuration: {  }

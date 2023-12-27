@@ -1,0 +1,15 @@
+uuid: 62fac1f9-5c1f-4dca-a320-2277cbd6c27e
+langcode: ru
+status: true
+dependencies:
+  module:
+    - commerce_order
+  enforced:
+    module:
+      - commerce_cart
+_core:
+  default_config_hash: BeqBf6Mm59Nebv4SsV0yvK5EspkCegPqvwnqwEBvEp0
+id: commerce_order_item.add_to_cart
+label: 'В корзину'
+targetEntityType: commerce_order_item
+cache: true

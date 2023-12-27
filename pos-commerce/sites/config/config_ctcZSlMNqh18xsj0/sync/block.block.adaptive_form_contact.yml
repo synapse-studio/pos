@@ -1,0 +1,34 @@
+uuid: a4b83c76-b196-4a87-9c76-d3b933d5da88
+langcode: ru
+status: true
+dependencies:
+  config:
+    - contact.form.contact
+  module:
+    - contact_block
+    - system
+  theme:
+    - adaptive
+_core:
+  default_config_hash: c99fX7lNsp_Fu1tj_NxehOzlXYU5LB-Do4Pxl8xLQJg
+id: adaptive_form_contact
+theme: adaptive
+region: content
+weight: 8
+provider: null
+plugin: contact_block
+settings:
+  id: contact_block
+  label: 'Свяжитесь с нами'
+  label_display: visible
+  provider: contact_block
+  contact_form: contact
+  form_display: default
+  contact_form_button_text: Send
+  remove_preview_button: 1
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /node/1

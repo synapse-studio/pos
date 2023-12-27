@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Exec=/home/synapse/reboot.sh
+Name=Reboot
+GenericName=Reboot
+Comment=Reboot kiosk
+Encoding=UTF-8
+Terminal=false
+Type=Application
+Icon=system-restart
+
+Categories=Application;Network;

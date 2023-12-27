@@ -1,0 +1,25 @@
+uuid: 79f949df-1463-499b-88ec-2ca2da5fb39c
+langcode: ru
+status: true
+dependencies:
+  enforced:
+    module:
+      - commerce_import
+_core:
+  default_config_hash: iu6NpdGxP9Tj-U0cehzj_9XQ1K74UzU0aptaH6Wn1DA
+id: commerce_product_attributes
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: commerce
+label: 'Product Attributes'
+source:
+  plugin: commerce_product_attributes
+process:
+  attribute: attribute
+  name: name
+  weight: weight
+destination:
+  plugin: 'entity:commerce_product_attribute_value'
+migration_dependencies: null

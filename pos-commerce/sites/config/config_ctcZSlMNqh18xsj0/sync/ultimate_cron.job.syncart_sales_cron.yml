@@ -1,0 +1,17 @@
+uuid: e5089d5d-c53b-4470-9718-f9f7746bc37c
+langcode: ru
+status: true
+dependencies:
+  module:
+    - syncart_sales
+title: 'Default cron handler'
+id: syncart_sales_cron
+weight: 0
+module: syncart_sales
+callback: syncart_sales_cron
+scheduler:
+  id: simple
+launcher:
+  id: serial
+logger:
+  id: database

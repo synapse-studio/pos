@@ -1,0 +1,49 @@
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.about.field_about_items
+    - field.field.paragraph.about.field_title
+    - paragraphs.paragraphs_type.about
+  module:
+    - maxlength
+    - paragraphs
+_core:
+  default_config_hash: yiZFo9Ythl5bBWqF8J9w-qtPoubn5Ht9MC-m6SrsxAU
+id: paragraph.about.default
+targetEntityType: paragraph
+bundle: about
+mode: default
+content:
+  field_about_items:
+    type: paragraphs
+    weight: 1
+    region: content
+    settings:
+      title: Параграфы
+      title_plural: Параграфы
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      maxlength:
+        maxlength_js: 100
+        maxlength_js_label: 'Содержание ограничено до @limit символов, осталось: <strong>@remaining</strong>'
+hidden:
+  created: true
+  status: true

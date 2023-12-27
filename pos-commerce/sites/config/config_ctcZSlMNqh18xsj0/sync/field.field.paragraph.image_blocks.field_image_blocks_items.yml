@@ -1,0 +1,51 @@
+uuid: 4c7033c9-b4cd-424d-90f3-ba35c3d744cb
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_image_blocks_items
+    - paragraphs.paragraphs_type.image_blocks
+    - paragraphs.paragraphs_type.image_text_sort
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: Gu9u_eirwUXMRa61PFft7ovCX76BQ9jYyr65LyZFxDM
+id: paragraph.image_blocks.field_image_blocks_items
+field_name: field_image_blocks_items
+entity_type: paragraph
+bundle: image_blocks
+label: Элементы
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      image_text_sort: image_text_sort
+    negate: 0
+    target_bundles_drag_drop:
+      about:
+        weight: 9
+        enabled: false
+      about_item:
+        weight: 10
+        enabled: false
+      body:
+        weight: 11
+        enabled: false
+      gallery:
+        weight: 12
+        enabled: false
+      image_blocks:
+        weight: 8
+        enabled: false
+      image_text:
+        weight: 13
+        enabled: false
+      image_text_sort:
+        weight: 14
+        enabled: true
+field_type: entity_reference_revisions

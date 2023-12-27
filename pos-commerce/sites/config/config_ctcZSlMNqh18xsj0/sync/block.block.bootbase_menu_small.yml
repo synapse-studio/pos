@@ -1,0 +1,27 @@
+uuid: 4ed39750-d0ab-4e87-b67c-e1ad6c0a8235
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - bootbase
+_core:
+  default_config_hash: BioI9BH3EAGRkK-CRHgnoLMIx6IHm99srRSjTWyi0AQ
+id: bootbase_menu_small
+theme: bootbase
+region: menu_small
+weight: -8
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

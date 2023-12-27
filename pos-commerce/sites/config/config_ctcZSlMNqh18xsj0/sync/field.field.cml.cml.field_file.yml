@@ -1,0 +1,29 @@
+uuid: 19e3cb77-5409-4af8-91ab-016b9e3d041d
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.cml.field_file
+  module:
+    - cmlapi
+    - file
+_core:
+  default_config_hash: p8k7cWDTmFGzVq8mSjgO1fyfXji-ROVQ6Gd6Q8wi264
+id: cml.cml.field_file
+field_name: field_file
+entity_type: cml
+bundle: cml
+label: 'Data file'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: 'fields/[date:custom:Y]'
+  file_extensions: 'xml zip log'
+  max_filesize: '95 MB'
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

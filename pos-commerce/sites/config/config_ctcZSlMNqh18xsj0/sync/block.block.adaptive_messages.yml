@@ -1,0 +1,22 @@
+uuid: 93a844ee-e190-44ec-95b3-1ddede1563bc
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - adaptive
+_core:
+  default_config_hash: sqe0C6Qr5KUDZfydSAUYywpBmtuo0vaBv1bPXwhUsiE
+id: adaptive_messages
+theme: adaptive
+region: messages
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Системные сообщения'
+  label_display: '0'
+  provider: system
+visibility: {  }

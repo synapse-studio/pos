@@ -1,0 +1,9 @@
+langcode: ru
+status: true
+dependencies: {  }
+id: image_text_sort
+label: 'Изображение + текст (с порядком)'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

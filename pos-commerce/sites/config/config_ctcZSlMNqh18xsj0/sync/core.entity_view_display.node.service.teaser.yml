@@ -1,0 +1,67 @@
+uuid: 681d0246-f306-4741-8a06-64139974d824
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.service.field_attach
+    - field.field.node.service.field_gallery
+    - field.field.node.service.field_image
+    - field.field.node.service.field_image_big
+    - field.field.node.service.field_metatag
+    - field.field.node.service.field_paragraph
+    - field.field.node.service.field_service_info
+    - field.field.node.service.field_short
+    - field.field.node.service.field_type_service
+    - image.style.service_teaser
+    - node.type.service
+  module:
+    - image
+    - media
+    - user
+_core:
+  default_config_hash: 18HKbTk-3n30v4m2hMyWs0xcMrzxlfv9WVJz6JM3PoY
+id: node.service.teaser
+targetEntityType: node
+bundle: service
+mode: teaser
+content:
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: service_teaser
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_image_big:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: content
+      image_style: service_teaser
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_short:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  field_attach: true
+  field_gallery: true
+  field_metatag: true
+  field_paragraph: true
+  field_service_info: true
+  field_type_service: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

@@ -1,0 +1,21 @@
+.product {
+  &-full {
+    .variations {
+      .variations-button {
+        &--full {
+          // display: flex;
+          // margin: 0 -10px;
+          .btn--cart {
+            min-width: 150px;
+          }
+        }
+      }
+      // .variations-quantity {
+      //   min-width: 150px;
+      // }
+      .variations-quantity-value {
+        height: 100%;
+      }
+    }
+  }
+}

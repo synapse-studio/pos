@@ -1,0 +1,21 @@
+uuid: 9ef4e2d9-57d9-462a-b4a5-eae99090a6a0
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description
+    - paragraphs.paragraphs_type.about_item
+_core:
+  default_config_hash: duy2HEkrCdCbG3E-LTQJ7ZfX_A3s1q4OKIL9QvGMVlU
+id: paragraph.about_item.field_description
+field_name: field_description
+entity_type: paragraph
+bundle: about_item
+label: Описание
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

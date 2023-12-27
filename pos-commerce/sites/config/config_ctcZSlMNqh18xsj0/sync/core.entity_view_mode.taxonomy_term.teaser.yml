@@ -1,0 +1,12 @@
+uuid: b2317aa1-6dcd-4e76-b1c4-0d2cae877ae7
+langcode: ru
+status: true
+dependencies:
+  module:
+    - taxonomy
+_core:
+  default_config_hash: WodctWuHt8DpC8UvdrKssHggX9oEDnH6Nsj0KiPYDzg
+id: taxonomy_term.teaser
+label: Анонс
+targetEntityType: taxonomy_term
+cache: true

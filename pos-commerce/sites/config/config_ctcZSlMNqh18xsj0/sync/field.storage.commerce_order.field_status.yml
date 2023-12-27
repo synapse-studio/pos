@@ -1,0 +1,22 @@
+uuid: 1c0a2ee1-225d-4eb3-acac-4a46763c4e8a
+langcode: ru
+status: true
+dependencies:
+  module:
+    - commerce_order
+    - taxonomy
+_core:
+  default_config_hash: nvZ6fKFF11xCmAtL5x-bMmRq5xznFdx7NTZq46cNhgg
+id: commerce_order.field_status
+field_name: field_status
+entity_type: commerce_order
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

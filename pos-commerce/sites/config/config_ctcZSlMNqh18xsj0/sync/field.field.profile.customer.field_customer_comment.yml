@@ -1,0 +1,21 @@
+uuid: 4bde5857-b794-4fb6-8c94-6cb74cfc2444
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_customer_comment
+    - profile.type.customer
+_core:
+  default_config_hash: TXBqeWpx3DgG1xi7qyUeOarZBTRU_tFiOWGoX9HnoXM
+id: profile.customer.field_customer_comment
+field_name: field_customer_comment
+entity_type: profile
+bundle: customer
+label: Комментарий
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

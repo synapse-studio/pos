@@ -1,0 +1,22 @@
+uuid: fdd30007-07af-49aa-887a-c76a0b4f1697
+langcode: ru
+status: true
+dependencies:
+  module:
+    - commerce_product
+_core:
+  default_config_hash: 4iOEr2NHHgs2VAYsVwBU1bS22AcaAQ_Ycpnypf2F60c
+id: commerce_product_variation.field_oldprice
+field_name: field_oldprice
+entity_type: commerce_product_variation
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

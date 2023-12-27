@@ -1,0 +1,18 @@
+uuid: 9c27ec63-0077-4f61-bf38-5b662a9fb955
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: heBZS3Hdm8vpASpd8LsuP8uTGwvkdbyojQxdP2Vsk1U
+name: brand_logo
+label: 'Brand Logo'
+effects:
+  7220fc0f-3966-4f37-9a18-e8b5e1b62589:
+    uuid: 7220fc0f-3966-4f37-9a18-e8b5e1b62589
+    id: image_scale
+    weight: 1
+    data:
+      width: 250
+      height: 120
+      upscale: false
+pipeline: ''

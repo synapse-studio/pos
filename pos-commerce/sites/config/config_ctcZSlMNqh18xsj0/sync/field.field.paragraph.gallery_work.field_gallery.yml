@@ -1,0 +1,37 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_gallery
+    - paragraphs.paragraphs_type.gallery_work
+  module:
+    - image
+id: paragraph.gallery_work.field_gallery
+field_name: field_gallery
+entity_type: paragraph
+bundle: gallery_work
+label: Галерея
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: 'fields-gallery/[date:custom:Y]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: '5 MB'
+  max_resolution: 2000x1300
+  min_resolution: 1x1
+  alt_field: true
+  alt_field_required: false
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

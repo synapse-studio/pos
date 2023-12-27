@@ -1,0 +1,23 @@
+uuid: b03b6122-d415-4b5c-87af-a96ce38c169c
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_product_feature_widget
+    - paragraphs.paragraphs_type.product_feature
+  module:
+    - options
+_core:
+  default_config_hash: ONIYIdr_gYPn5gQcDDC6JjR9fL-dJKh-o2XM7MVPnFw
+id: paragraph.product_feature.field_product_feature_widget
+field_name: field_product_feature_widget
+entity_type: paragraph
+bundle: product_feature
+label: Виджет
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

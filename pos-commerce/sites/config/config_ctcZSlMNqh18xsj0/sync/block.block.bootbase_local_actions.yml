@@ -1,0 +1,20 @@
+uuid: 702a440f-fdbc-434a-b5c6-8620855cd795
+langcode: en
+status: true
+dependencies:
+  theme:
+    - bootbase
+_core:
+  default_config_hash: OGCXKUqfpK7HBBcO_bqczbiYTciwjHCZqkPLpsh_4b0
+id: bootbase_local_actions
+theme: bootbase
+region: content
+weight: -4
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

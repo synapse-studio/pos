@@ -1,0 +1,21 @@
+uuid: 70b6a85b-4e11-4aa2-b759-c59518723736
+langcode: ru
+status: true
+dependencies:
+  module:
+    - commerce_order
+_core:
+  default_config_hash: TUBSuVoOBVG8xj1CsqI1bGjk0mg7FlFrLL4Hlflk21s
+id: commerce_order_item.field_json
+field_name: field_json
+entity_type: commerce_order_item
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

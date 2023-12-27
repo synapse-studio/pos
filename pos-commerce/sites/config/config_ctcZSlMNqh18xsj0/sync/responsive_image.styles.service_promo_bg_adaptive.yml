@@ -1,0 +1,26 @@
+uuid: b6f2e8ed-921d-4ca8-8137-16f2f7db05fb
+langcode: ru
+status: true
+dependencies:
+  config:
+    - image.style.servcie_bgimage
+    - image.style.service_promo_bg_325x256
+  theme:
+    - adaptive
+_core:
+  default_config_hash: s5SgXqbRfCaHhNlJNXHWxhPPNPEcgH_1PhucDmS3DBY
+id: service_promo_bg_adaptive
+label: 'Service promo bg adaptive'
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: servcie_bgimage
+    breakpoint_id: adaptive.wide
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: service_promo_bg_325x256
+    breakpoint_id: adaptive.mobile_small
+    multiplier: 1x
+breakpoint_group: adaptive
+fallback_image_style: servcie_bgimage

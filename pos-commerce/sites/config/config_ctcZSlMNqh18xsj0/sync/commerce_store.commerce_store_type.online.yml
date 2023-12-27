@@ -1,0 +1,11 @@
+uuid: ac0a678c-ec56-4c1a-8aa6-7d4c5e6b7c94
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: FGYrs0ZrjxSzRQMODyYqquV1UW5MN7S5wUG0Dp_OxWU
+id: online
+label: 'В сети'
+traits: {  }
+locked: false
+description: ''

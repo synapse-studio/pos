@@ -1,0 +1,20 @@
+uuid: 9d12b0f6-82b4-43b1-8d78-7d42561a214e
+langcode: ru
+status: true
+dependencies:
+  enforced:
+    module:
+      - responsive_image
+_core:
+  default_config_hash: MIWUEhKenWK-3vEZNN_FJwpmqggIZtfJ9LOLYryTqHI
+name: max_650x650
+label: 'Макс. 650x650'
+effects:
+  949c201a-77f5-48f6-ba00-be91eb1aad47:
+    uuid: 949c201a-77f5-48f6-ba00-be91eb1aad47
+    id: image_scale
+    weight: 1
+    data:
+      width: 650
+      height: 650
+      upscale: false

@@ -1,0 +1,16 @@
+_core:
+  default_config_hash: NJyna-JC52iMbwYVB3bA46KxF8BdqK9x7BhtjN-YpOA
+langcode: ru
+cache_strings: true
+translate_english: true
+javascript:
+  directory: languages
+translation:
+  use_source: remote_and_local
+  default_filename: '%project-%version.%language.po'
+  default_server_pattern: 'https://ftp.drupal.org/files/translations/%core/%project/%project-%version.%language.po'
+  overwrite_customized: true
+  overwrite_not_customized: true
+  update_interval_days: 7
+  path: sites/default/files/translations
+  import_enabled: true

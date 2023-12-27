@@ -1,0 +1,21 @@
+uuid: 963a75a0-b289-4e72-8d8f-11cb28547df2
+langcode: ru
+status: true
+dependencies:
+  config:
+    - contact.form.order
+    - field.storage.contact_message.field_name
+_core:
+  default_config_hash: Lhyek52O8ld3AtdeatHg-4-YDew2ixx2xRWE0a7NR1E
+id: contact_message.order.field_name
+field_name: field_name
+entity_type: contact_message
+bundle: order
+label: 'Ваше имя'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

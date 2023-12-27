@@ -1,0 +1,27 @@
+uuid: ccef5a5c-4a94-4478-8c19-7b95da00f008
+langcode: ru
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_product_features_widget
+field_name: field_product_features_widget
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: select
+      label: 'Выпадающий список'
+    -
+      value: checkboxes
+      label: Чекбоксы
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

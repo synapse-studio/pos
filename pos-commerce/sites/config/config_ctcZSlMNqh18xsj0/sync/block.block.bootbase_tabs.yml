@@ -1,0 +1,22 @@
+uuid: 1abd0f06-9abf-41c8-8ba1-bf7b422ed0f4
+langcode: en
+status: true
+dependencies:
+  theme:
+    - bootbase
+_core:
+  default_config_hash: twTWqNwwZNIIYdoAiOfkrE5FxlfHzIle99KB-WTlQ0k
+id: bootbase_tabs
+theme: bootbase
+region: tabs
+weight: -6
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

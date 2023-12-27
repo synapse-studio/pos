@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: about_item_325x250
+label: 'About item [325x250]'
+effects:
+  56830d1c-489f-4679-872f-137ef78a1e64:
+    uuid: 56830d1c-489f-4679-872f-137ef78a1e64
+    id: focal_point_scale_and_crop
+    weight: 2
+    data:
+      width: 325
+      height: 250
+      crop_type: focal_point
+pipeline: ''

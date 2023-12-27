@@ -1,0 +1,28 @@
+uuid: 2a7ba1e1-0aa2-47c4-b497-cd3eeed000f1
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.description
+    - field.field.taxonomy_term.catalog.field_catalog_image
+    - taxonomy.vocabulary.catalog
+  module:
+    - text
+_core:
+  default_config_hash: GAJXRdfJXcSckUPcAt1sqJckCJm3KHePBr_PZDvIbUI
+id: taxonomy_term.catalog.description
+targetEntityType: taxonomy_term
+bundle: catalog
+mode: description
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_catalog_image: true
+  langcode: true
+  search_api_excerpt: true

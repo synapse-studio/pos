@@ -1,0 +1,4 @@
+name: dashboard
+type: module
+description: dashboard.
+core_version_requirement: ^8.8 || ^9

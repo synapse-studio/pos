@@ -1,0 +1,35 @@
+uuid: 2f3f8b49-8a84-46ba-be74-9333381b7713
+langcode: ru
+status: true
+dependencies:
+  config:
+    - commerce_order.commerce_order_type.default
+    - field.storage.commerce_order.field_status
+    - taxonomy.vocabulary.order_status
+  content:
+    - 'taxonomy_term:order_status:559fe875-a597-45e6-b988-5f10956ee316'
+_core:
+  default_config_hash: oAtSQ0voB2A4mOVsLK3M4s6__lb3fXipoWzXGAQy3xU
+id: commerce_order.default.field_status
+field_name: field_status
+entity_type: commerce_order
+bundle: default
+label: Статус
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: 559fe875-a597-45e6-b988-5f10956ee316
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      order_status: order_status
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

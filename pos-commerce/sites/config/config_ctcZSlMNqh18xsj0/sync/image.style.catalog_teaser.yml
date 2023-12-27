@@ -1,0 +1,18 @@
+uuid: 583f7b51-78fa-47f6-85f7-abd62056d0d2
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: NKQTmFvRqrm4Hl0-bf3I4AUhhmN-FJ-jPJHnqYo_6d8
+name: catalog_teaser
+label: 'Catalog teaser [286x300]'
+effects:
+  dcecb79f-f7c1-41ec-a93b-1a68097905a7:
+    uuid: dcecb79f-f7c1-41ec-a93b-1a68097905a7
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 286
+      height: 300
+      anchor: center-top
+pipeline: __default__

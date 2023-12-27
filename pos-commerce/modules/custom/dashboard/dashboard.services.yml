@@ -1,0 +1,11 @@
+services:
+  plugin.manager.dashboard_static:
+    class: Drupal\dashboard\PluginManager\StaticDashboardPluginManager
+    parent: default_plugin_manager
+  plugin.manager.dashboard_dinamic:
+    class: Drupal\dashboard\PluginManager\DinamicDashboardPluginManager
+    parent: default_plugin_manager
+  dashboard.time:
+    class: Drupal\dashboard\Service\DashboardTime
+  dashboard.access:
+    class: Drupal\dashboard\Service\DashboardAccess

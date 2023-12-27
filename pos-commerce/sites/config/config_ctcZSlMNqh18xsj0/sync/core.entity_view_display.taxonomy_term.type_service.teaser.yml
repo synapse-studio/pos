@@ -1,0 +1,41 @@
+uuid: 0530a83a-4c8d-4081-ada8-07b177f8cec7
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.teaser
+    - field.field.taxonomy_term.type_service.field_type_service_image
+    - field.field.taxonomy_term.type_service.field_type_service_text
+    - image.style.service_teaser
+    - taxonomy.vocabulary.type_service
+  module:
+    - image
+_core:
+  default_config_hash: eluJfDM_gSmbtmnpzfxARaBrv7RK7iXfyUg9SihyUvQ
+id: taxonomy_term.type_service.teaser
+targetEntityType: taxonomy_term
+bundle: type_service
+mode: teaser
+content:
+  field_type_service_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: service_teaser
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_type_service_text:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  description: true
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,21 @@
+uuid: 22995c33-bc03-46f6-ba42-b33bc352b811
+langcode: ru
+status: true
+dependencies:
+  config:
+    - contact.form.contact
+    - field.storage.contact_message.field_email
+_core:
+  default_config_hash: t9twOjXrg3ZhTfbrA7yVtfMsk45zf_UndjK4QsLZiic
+id: contact_message.contact.field_email
+field_name: field_email
+entity_type: contact_message
+bundle: contact
+label: E-mail
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

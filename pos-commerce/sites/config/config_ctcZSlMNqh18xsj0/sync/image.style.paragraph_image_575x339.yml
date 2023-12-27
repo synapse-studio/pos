@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: paragraph_image_575x339
+label: 'Paragraph-image max.[575x339]'
+effects:
+  f876ff86-5c12-40a8-af24-6374de789aac:
+    uuid: f876ff86-5c12-40a8-af24-6374de789aac
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 575
+      height: 339
+      crop_type: focal_point
+pipeline: ''

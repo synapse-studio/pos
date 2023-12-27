@@ -1,0 +1,5 @@
+# Managed with Composer.
+vendor
+composer.lock
+composer-setup.php
+.env

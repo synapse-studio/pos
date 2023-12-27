@@ -1,0 +1,17 @@
+uuid: 6b02eb7e-ea82-4337-b0f9-6cfd4661c660
+langcode: ru
+status: true
+dependencies:
+  module:
+    - cmlapi
+title: 'Default cron handler'
+id: cmlapi_cron
+weight: 0
+module: cmlapi
+callback: cmlapi_cron
+scheduler:
+  id: simple
+launcher:
+  id: serial
+logger:
+  id: database

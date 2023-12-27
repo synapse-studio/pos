@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.about_item_325x250
+    - image.style.about_item_375x285
+  theme:
+    - adaptive
+id: about_item_adaptive
+label: 'About item adaptive'
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: about_item_375x285
+    breakpoint_id: adaptive.wide
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: about_item_325x250
+    breakpoint_id: adaptive.mobile_small
+    multiplier: 1x
+breakpoint_group: adaptive
+fallback_image_style: about_item_375x285

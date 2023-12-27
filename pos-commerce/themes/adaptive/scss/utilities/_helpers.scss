@@ -1,0 +1,19 @@
+.element-hidden,
+.hidden {
+  display: none;
+}
+#synapse-custom-ajax-cover {
+  visibility: hidden;
+  position: absolute;
+  pointer-events: none;
+  bottom: 0;
+  width: 0;
+  height: 0;
+}
+
+// Fz152/Gdpr Form Fix
+.form-item-gdpr-warning {
+  .description {
+    display: inline-block;
+  }
+}

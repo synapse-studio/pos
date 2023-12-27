@@ -1,0 +1,72 @@
+@import 'header/index';
+.header {
+  flex-shrink: 0;
+  color: $color-text-header;
+  background: $color-bg-header;
+  &-logo {
+    img {
+      height: 40px;
+    }
+    &--small img {
+      height: 2.4rem;
+    }
+  }
+  &-phone {
+    .btn {
+      margin-left: 15px;
+    }
+  }
+  &-full {
+    padding: 15px 0;
+    .nav {
+      a {
+        color: $color-link-menu;
+      }
+    }
+    li {
+      padding: 0 1em;
+    }
+  }
+  &-small {
+    padding: 10px 0;
+  }
+  &-info {
+    border-bottom: 1px solid $color-bg-blocks;
+  }
+  a {
+    color: $color-text-header;
+  }
+  &-nav {
+    &-content {
+      &-phone {
+        display: none;
+        .header--fixed & {
+          display: inherit;
+        }
+      }
+    }
+  }
+}
+.small-menu {
+  padding: 10px 0 20px;
+  border-top: solid 1px $color-bg-blocks;
+  ul {
+    display: flex;
+    font-size: 21px;
+    font-weight: 600;
+    margin: 0 -10px;
+    flex-direction: column;
+  }
+  a {
+    display: block;
+    padding: 15px 10px;
+    text-align: right;
+    transition: color $duration, background-color $duration;
+    &:hover {
+      color: $color-bg-blocks;
+    }
+    &:active {
+      background-color: rgba($color-bg-blocks, .07);
+    }
+  }
+}

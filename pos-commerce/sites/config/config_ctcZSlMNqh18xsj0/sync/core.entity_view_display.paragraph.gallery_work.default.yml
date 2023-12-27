@@ -1,0 +1,48 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.gallery_work.field_body
+    - field.field.paragraph.gallery_work.field_gallery
+    - field.field.paragraph.gallery_work.field_title
+    - image.style.max_1300x1300
+    - image.style.paragraph_gallery_work_364x276
+    - paragraphs.paragraphs_type.gallery_work
+  module:
+    - colorbox
+    - text
+id: paragraph.gallery_work.default
+targetEntityType: paragraph
+bundle: gallery_work
+mode: default
+content:
+  field_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_gallery:
+    type: colorbox
+    label: hidden
+    settings:
+      colorbox_node_style: paragraph_gallery_work_364x276
+      colorbox_node_style_first: ''
+      colorbox_image_style: max_1300x1300
+      colorbox_gallery: post
+      colorbox_gallery_custom: ''
+      colorbox_caption: auto
+      colorbox_caption_custom: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

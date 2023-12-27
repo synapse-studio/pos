@@ -1,0 +1,25 @@
+uuid: 6e46c013-2a37-45e7-b9c6-c214db03635f
+langcode: ru
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.variation
+    - field.storage.commerce_product_variation.field_stock
+_core:
+  default_config_hash: mRMHTMNuFlcZ6AnTNBnDgW9DknQqO_igfVBHEMEP1gM
+id: commerce_product_variation.variation.field_stock
+field_name: field_stock
+entity_type: commerce_product_variation
+bundle: variation
+label: Склад
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

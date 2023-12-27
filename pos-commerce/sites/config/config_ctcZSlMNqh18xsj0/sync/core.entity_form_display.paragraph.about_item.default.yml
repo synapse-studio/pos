@@ -1,0 +1,63 @@
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.about_item.field_about_icon
+    - field.field.paragraph.about_item.field_description
+    - field.field.paragraph.about_item.field_image
+    - field.field.paragraph.about_item.field_title
+    - image.style.media_library
+    - paragraphs.paragraphs_type.about_item
+  module:
+    - focal_point
+    - maxlength
+id: paragraph.about_item.default
+targetEntityType: paragraph
+bundle: about_item
+mode: default
+content:
+  field_about_icon:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_description:
+    type: string_textarea
+    weight: 3
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      maxlength:
+        maxlength_js: 200
+        maxlength_js_label: 'Содержание ограничено до @limit символов, осталось: <strong>@remaining</strong>'
+        maxlength_js_enforce: true
+        maxlength_js_truncate_html: true
+  field_image:
+    type: image_focal_point
+    weight: 1
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: media_library
+      preview_link: true
+      offsets: '50,50'
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      maxlength:
+        maxlength_js: 100
+        maxlength_js_label: 'Содержание ограничено до @limit символов, осталось: <strong>@remaining</strong>'
+hidden:
+  created: true
+  status: true

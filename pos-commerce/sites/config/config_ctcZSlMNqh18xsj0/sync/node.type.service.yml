@@ -1,0 +1,18 @@
+langcode: ru
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+_core:
+  default_config_hash: rgZR8ShvINTQAM93aY8s8FjYIR5M-GQQTwl04AYWuOw
+name: Услуга
+type: service
+description: ''
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

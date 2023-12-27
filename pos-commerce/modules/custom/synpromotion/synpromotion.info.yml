@@ -1,0 +1,8 @@
+name: synpromotion
+type: module
+description: The description.
+package: 'Synapse'
+core: 8.x
+core_version_requirement: ^8 || ^9
+dependencies:
+  - commerce:commerce_promotion

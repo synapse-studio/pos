@@ -1,0 +1,70 @@
+uuid: 0a74b98d-532b-43ef-b82f-0eb565c68b26
+langcode: ru
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.syspage.body
+    - field.field.node.syspage.field_image
+    - field.field.node.syspage.field_metatag
+    - field.field.node.syspage.field_paragraph
+    - field.field.node.syspage.field_short
+    - node.type.syspage
+  module:
+    - entity_reference_revisions
+    - image
+    - metatag
+    - text
+    - user
+_core:
+  default_config_hash: zwOCJEpvGOl13fNY0bfNpxwoxscx-o26yAezf9FbzL8
+id: node.syspage.full
+targetEntityType: node
+bundle: syspage
+mode: full
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_metatag:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_paragraph:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_short:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  langcode: true
+  links: true
+  search_api_excerpt: true

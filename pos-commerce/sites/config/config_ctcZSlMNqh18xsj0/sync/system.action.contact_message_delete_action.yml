@@ -1,0 +1,16 @@
+uuid: 3645ab6f-db08-4a39-aa10-53a87431c618
+langcode: ru
+status: true
+dependencies:
+  module:
+    - contact
+  enforced:
+    module:
+      - contact_storage
+_core:
+  default_config_hash: ugOcAZ_g8S26-iGCjTlbSpuxDahvhMV5FYi0jNsn1rk
+id: contact_message_delete_action
+label: 'Удалить контактное сообщение'
+type: contact_message
+plugin: 'entity:delete_action:contact_message'
+configuration: {  }

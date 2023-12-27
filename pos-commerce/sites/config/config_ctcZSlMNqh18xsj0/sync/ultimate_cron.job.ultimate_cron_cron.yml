@@ -1,0 +1,15 @@
+uuid: 9087ff23-93e4-4aee-9b6f-2a0cede9f2fe
+langcode: ru
+status: true
+dependencies: {  }
+title: 'Runs internal cleanup operations'
+id: ultimate_cron_cron
+weight: 0
+module: ultimate_cron
+callback: ultimate_cron_cron
+scheduler:
+  id: simple
+launcher:
+  id: serial
+logger:
+  id: database

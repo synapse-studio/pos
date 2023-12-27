@@ -1,0 +1,33 @@
+uuid: 8b7743b2-4f1d-498b-8c9d-746d582a7b9d
+langcode: ru
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.product
+    - field.storage.commerce_product.field_paragraph
+    - paragraphs.paragraphs_type.product_param
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: aN6jv34ymOyaUvCjW_fCk-Mhpp-s6JztvRLTJ8jg0W8
+id: commerce_product.product.field_paragraph
+field_name: field_paragraph
+entity_type: commerce_product
+bundle: product
+label: Параметры
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      product_param: product_param
+    negate: 0
+    target_bundles_drag_drop:
+      product_param:
+        weight: 2
+        enabled: true
+field_type: entity_reference_revisions

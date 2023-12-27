@@ -1,0 +1,31 @@
+uuid: 3ffedad6-32dc-4896-9a87-16358c174b21
+langcode: ru
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.product
+    - field.storage.commerce_product.field_tx_options
+    - taxonomy.vocabulary.product_options
+_core:
+  default_config_hash: O4KIilY-eirjtOqZkI1AdR71-3c5pY0M7oxcQ7sFIKc
+id: commerce_product.product.field_tx_options
+field_name: field_tx_options
+entity_type: commerce_product
+bundle: product
+label: Настройки
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      product_options: product_options
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

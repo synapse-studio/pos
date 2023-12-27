@@ -1,0 +1,21 @@
+uuid: 80a27273-8be9-4667-a583-cec29649adbb
+langcode: ru
+status: true
+dependencies:
+  config:
+    - contact.form.order
+    - field.storage.contact_message.field_order_item
+_core:
+  default_config_hash: Ccg2sNM3OTsXLAnwnB5qT4R1lMbKB-wI5qTTecji-xs
+id: contact_message.order.field_order_item
+field_name: field_order_item
+entity_type: contact_message
+bundle: order
+label: 'Позиция заказа'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

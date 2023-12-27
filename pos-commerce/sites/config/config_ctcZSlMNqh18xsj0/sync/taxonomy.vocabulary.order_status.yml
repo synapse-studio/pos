@@ -1,0 +1,10 @@
+uuid: 3838dc9d-ceec-492a-945a-5101dc8b839f
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Jn_-f7k8s-TTuE4ZfMMPurWlCeuGrz61g1uXKKa3QZE
+name: 'Статус заказа'
+vid: order_status
+description: ''
+weight: 0

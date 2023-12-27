@@ -1,0 +1,19 @@
+uuid: 8f900262-ae9b-441e-bf5f-7869618f355b
+langcode: ru
+status: false
+dependencies: {  }
+id: synpay_cash
+label: synpay-cash
+weight: null
+plugin: manual
+configuration:
+  display_label: 'Наличные 2'
+  mode: n/a
+  payment_method_types:
+    - credit_card
+  collect_billing_information: true
+  instructions:
+    value: ''
+    format: plain_text
+conditions: {  }
+conditionOperator: AND

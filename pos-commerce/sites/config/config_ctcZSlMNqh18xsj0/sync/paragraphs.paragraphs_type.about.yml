@@ -1,0 +1,12 @@
+uuid: c7bb9a0c-e1e3-4545-bb6e-f8a42b1f72b0
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 1UzFPR7CQunM_A9XTNfwVPIdAZRDWxLe1O1A_6XcSvo
+id: about
+label: Информация
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

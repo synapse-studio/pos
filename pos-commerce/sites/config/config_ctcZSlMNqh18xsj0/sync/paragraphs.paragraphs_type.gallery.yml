@@ -1,0 +1,11 @@
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 2W-QTe_2FmmzLHdHLO6rrNH4qHRVa7_0RLHVrmdxx0k
+id: gallery
+label: Галерея
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

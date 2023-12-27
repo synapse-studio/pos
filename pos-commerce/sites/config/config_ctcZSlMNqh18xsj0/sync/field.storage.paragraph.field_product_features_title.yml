@@ -1,0 +1,21 @@
+uuid: c45febd7-bc1b-48ad-a0e6-35c906d433d2
+langcode: ru
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_product_features_title
+field_name: field_product_features_title
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

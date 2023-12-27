@@ -1,0 +1,57 @@
+uuid: 964bebe0-57d8-458e-ad3e-bff97a30006d
+langcode: ru
+status: true
+dependencies:
+  config:
+    - filter.format.wysiwyg
+  module:
+    - ckeditor
+_core:
+  default_config_hash: Zkm0dvXEdMZsAkpZyizcXq_CPUAUYVHO_4-lhiLrow0
+format: wysiwyg
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Formatting
+          items:
+            - Bold
+            - Italic
+            - Underline
+            - JustifyRight
+            - JustifyCenter
+            - JustifyLeft
+            - JustifyBlock
+            - RemoveFormat
+            - Format
+        -
+          name: Linking
+          items:
+            - DrupalLink
+            - DrupalUnlink
+        -
+          name: Lists
+          items:
+            - BulletedList
+            - NumberedList
+        -
+          name: Media
+          items:
+            - Blockquote
+            - DrupalImage
+        -
+          name: Tools
+          items:
+            - Source
+            - Table
+  plugins: {  }
+image_upload:
+  status: true
+  scheme: public
+  directory: inline-images
+  max_size: '20 Mb'
+  max_dimensions:
+    width: 1900
+    height: 2000

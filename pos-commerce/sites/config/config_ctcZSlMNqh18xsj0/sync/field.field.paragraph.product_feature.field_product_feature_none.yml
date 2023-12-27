@@ -1,0 +1,21 @@
+uuid: d116f43e-818b-4a76-b077-8fd8d54c7eba
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_product_feature_none
+    - paragraphs.paragraphs_type.product_feature
+_core:
+  default_config_hash: Rg9DefqoFVQpA7JmpcxrRuADPr9LJBGRnrRUoO2VkO8
+id: paragraph.product_feature.field_product_feature_none
+field_name: field_product_feature_none
+entity_type: paragraph
+bundle: product_feature
+label: 'Текст для варианта "Ничего не выбрано"'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

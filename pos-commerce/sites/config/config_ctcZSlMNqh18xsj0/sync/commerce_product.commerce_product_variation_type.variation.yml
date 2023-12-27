@@ -1,0 +1,13 @@
+uuid: null
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: tp6gqA1orX9QhSKH6Ktcg-Lq_kHAUliVVFBnGBaAOLA
+id: variation
+label: 'Product Variations'
+traits:
+  - purchasable_entity_shippable
+locked: false
+orderItemType: default
+generateTitle: true

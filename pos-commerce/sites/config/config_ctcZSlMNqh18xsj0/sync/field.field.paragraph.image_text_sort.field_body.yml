@@ -1,0 +1,23 @@
+uuid: 6cd2122e-f5af-48fd-ab73-643386eb7d65
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_body
+    - paragraphs.paragraphs_type.image_text_sort
+  module:
+    - text
+_core:
+  default_config_hash: KmOsAtPE1duk6FW6EZ7yIS0PIYjTGvuynDLYNCT7dGM
+id: paragraph.image_text_sort.field_body
+field_name: field_body
+entity_type: paragraph
+bundle: image_text_sort
+label: Описание
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

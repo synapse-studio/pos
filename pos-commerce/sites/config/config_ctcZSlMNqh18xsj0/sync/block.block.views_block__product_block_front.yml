@@ -1,0 +1,32 @@
+uuid: 1284a5e0-b754-475c-9b64-7d817e86039c
+langcode: ru
+status: true
+dependencies:
+  config:
+    - views.view.product
+  module:
+    - system
+    - views
+  theme:
+    - adaptive
+_core:
+  default_config_hash: atcI3ODuwUgIAnNxR_14Cyz4oAT3PLSTVd2zGiLgcng
+id: views_block__product_block_front
+theme: adaptive
+region: content
+weight: -4
+provider: null
+plugin: 'views_block:product-block_front'
+settings:
+  id: 'views_block:product-block_front'
+  label: Товары
+  label_display: visible
+  provider: views
+  views_label: Товары
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '<front>'

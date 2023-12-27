@@ -1,0 +1,13 @@
+_core:
+  default_config_hash: y2LyVni2uXnlCm8KG1jOaDtvc-IRNX4XMZ876P5NefI
+langcode: ru
+name: Pos-commerce
+mail: mail@synapse-studio.ru
+slogan: ''
+page:
+  403: /403
+  404: /404
+  front: /node/5
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: ru

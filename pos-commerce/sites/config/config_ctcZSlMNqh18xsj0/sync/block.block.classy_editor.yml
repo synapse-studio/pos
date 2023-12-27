@@ -1,0 +1,36 @@
+uuid: 147f940e-39fb-43ef-9853-134b6c86510a
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.editor
+  module:
+    - system
+    - user
+  theme:
+    - classy
+_core:
+  default_config_hash: ZdmiDfpxRVdqL7IPy5eU8oIlStDOJjQ8zrpGq_aqGqg
+id: classy_editor
+theme: classy
+region: sidebar_first
+weight: -5
+provider: null
+plugin: 'system_menu_block:editor'
+settings:
+  id: 'system_menu_block:editor'
+  label: Navigation
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      administrator: administrator
+      editor: editor

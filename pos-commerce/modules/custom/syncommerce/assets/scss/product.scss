@@ -1,0 +1,75 @@
+.page-syncommerce-products {
+  .region-content {
+    max-width: 100%;
+  }
+}
+
+.products-filter {
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    &-item:not(.filters-page) {
+      margin-right: 30px;
+      margin-bottom: 15px;
+
+      label {
+        margin-right: 5px;
+      }
+    }
+
+    &-page {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+
+      &-item {
+        margin-right: 30px;
+        margin-bottom: 15px;
+
+        label {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}
+
+.variations-toggler {
+  transition: transform 0.4s;
+
+  &.opened {
+    transform: rotate(90deg);
+  }
+}
+
+@media (max-width: 1200px) {
+  .products-filter {
+    .products-variations {
+      table {
+        display: block;
+        overflow: scroll;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .products-filter {
+    .filters {
+      flex-direction: column;
+      align-items: flex-start;
+
+      &-item {
+        margin-right: 0;
+      }
+
+      &-page {
+        &-item {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

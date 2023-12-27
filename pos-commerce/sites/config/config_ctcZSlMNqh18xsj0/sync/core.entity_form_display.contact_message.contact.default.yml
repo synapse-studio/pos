@@ -1,0 +1,49 @@
+uuid: 274bbadb-789b-4448-a7d1-6024112f303e
+langcode: ru
+status: true
+dependencies:
+  config:
+    - contact.form.contact
+    - field.field.contact_message.contact.field_details
+    - field.field.contact_message.contact.field_email
+    - field.field.contact_message.contact.field_name
+_core:
+  default_config_hash: YI_uwgP7_MY_bXDjeEFRrMuUlWceEs2q1P7AhHSYGZQ
+id: contact_message.contact.default
+targetEntityType: contact_message
+bundle: contact
+mode: default
+content:
+  field_details:
+    type: string_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+    third_party_settings: {  }
+  field_email:
+    type: email_default
+    weight: 1
+    region: content
+    settings:
+      size: 20
+    third_party_settings: {  }
+  field_name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+    third_party_settings: {  }
+  preview:
+    weight: 50
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  copy: true
+  langcode: true
+  mail: true
+  message: true
+  name: true
+  subject: true

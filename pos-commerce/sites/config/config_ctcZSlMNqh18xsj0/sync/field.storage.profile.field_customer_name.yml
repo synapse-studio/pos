@@ -1,0 +1,23 @@
+uuid: 33d3aae6-a3ee-4630-9302-4ebe1d12b679
+langcode: ru
+status: true
+dependencies:
+  module:
+    - profile
+_core:
+  default_config_hash: 6EwnGBC6mOl90M1owu-86dj56RZrl5c9XD-q7oAZ2ko
+id: profile.field_customer_name
+field_name: field_customer_name
+entity_type: profile
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

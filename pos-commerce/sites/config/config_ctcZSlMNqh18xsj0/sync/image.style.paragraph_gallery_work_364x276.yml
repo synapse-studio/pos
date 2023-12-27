@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: paragraph_gallery_work_364x276
+label: 'Paragraph gallery-work [364x276]'
+effects:
+  d9c3442c-2769-412c-9837-27dfd7c6e724:
+    uuid: d9c3442c-2769-412c-9837-27dfd7c6e724
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 364
+      height: 276
+      anchor: center-center

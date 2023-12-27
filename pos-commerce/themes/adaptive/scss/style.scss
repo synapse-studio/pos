@@ -1,0 +1,108 @@
+@import 'colors', 'mixins/index';
+
+/* FONTS */
+$font-family-main: 'Open Sans', Helvetica, Arial, sans-serif;
+
+/* EXTRA COLORS */
+$color-border: #ccc;
+$color-togglers: $color-button1;
+$color-togglers-bars: #FFFFFF;
+
+/* LAYOUT */
+body {
+  color: $color-text-main;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: $font-family-main;
+  background-color: $color-bg;
+  &.cke_editable {
+    color: $black;
+    background-color: $white;
+  }
+}
+/* HEADERS */
+// hX, font-size
+$headers: (
+  ('h1', 2.25rem),
+  ('h2', 1.7rem),
+  ('h3', 1.6rem),
+  ('h4', 1.5rem),
+  ('h5', 1.25rem),
+  ('h6', 1.00rem),
+);
+@each $h in $headers {
+  #{nth($h,1)} {
+    font-size: #{nth($h,2)};
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+}
+a {
+  color: $color-link;
+  transition: color $duration;
+  .main-menu & {
+    color: $color-link-menu;
+    &:hover {
+      color: $color-link-menu-hover;
+    }
+  }
+  &:hover {
+    color: lighten($color-link, 15%);
+    text-decoration: none;
+  }
+  &:active {
+    color: lighten($color-link, 15%);
+  }
+  &:focus {
+    outline: none;
+  }
+}
+b,
+strong {
+  font-weight: 600;
+}
+blockquote {
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  border-left: 0.25rem solid #eceeef;
+}
+button:focus {
+  outline: none !important;
+}
+img {
+  height: auto;
+  max-width: 100%;
+}
+table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  td,
+  th {
+    padding: 0.75rem;
+    line-height: 1.5;
+    vertical-align: top;
+    border-top: 1px solid #eceeef;
+  }
+  thead {
+    th {
+      vertical-align: bottom;
+      border-bottom: 2px solid #eceeef;
+    }
+  }
+  tbody {
+    tr {
+      &:nth-of-type(odd) {
+        background-color: #f9f9f9;
+      }
+    }
+    & + tbody {
+      border-top: 2px solid #eceeef;
+    }
+  }
+}
+.form-control {
+  height: auto;
+}

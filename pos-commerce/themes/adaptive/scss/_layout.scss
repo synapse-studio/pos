@@ -1,0 +1,25 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  &-content {
+    flex-grow: 1;
+    padding-bottom: 30px;
+  }
+  &--service &-content {
+    padding-bottom: 0;
+  }
+}
+.path-webform {
+  .region-content,
+  .region-title {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.checkout-pane-review {
+  & > div:last-child {
+    display: none;
+  }
+}

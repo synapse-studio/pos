@@ -1,0 +1,32 @@
+#manager-menu {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px 0 #ccc;
+  padding: 20px;
+  cursor: move;
+  z-index: 20;
+  background: #fff;
+  max-width: 205px;
+  @include m-down(sm) {
+    display: none !important;
+  }
+  .contextual {
+    display: none;
+  }
+  .toggle-manager {
+    position: relative;
+    z-index: 3;
+    max-width: 1em;
+    cursor: pointer;
+  }
+  h2 {
+    margin: -1em 0 0.5em 1em;
+    font-size: 1.5em;
+  }
+}
+.breadcrumb {
+  padding: 20px 0;
+  background-color: transparent;
+}

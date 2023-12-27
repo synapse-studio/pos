@@ -1,0 +1,7 @@
+_core:
+  default_config_hash: t9Sy2r0HbzF--v4fHksAEsX9Vw2uA5oJGKAiLRP15HA
+tpl: 1
+html: 1
+emails: "support@synapse-studio.ru\r\nalena.naumova@synapse-studio.ru"
+langcode: ru
+header: "<h2>Вам письмо от сайта</h2>\r\n<ul>\r\n  <li>Заявка пришла с технического адреса, не стоит нажимать 'ответить' и отправлять ответ нам.\r\nE-mail клиента (если он его оставил) находится где-то в письме.</li>\r\n  <li>До того как начать писать e-mail посмотри - может клиент оставил телефон,\r\nв таком случае лучше прямо сейчас ему позвонить, сообщить что заявка получена, и передана в работу.</li>\r\n</ul>\r\n<hr>\r\n<h2>Содержимое заявки</h2>\r\n"

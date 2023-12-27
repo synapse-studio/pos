@@ -1,0 +1,34 @@
+_core:
+  default_config_hash: 55G5eP_Dk7fG8p6THm4Zdm7CgAhhlmQMBDbKezJL1VY
+langcode: ru
+phone: '+7 (8172) 26-43-06'
+address: 'г. Вологда, ул. Ленинградская, 71, оф. 401'
+contact: "<b>Телефон:</b> 8 (8172) 26-43-06\r\n<b>Адрес:</b> г. Вологда, ул. Ленинградская, 71, оф. 401\r\n<b>E-mail:</b> mail@synapse-studio.ru\r\n"
+line_text: 'Получите бесплатную консультацию у наших менеджеров'
+menu: ''
+mail: support@synapse-studio.ru
+logo-text: 1
+theme: default
+lp2: 1
+design: store
+map-show: true
+lp_menu: 0
+whatsapp: ''
+phone_text: 'отдел продаж'
+vkontakte: ''
+facebook: ''
+instagram: ''
+youtube: ''
+map-hide: 0
+form_bg:
+  - '27'
+telegram: ''
+viber: ''
+twitter: ''
+header_messangers: 0
+whatsapp_widget_phone: ''
+whatsapp_widget_color: 0
+schedule: ''
+dark_promo: 0
+big_promo: 0
+logo_svg: {  }

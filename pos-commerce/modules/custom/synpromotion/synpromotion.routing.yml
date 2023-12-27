@@ -1,0 +1,15 @@
+synpromotion.settings:
+  path: '/synpromotion/settings'
+  defaults:
+    _title: 'Настройки synpromotion'
+    _controller: '\Drupal\synpromotion\Controller\SynpromotionController::build'
+  requirements:
+    _permission: 'administer synpromotion configuration'
+
+synpromotion.test:
+  path: '/synpromotion/test'
+  defaults:
+    _title: 'Example'
+    _controller: '\Drupal\synpromotion\Controller\SynpromotionController::test'
+  requirements:
+    _permission: 'administer synpromotion configuration'

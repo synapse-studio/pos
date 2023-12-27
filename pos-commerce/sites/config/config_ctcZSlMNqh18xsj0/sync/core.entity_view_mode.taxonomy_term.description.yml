@@ -1,0 +1,12 @@
+uuid: 8ec2f7d2-a99c-445c-a0f8-b7a7bb9c09e5
+langcode: ru
+status: true
+dependencies:
+  module:
+    - taxonomy
+_core:
+  default_config_hash: OSN32Y7xyjTsUeGnL7V5W1Qr4QrV2E8kca4Rk2TOejc
+id: taxonomy_term.description
+label: Описание
+targetEntityType: taxonomy_term
+cache: true

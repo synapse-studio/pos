@@ -1,0 +1,21 @@
+uuid: 94e05e06-c366-4269-8d94-5afe96fd60d6
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_brand_short
+    - taxonomy.vocabulary.brand
+_core:
+  default_config_hash: sP7Z6tOrXSGRI5yW7o78dEJDRlhZFutsybOFWtHeQVE
+id: taxonomy_term.brand.field_brand_short
+field_name: field_brand_short
+entity_type: taxonomy_term
+bundle: brand
+label: 'Короткое описание'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

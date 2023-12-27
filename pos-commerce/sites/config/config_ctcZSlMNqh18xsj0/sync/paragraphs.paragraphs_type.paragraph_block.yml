@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: paragraph_block
+label: Блок
+icon_uuid: null
+icon_default: null
+description: 'Position block between paragraphs'
+behavior_plugins: {  }

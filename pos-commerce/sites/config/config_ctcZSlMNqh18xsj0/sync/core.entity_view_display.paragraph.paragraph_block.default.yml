@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paragraph_block.field_block_id
+    - paragraphs.paragraphs_type.paragraph_block
+id: paragraph.paragraph_block.default
+targetEntityType: paragraph
+bundle: paragraph_block
+mode: default
+content:
+  field_block_id:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true

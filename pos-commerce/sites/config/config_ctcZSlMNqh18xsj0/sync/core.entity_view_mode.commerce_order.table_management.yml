@@ -1,0 +1,10 @@
+uuid: 91296a8b-d772-42c3-a23d-899ad1e9226b
+langcode: ru
+status: true
+dependencies:
+  module:
+    - commerce_order
+id: commerce_order.table_management
+label: 'Таблица управления'
+targetEntityType: commerce_order
+cache: true

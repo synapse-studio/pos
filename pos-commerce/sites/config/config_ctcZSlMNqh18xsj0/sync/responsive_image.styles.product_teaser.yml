@@ -1,0 +1,25 @@
+uuid: 949526aa-e5b3-4276-8ac5-c89bbeceda9b
+langcode: ru
+status: true
+dependencies:
+  config:
+    - image.style.product_teaser
+  module:
+    - cmlstarter
+_core:
+  default_config_hash: pGs7os6bNMZxa3P_pAerg_JMXpNqPUTs6rBFTHO8nZ8
+id: product_teaser
+label: 'Product teaser'
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: product_teaser
+    breakpoint_id: cmlstarter.wide
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: product_teaser
+    breakpoint_id: cmlstarter.mobile_small
+    multiplier: 1x
+breakpoint_group: cmlstarter
+fallback_image_style: product_teaser

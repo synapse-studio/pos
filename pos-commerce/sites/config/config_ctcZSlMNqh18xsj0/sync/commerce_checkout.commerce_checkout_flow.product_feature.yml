@@ -1,0 +1,11 @@
+uuid: f675ffb4-2284-440d-be34-33a6ee249163
+langcode: ru
+status: true
+dependencies: {  }
+label: 'Комплектация товара'
+id: product_feature
+plugin: multistep_default
+configuration:
+  display_checkout_progress: true
+  display_checkout_progress_breadcrumb_links: false
+  panes: {  }

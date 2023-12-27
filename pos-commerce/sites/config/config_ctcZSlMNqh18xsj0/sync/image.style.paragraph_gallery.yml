@@ -1,0 +1,14 @@
+langcode: ru
+status: true
+dependencies: {  }
+name: paragraph_gallery
+label: 'Paragraph gallery [425x215]'
+effects:
+  b8d18cae-8cd4-4ddc-a3b4-651a693e79c2:
+    uuid: b8d18cae-8cd4-4ddc-a3b4-651a693e79c2
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 425
+      height: 215
+      anchor: center-center

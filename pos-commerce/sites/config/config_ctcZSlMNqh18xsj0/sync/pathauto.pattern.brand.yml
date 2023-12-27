@@ -1,0 +1,24 @@
+uuid: b8c307b1-5c4c-450e-b888-fa28b6b44e29
+langcode: ru
+status: true
+dependencies:
+  module:
+    - taxonomy
+_core:
+  default_config_hash: oiq7XiMlIK28iSJLkC13hV45Tz8uKr-ncDt4tDlOWJo
+id: brand
+label: бренд
+type: 'canonical_entities:taxonomy_term'
+pattern: 'product/brand/[term:name]'
+selection_criteria:
+  56bda2d4-d679-4cc2-8cc9-aa8ec4f00046:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: 56bda2d4-d679-4cc2-8cc9-aa8ec4f00046
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      brand: brand
+selection_logic: and
+weight: -5
+relationships: {  }

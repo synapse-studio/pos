@@ -1,0 +1,21 @@
+uuid: 56448a13-6a33-4354-bb39-4ac244ce4b05
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_product_feature_title
+    - paragraphs.paragraphs_type.product_feature
+_core:
+  default_config_hash: oEjG5i2HnqZFNxAqsSICKkrmwS5R1RH-KWxUp1cJf-Q
+id: paragraph.product_feature.field_product_feature_title
+field_name: field_product_feature_title
+entity_type: paragraph
+bundle: product_feature
+label: Заголовок
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

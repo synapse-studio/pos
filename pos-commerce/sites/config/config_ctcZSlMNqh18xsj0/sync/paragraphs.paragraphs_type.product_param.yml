@@ -1,0 +1,12 @@
+uuid: 8cafedcf-9ebb-471a-a7a1-94d34b212f94
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: aKwb6fzjTqQcD1HLXjA06U1e_L7wviPrsS-KxQSlcx0
+id: product_param
+label: Параметры
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

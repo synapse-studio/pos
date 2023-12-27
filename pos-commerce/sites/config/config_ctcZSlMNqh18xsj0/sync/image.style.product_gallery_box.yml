@@ -1,0 +1,10 @@
+uuid: 3fd8f8cc-18df-4f39-9ca2-85111fa0d702
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: rFmJFwAa3GmCj_2CvSbx5Hk1-25oBQ7fkZNUOBVjexI
+name: product_gallery_box
+label: 'Product gallery box (800x700)'
+effects: {  }
+pipeline: ''

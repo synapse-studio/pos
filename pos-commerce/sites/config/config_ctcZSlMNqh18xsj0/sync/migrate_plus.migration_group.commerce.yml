@@ -1,0 +1,12 @@
+uuid: acfcb668-7b85-4515-b2c5-1370e840a582
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: FApEShWx6qO28EYEwG1oQo-gAyFB-8zgY60tLCgPc4g
+id: commerce
+label: Торговля
+description: ''
+source_type: ''
+module: null
+shared_configuration: null

@@ -1,0 +1,15 @@
+features:
+  node_user_picture: true
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: 1
+logo:
+  use_default: 0
+  path: 'public://635850.png'
+favicon:
+  use_default: 0
+  path: 'public://fav.png'
+  mimetype: image/png
+header_logo_inverse: null
+footer_logo_inverse: null
+theme_inverse: 0

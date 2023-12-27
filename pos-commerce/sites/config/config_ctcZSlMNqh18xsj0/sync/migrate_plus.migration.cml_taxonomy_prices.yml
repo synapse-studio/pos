@@ -1,0 +1,35 @@
+uuid: 2e48386e-3875-457f-841a-1cda12176fb6
+langcode: ru
+status: true
+dependencies:
+  enforced:
+    module:
+      - cmlmigrations
+_core:
+  default_config_hash: DVusFdLVrj4zTi3YlBPyncXtS1vvNfLf_kPVN24ofLc
+id: cml_taxonomy_prices
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: cml
+label: 'Price types'
+source:
+  plugin: cml_tx_prices
+process:
+  vid: vid
+  name: name
+  status: status
+  parent:
+    -
+      plugin: skip_on_empty
+      method: process
+      source: parent
+    -
+      plugin: migration_lookup
+      migration: cml_taxonomy_prices
+      source: parent
+  weight: weight
+destination:
+  plugin: 'entity:taxonomy_term'
+migration_dependencies: null

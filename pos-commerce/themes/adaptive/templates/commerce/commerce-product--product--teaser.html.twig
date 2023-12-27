@@ -1,0 +1,87 @@
+{{ attach_library('catalog/catalog') }}
+{% set marks = product.field_tx_options|filter((mark, key) => mark['#title'] != 'На главную' and key matches '/^\\d+$/')
+%}
+{% set mark = marks|first %}
+{% if product_entity.field_short.value is not empty %}
+{% set product_expanded = 'product-expanded' %}
+{% else %}
+{% set product_expanded = '' %}
+{% endif %}
+{%
+set classes = [
+'product',
+'product-teaser',
+product_expanded,
+]
+%}
+<div {{ attributes.addClass(classes) }}>
+
+  {{ title_prefix }}
+  {{ title_suffix }}
+  <div class="product-picture">
+    {{ product.field_image }}
+  </div>
+  <div class="product-content">
+    <div class="product-content-top">
+      <div class="product-title">
+        {{ product.title }}
+      </div>
+      {% if product_entity.field_short.value is not empty %}
+      <div class="product-content-description">
+        {{ product.field_short }}
+      </div>
+      {% endif %}
+    </div>
+    {{ favorite }}
+    <div class="product-content-bottom">
+      {% if mark %}
+      <div class="product-mark">
+        {{ mark }}
+      </div>
+      {% endif %}
+      {% if cart %}
+      <div class="product-cart">
+        {{ cart }}
+      </div>
+      {% else %}
+      {% if view_price %}
+      {% set oldprice = product.variation_field_oldprice[0]['#markup'] %}
+      <div class="product-variation-price">
+        <div class="product-price">
+          {% if oldprice %}
+          <div class="product-price-old">
+            {{ oldprice|round(2) }}
+          </div>
+          {% endif %}
+          <div class="product-price-current">
+            {{ product.variations }}
+          </div>
+        </div>
+      </div>
+      {% endif %}
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{#
+/**
+* @file
+*
+* Default product template.
+*
+* Available variables:
+* - attributes: HTML attributes for the wrapper.
+* - product: The rendered product fields.
+* Use 'product' to print them all, or print a subset such as
+* 'product.title'. Use the following code to exclude the
+* printing of a given field:
+* @code
+* {{ product|without('title') }}
+* @endcode
+* - product_entity: The product entity.
+* - product_url: The product URL.
+*
+* @ingroup themeable
+*/
+#}

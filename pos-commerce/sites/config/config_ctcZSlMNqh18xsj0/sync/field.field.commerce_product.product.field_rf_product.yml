@@ -1,0 +1,29 @@
+uuid: baccd3bc-bd29-41f3-ae64-ee2748e98a2c
+langcode: ru
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.product
+    - field.storage.commerce_product.field_rf_product
+_core:
+  default_config_hash: 8sGCooNwbffnLjC4QEW8PQ1d4F36fnM6IEabNA-MyqQ
+id: commerce_product.product.field_rf_product
+field_name: field_rf_product
+entity_type: commerce_product
+bundle: product
+label: 'Related Products'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:commerce_product'
+  handler_settings:
+    target_bundles:
+      product: product
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

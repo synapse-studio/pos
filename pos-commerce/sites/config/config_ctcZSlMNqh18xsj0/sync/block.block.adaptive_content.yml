@@ -1,0 +1,22 @@
+uuid: a85a442d-9f30-4d1f-af16-99c23f5d97c0
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - adaptive
+_core:
+  default_config_hash: YdAmeqQLLaLJP39pfj8uxCJii_Q1d2tg1AXpVYkiUNE
+id: adaptive_content
+theme: adaptive
+region: content
+weight: -7
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Содержимое страницы'
+  label_display: '0'
+  provider: system
+visibility: {  }

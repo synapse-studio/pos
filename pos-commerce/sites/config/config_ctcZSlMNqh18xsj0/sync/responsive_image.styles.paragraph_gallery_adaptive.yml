@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.paragraph_gallery_325x195
+    - image.style.paragraph_gallery_580x340
+  theme:
+    - adaptive
+id: paragraph_gallery_adaptive
+label: 'Paragraph gallery adaptive'
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: paragraph_gallery_580x340
+    breakpoint_id: adaptive.wide
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: paragraph_gallery_325x195
+    breakpoint_id: adaptive.mobile_small
+    multiplier: 1x
+breakpoint_group: adaptive
+fallback_image_style: paragraph_gallery_580x340

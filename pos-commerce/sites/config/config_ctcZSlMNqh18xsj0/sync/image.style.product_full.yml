@@ -1,0 +1,20 @@
+uuid: 6deba1ad-083e-4551-aeba-3290e64c5194
+langcode: ru
+status: true
+dependencies:
+  module:
+    - focal_point
+_core:
+  default_config_hash: w1VM74nrl_GrXvPZc5_j3HVXqOX4EDoYAhmEVv5md9E
+name: product_full
+label: 'Product Full (1000x750)'
+effects:
+  7a23ba77-c695-4528-ac1d-f77e221791df:
+    uuid: 7a23ba77-c695-4528-ac1d-f77e221791df
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1000
+      height: 750
+      crop_type: focal_point
+pipeline: ''

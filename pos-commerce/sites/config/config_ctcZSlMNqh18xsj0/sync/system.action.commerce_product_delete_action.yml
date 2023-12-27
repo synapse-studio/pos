@@ -1,0 +1,16 @@
+uuid: 9a8eeb9e-f2d1-4dc9-b515-8ae849d8b498
+langcode: ru
+status: true
+dependencies:
+  module:
+    - commerce_product
+  enforced:
+    module:
+      - commerce_product
+_core:
+  default_config_hash: OHXQpgNjqh0nG6rRmaprOm94zIX-wAmSu3TlY2JBn54
+id: commerce_product_delete_action
+label: 'Удалить товар'
+type: commerce_product
+plugin: 'entity:delete_action:commerce_product'
+configuration: {  }

@@ -1,0 +1,44 @@
+uuid: 6b0c9c41-6218-439a-86f8-417cb48b4d6d
+langcode: ru
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.product_options
+  module:
+    - path
+_core:
+  default_config_hash: JBElzq_WsmQBbSHxjFtPyRjoRHaUn6k2DLmMQBSocSs
+id: taxonomy_term.product_options.default
+targetEntityType: taxonomy_term
+bundle: product_options
+mode: default
+content:
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 100
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  tvi:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  description: true
+  langcode: true

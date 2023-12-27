@@ -1,0 +1,15 @@
+uuid: ae05083d-3641-4836-a16a-4449b25b33f5
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 44K6MYGD2wu18BLtDsT4IlPeYGylVcseLZN7Br7njjA
+id: pos
+label: POS
+targetEntityType: commerce_order
+plugin: infinite
+configuration:
+  pattern: 'P-[pattern:number]'
+  initial_number: 1
+  padding: 0
+  per_store_sequence: true

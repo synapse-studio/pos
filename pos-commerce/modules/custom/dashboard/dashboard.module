@@ -1,0 +1,12 @@
+<?php
+
+/**
+ * @file
+ * Dashboard module file.
+ */
+
+/**
+ * Implements hook_cron().
+ */
+function dashboard_cron() {
+}

@@ -1,0 +1,57 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_work_scope_items
+    - paragraphs.paragraphs_type.work_scope
+    - paragraphs.paragraphs_type.work_scope_item
+  module:
+    - entity_reference_revisions
+id: paragraph.work_scope.field_work_scope_items
+field_name: field_work_scope_items
+entity_type: paragraph
+bundle: work_scope
+label: 'Элемент работ'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      work_scope_item: work_scope_item
+    negate: 0
+    target_bundles_drag_drop:
+      about:
+        weight: 11
+        enabled: false
+      about_item:
+        weight: 12
+        enabled: false
+      body:
+        weight: 13
+        enabled: false
+      gallery:
+        weight: 14
+        enabled: false
+      gallery_work:
+        weight: 15
+        enabled: false
+      image_blocks:
+        weight: 16
+        enabled: false
+      image_text:
+        weight: 17
+        enabled: false
+      image_text_sort:
+        weight: 18
+        enabled: false
+      work_scope:
+        weight: 19
+        enabled: false
+      work_scope_item:
+        weight: 20
+        enabled: true
+field_type: entity_reference_revisions

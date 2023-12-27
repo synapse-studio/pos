@@ -1,0 +1,15 @@
+uuid: cfd5fc06-4414-48bd-87e7-ab6035334b66
+langcode: ru
+status: true
+dependencies:
+  module:
+    - profile
+  enforced:
+    module:
+      - commerce_order
+_core:
+  default_config_hash: yeGwCxbA5dBAS_3eBkfaVrbxkASEM357dkjPZShKiR4
+id: profile.billing
+label: Счет
+targetEntityType: profile
+cache: true

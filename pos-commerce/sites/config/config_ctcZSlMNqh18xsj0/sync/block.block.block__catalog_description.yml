@@ -1,0 +1,27 @@
+uuid: null
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - adaptive
+id: block__catalog_description
+theme: adaptive
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:d8212013-b688-4bf6-a4eb-a37a94344eba'
+settings:
+  id: 'block_content:d8212013-b688-4bf6-a4eb-a37a94344eba'
+  label: 'Блок описания в корне каталога'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /catalog

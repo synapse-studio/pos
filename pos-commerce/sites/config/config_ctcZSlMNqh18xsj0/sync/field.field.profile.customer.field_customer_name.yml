@@ -1,0 +1,21 @@
+uuid: 23e83234-b2ca-4296-84a3-418923cb2fdc
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_customer_name
+    - profile.type.customer
+_core:
+  default_config_hash: 3QdVts9cPBKK2xlWHkMK5W6n-DI75AwbTTfWiYGTs8E
+id: profile.customer.field_customer_name
+field_name: field_customer_name
+entity_type: profile
+bundle: customer
+label: Имя
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

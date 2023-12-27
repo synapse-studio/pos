@@ -1,0 +1,4 @@
+administer syncommerce configuration:
+  title: 'Administer syncommerce configuration'
+  description: 'Optional description.'
+  restrict access: true

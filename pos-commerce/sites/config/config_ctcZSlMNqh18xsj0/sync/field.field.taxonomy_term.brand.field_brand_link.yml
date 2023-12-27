@@ -1,0 +1,25 @@
+uuid: 1428447d-5dce-4a88-a554-50e04c438d14
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_brand_link
+    - taxonomy.vocabulary.brand
+  module:
+    - link
+_core:
+  default_config_hash: liOr8oJpVG3xkYs44mhLZ8EBJgvusjmW9ekPq0of-QE
+id: taxonomy_term.brand.field_brand_link
+field_name: field_brand_link
+entity_type: taxonomy_term
+bundle: brand
+label: Ссылка
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 16
+field_type: link
